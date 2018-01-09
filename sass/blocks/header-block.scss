@@ -6,15 +6,31 @@
   flex-direction: row;
   max-width: 1350px;
   margin: auto;
+  padding-top: 9px;
+  padding-bottom: 13px;
 }
 .page-header__slogan {
   font-size: 14px;
   color: $basic-font-grey;
   margin-right: auto;
-  margin-left: 15px;
+  margin-left: 57px;
 }
-.page-header__info {
+.page-header-info {
+  margin-top: 14px;
   display: flex;
+  flex-direction: column;
+}
+.page-header-phone {
+  margin-top: 14px;
+  margin-left: 34px;
+  font-weight: bold;
+}
+.page-header-city {
+  margin-top: 14px;
+  margin-left: 77px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $basic-green;
 }
 
 
