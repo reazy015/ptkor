@@ -15,3 +15,15 @@
   text-decoration: none;
   color: $basic-font-grey;
 }
+@mixin link-green {
+  background-color: $basic-green;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 21px 68px 20px 71px;
+}
+@mixin link-black {
+  @extend link-green;
+  background-color: $basic-black;
+}

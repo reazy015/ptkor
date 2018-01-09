@@ -2,6 +2,9 @@
   max-width: 651px;
   padding-top: 64px;
   padding-left: 84px;
+  padding-right: 86px;
+  padding-bottom: 58px;
+  margin-bottom: 42px;
   background-color: $article-background;
 
   &--center {
@@ -12,10 +15,25 @@
 
   }
 }
+.article-container  .main-article:last-of-type {
+  padding-bottom: 0;
+  border: none;
+  margin-bottom: 59px;
+}
 .article-container__header {
   &--center {
     flex: 1 1 100%;
   }
+}
+.article-container__link {
+  @include link-green;
+}
+.main-article {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $basic-font-grey;
+
+
 }
 .main-article__header {
   text-align: center;

@@ -1,5 +1,16 @@
 .callback {
   max-width: 651px;
+  padding-top: 65px;
+  padding-bottom: 64px;
   background-color: $basic-green;
   color: $basic-white;
+  text-align: center;
+}
+.callback__text {
+  margin-bottom: 47px;
+}
+.callback__order {
+  @include link-green;
+  background-color: $basic-black;
+
 }

@@ -42,5 +42,8 @@
   z-index: 2;
 }
 .slider-info__header {
-  text-tranform: uppercase;
+  text-transform: uppercase;
+}
+.slider-info__link {
+  @include link-green;
 }
