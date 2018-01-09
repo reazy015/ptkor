@@ -1,0 +1,20 @@
+.page-header {
+  dispay: flex;
+}
+.page-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1350px;
+  margin: auto;
+}
+.page-header__slogan {
+  font-size: 14px;
+  color: $basic-font-grey;
+  margin-right: auto;
+  margin-left: 15px;
+}
+.page-header__info {
+  display: flex;
+}
+
+

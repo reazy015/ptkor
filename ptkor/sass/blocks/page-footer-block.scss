@@ -1,0 +1,25 @@
+.page-footer {
+  @include center-container;
+}
+.page-footer-top {
+  display: flex;
+}
+.page-footer__news {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.news__header {
+  flex: 1 1 100%;
+}
+.news-block {
+  flex: 1 1 50%;
+}
+.page-footer__contacts {
+  @include flex-row
+  justify-content: space-between;
+}
+.page-footer__sum {
+  @include flex-row;
+  justify-content: space-between;
+}
