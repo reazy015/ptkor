@@ -1,8 +1,8 @@
 .article-container {
   max-width: 651px;
   padding-top: 64px;
-  padding-left: 84px;
-  padding-right: 86px;
+  padding-left: 13%;
+  padding-right: 8%;
   padding-bottom: 58px;
   margin-bottom: 42px;
   background-color: $article-background;
@@ -21,6 +21,10 @@
   margin-bottom: 59px;
 }
 .article-container__header {
+  font-family: "Merel Bold";
+  font-size: 24px;
+  color: $basic-black;
+
   &--center {
     flex: 1 1 100%;
   }
@@ -31,7 +35,7 @@
 .main-article {
   padding-top: 19px;
   padding-bottom: 19px;
-  border-bottom: 1px solid $basic-font-grey;
+  border-bottom: 1px solid $basic-hr-border;
 
 
 }
@@ -39,4 +43,3 @@
   text-align: center;
   margin: 0;
 }
-

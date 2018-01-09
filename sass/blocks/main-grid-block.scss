@@ -8,9 +8,13 @@
 }
 .main__header {
   flex: 1 1 100%;
+  margin-top: 92px;
+  margin-bottom: 97px;
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
+  font-family: "Merel Light";
+  font-size: 30px;
 }
 .central {
   flex: 1 1 100%;
@@ -18,6 +22,11 @@
   margin-bottom: 42px;
 }
 .part {
-  flex: 0 1 651px;
+  flex: 0 1 48%;
   margin-bottom: 42px;
+}
+@media (max-width: 1337px) {
+  .part {
+
+  }
 }
