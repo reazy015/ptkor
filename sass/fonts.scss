@@ -1,11 +1,24 @@
 @font-face {
-  font-family: "PT Sans";
-  src: url('../fonts/ptsans.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  font-family: "Merel Medium";
+  src: url('../fonts/Merel Medium.otf') format('opentype');
 }
-
-body {
-  font-family: "PT Sans";
+@font-face {
+  font-family: "Merel Black";
+  src: url('../fonts/Merel Black.otf') format('opentype');
+}
+@font-face {
+  font-family: "Merel Bold";
+  src: url('../fonts/Merel Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: "Merel Light";
+  src: url('../fonts/Merel Light.otf') format('opentype');
+}
+@font-face {
+  font-family: "Merel Thin";
+  src: url('../fonts/Merel Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: "Merel";
+  src: url('../fonts/Merel.otf') format('opentype');
 }

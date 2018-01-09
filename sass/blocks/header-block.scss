@@ -1,5 +1,6 @@
 .page-header {
-  dispay: flex;
+  font-family: "Merel";
+  font-size: 14px;
 }
 .page-header-wrapper {
   display: flex;
@@ -21,16 +22,16 @@
   flex-direction: column;
 }
 .page-header-phone {
+  font-family: "Merel Bold";
   margin-top: 14px;
   margin-left: 34px;
   font-weight: bold;
 }
 .page-header-city {
+  font-family: "Merel Bold";
   margin-top: 14px;
   margin-left: 77px;
   text-align: left;
   text-transform: uppercase;
   color: $basic-green;
 }
-
-
