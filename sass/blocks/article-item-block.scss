@@ -1,26 +1,27 @@
 .article-item {
   overflow: hidden;
+  font-size: 18px;
 }
 .article-item__header {
   margin: 0;
   font-family: "Merel Light";
-  font-size: 18px;
+  font-size: 1em;
   color: $basic-black;
   text-transform: uppercase;
 }
 .article-item__text {
   font-family: "Merel";
-  font-size: 14px;
+  font-size: 0.8em;
   color: $basic-font-grey;
 }
 .article-item__price {
   font-family: "Merel Bold";
-  font-size: 18px;
+  font-size: 1em;
   color: $basic-black;
 }
 .article-item__link {
   font-family: "Merel";
-  font-size: 14px;
+  font-size: 0.8em;
   color: $basic-green;
   text-decoration: none;
 }

@@ -4,16 +4,9 @@
 .nav-list {
   @include list-reset;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   max-width: 1360px;
   margin: auto;
-}
-.nav-list-item {
-  margin-right: 11.8em;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
 }
 .nav-list-item__link {
   @include reset-link;

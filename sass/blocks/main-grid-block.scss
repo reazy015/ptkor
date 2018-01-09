@@ -18,15 +18,9 @@
 }
 .central {
   flex: 1 1 100%;
-  text-align: center;
   margin-bottom: 42px;
 }
 .part {
-  flex: 0 1 48%;
+  flex: 0 1 47.8%;
   margin-bottom: 42px;
-}
-@media (max-width: 1337px) {
-  .part {
-
-  }
 }
