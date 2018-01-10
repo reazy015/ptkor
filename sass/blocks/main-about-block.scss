@@ -1,9 +1,36 @@
 .main-about {
+  text-align: center;
 
   & input[type="radio"] {
     display: none;
   }
-
-  & label {
+  & input[type="radio"]:checked + .main-about__tab {
+    background-color: $basic-green;
+    color: $basic-white;
+  }
+  & input[id="trust"]:checked + .main-about-sliders {
+    display: block;
+    background-color: red;
+    height: 100px;
+    width: 100px;
   }
 }
+.main-about__tab {
+  display: inline-block;
+  padding: 14px 21px 14px 24px;
+  font-family: "Merel";
+  font-size: 14px;
+  color: $basic-font-grey;
+  cursor: pointer;
+}
+.main-about__decor {
+  height: 1px;
+  width: 100%;
+  background-color: $basic-green;
+}
+.main-about-sliders {
+  margin-top: 85px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+

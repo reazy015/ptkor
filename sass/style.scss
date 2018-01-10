@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "global";
 @import "fonts";
 @import "blocks/header-block";
 @import "blocks/nav-block";
@@ -10,3 +11,10 @@
 @import "blocks/article-item-block";
 @import "blocks/main-about-block";
 @import "blocks/page-footer-block";
+@import "blocks/main-summary-block";
+@import "blocks/page-footer-block";
+@import "blocks/footer-news-block";
+@import "blocks/footer-contacts-block";
+@import "blocks/footer-sum-block";
+@import "blocks/footer-copyright-block";
+

@@ -1,0 +1,51 @@
+.main-summary {
+  margin-bottom: 0;
+  position: relative;
+  background-image: url('../img/main-summary-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 140px;
+  padding-bottom: 120px;
+  text-align: center;
+  color: $basic-white;
+}
+.main-summary__header {
+  margin-bottom: 160px;
+  font-family: "Merel Light";
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.main-summary-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 110px;
+}
+.main-summary__link {
+  @include link-green;
+  background-color: transparent;
+  border: 1px solid $basic-white;
+  z-index: 10;
+}
+.main-summary__background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 0;
+}
+.item:nth-of-type(2) {
+  margin-left: 155px;
+  margin-right: 172px;
+}
+.item__number {
+  font-family: "Merel Bold";
+  font-size: 72px;
+}
+.item__text {
+  font-family: "Merel Light";
+  font-size: 18px;
+}
+

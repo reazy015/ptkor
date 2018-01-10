@@ -1,25 +1,39 @@
-.page-footer {
-  @include center-container;
-}
 .page-footer-top {
   display: flex;
+  background-image: url('../img/page-footer-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 111px;
+  padding-bottom: 93px;
+  color: white;
+}
+.page-footer__support {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 41.69%;
 }
 .page-footer__news {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.news__header {
-  flex: 1 1 100%;
-}
-.news-block {
-  flex: 1 1 50%;
-}
-.page-footer__contacts {
-  @include flex-row
-  justify-content: space-between;
-}
-.page-footer__sum {
   @include flex-row;
-  justify-content: space-between;
+}
+.support__header {
+  font-family: "Merel Light";
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.support-list {
+  @include list-reset;
+  margin-bottom: 101px;
+}
+.support-list-item {
+  margin-bottom: 22px;
+}
+.support-list-item__link {
+  font-family: "Merel";
+  font-size: 16px;
+  color: $basic-white;
+}
+.support__link {
+  @include link-green;
+  width: 339px;
+  background-color: $basic-black;
 }

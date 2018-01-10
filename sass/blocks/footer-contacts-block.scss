@@ -1,0 +1,61 @@
+.contacts {
+  padding-top: 65px;
+  padding-bottom: 55px;
+  background-color: $basic-black;
+  color: $basic-white;
+}
+.contacts-item {
+
+}
+.soc-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contacts-socials {
+  margin-right: auto;
+}
+.contacts-socials__slogan {
+  font-family: "Merel";
+  font-size: 16px;
+  color: $basic-green;
+  text-transform: uppercase;
+}
+.contacts-item-info {
+  font-size: 16px;
+
+  &--time {
+    font-family: "Merel";
+  }
+
+  &--phone {
+    font-family: "Merel Bold";
+  }
+
+  &--mail {
+    font-family: "Merel Bold";
+  }
+}
+.contacts-item-info__city {
+  font-family: "Merel Bold";
+  text-transform: uppercase;
+}
+.contacts-item-info__ads {
+  font-family: "Merel";
+}
+.city-info-list {
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+}
+.city-info {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 100%;
+  justify-content: space-between;
+
+  &:last-of-type .contacts-item:first-of-type {
+    margin-right: 5.8%;
+  }
+}

@@ -1,0 +1,15 @@
+.copyright {
+  padding-top: 32px;
+  padding-bottom: 25px;
+  background-color: $basic-black;
+
+}
+.copyright-text {
+  max-width: 1360px;
+  margin: auto;
+  font-family: "Merel Light";
+  color: $basic-white;
+}
+.copyright-text__name {
+  text-transform: uppercase;
+}
