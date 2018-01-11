@@ -2,14 +2,14 @@
   font-family: "Merel";
   font-size: 14px;
 }
-.page-header-wrapper {
-  display: flex;
-  flex-direction: row;
-  max-width: 1350px;
-  margin: auto;
-  padding-top: 9px;
-  padding-bottom: 13px;
-}
+//.page-header-wrapper {
+//  display: flex;
+//  flex-direction: row;
+//  max-width: 1350px;
+//  margin: auto;
+//  padding-top: 9px;
+//  padding-bottom: 13px;
+//}
 .page-header__slogan {
   font-size: 14px;
   color: $basic-font-grey;
@@ -34,4 +34,9 @@
   text-align: left;
   text-transform: uppercase;
   color: $basic-green;
+}
+@media (max-width: 968px) {
+  .page-header .container-flex {
+
+  }
 }

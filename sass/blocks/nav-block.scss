@@ -1,5 +1,7 @@
 .nav {
   border-top: 1px solid $basic-hr-border;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .nav-list {
   @include list-reset;
@@ -7,6 +9,9 @@
   justify-content: space-between;
   max-width: 1360px;
   margin: auto;
+}
+.nav-list-item--sticky {
+  display: none;
 }
 .nav-list-item--has-sub {
   position: relative;
@@ -24,10 +29,16 @@
   }
 
   &:hover > .submenu {
+    display: block;
     visibility: visible;
+    animation: visible;
+    animation-duration: 1s;
     opacity: 1;
     z-index: 10;
   }
+}
+.nav-list-item__logo {
+  display: none;
 }
 .nav-list-item__link {
   @include reset-link;
@@ -39,10 +50,11 @@
 .submenu {
   @include list-reset;
   position: absolute;
+  display: none;
   visibility: visible;
   top: 100%;
   left: -25px;
-  z-index: -10;
+  z-index: -90;
   background-color: $basic-white;
   padding: 12px;
   width: 256px;
@@ -62,5 +74,79 @@
 
   &:hover {
     background-color: $basic-hover;
+  }
+}
+.nav-toggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+  outline: none;
+}
+.nav-toggle__decor {
+  position: relative;
+  display: block;
+  width: 23px;
+  height: 2px;
+  margin-bottom: 9px;
+  background-color: $menu-toggle;
+
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    left: -10px;
+    margin-top: -4px;
+    border-radius: 50%;
+    border: 1px solid $menu-toggle;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    position: relative;
+    border-top: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: $basic-white;
+    visibility: hidden;
+    z-index: -50;
+    transform: translate(100%);
+    transition: transform .3s;
+  }
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+  .nav-list-item--sticky {
+    display: block;
+  }
+  .nav-open {
+    visibility: visible;
+    z-index: 20;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(0%);
+    transition: transform .3s;
+  }
+}
+@keyframe visible {
+  from {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

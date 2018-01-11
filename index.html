@@ -12,80 +12,132 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="page">
 
         <header class="page-header">
-            <div class="page-header-wrapper">
-                <div class="page-header-logo">
-                    <img src="img/logo.png" alt="logo-img" class="page-header-logo__img">
-                </div>
-                <h2 class="page-header__slogan">
-                    Поставка материалов<br>для дорожного строительства
-                </h2>
-                <div class="page-header-info">
-                    <div class="page-header-info__time">Пн-Пт: 9:30 - 18:00</div>
-                    <div class="page-header-info__mail">info@ptkor.ru</div>
-                </div>
-                <div class="page-header-city city">
-                    <span class="city-active">Москва<br>Санкт-Петербург</span>
-                </div>
-                <div class="page-header-phone">
-                    <div class="page-header-phone__item">8(499)550-22-58</div>
-                    <div class="page-header-phone__item">8(499)550-22-58</div>
-                </div>
-            </div>
 
-            <nav class="page-header-nav nav">
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="#" class="nav-list-item__link">Прайс-лист</a></li>
-                    <li class="nav-list-item nav-list-item--has-sub">
-                        <a href="#" class="nav-list-item__link">Компания</a>
-                        <ul class="nav-list-item__submenu submenu">
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">О компании</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">Новости и публикации</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">Партнеры</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">Отзывы и благодарности</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">Вакансии</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">Реквезиты</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-list-item nav-list-item--has-sub">
-                        <a href="#" class="nav-list-item__link">Каталог</a>
-                        <ul class="nav-list-item__submenu submenu">
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">О компании</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">Новости и публикации</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">Партнеры</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">Отзывы и благодарности</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">Вакансии</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-item__link">Реквезиты</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-item__link">Объекты</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-item__link">Техсопровождение</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-item__link">Контакты</a></li>
-                </ul>
-            </nav>
+           <div class="page-header__sticky-flex">
 
-            <div class="page-header-slider slider">
-                <button class="slider-btn slider-btn--prev"> < </button>
-                <button class="slider-btn slider-btn--next"> > </button>
-                <ul class="slider-list">
-                    <li class="slider-list-item">
-                        <img src="img/slider-img1.png" alt="slider-img" class="slider-list-item__img">
-                        <div class="slider-list-item__info slider-info">
-                            <h2 class="slider-info__header">Гранитные изделия</h2>
-                            <p class="slider-info__text">Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение форм развития.</p>
-                            <a href="#" class="slider-info__link">Подробнее ...</a>
-                        </div>
-                    </li>
-                    <li class="slider-list-item"></li>
-                    <li class="slider-list-item"></li>
-                </ul>
-            </div>
+               <div class="container-flex">
+                   <div class="page-header-logo">
+                       <img src="img/logo.png" alt="logo-img" class="page-header-logo__img">
+                   </div>
+                   <h2 class="page-header__slogan">
+                       Поставка материалов<br>для дорожного строительства
+                   </h2>
+                   <div class="page-header-info">
+                       <div class="page-header-info__time">Пн-Пт: 9:30 - 18:00</div>
+                       <div class="page-header-info__mail">info@ptkor.ru</div>
+                   </div>
+                   <div class="page-header-city city">
+                       <div class="city__header"><span>Москва</span><br><span>Санкт-Петерубрг</span></div>
+
+
+                       <div class="city-dropdown">
+                           <div class="city-dropdown-item">
+                               <div class="city-dropdown-item__adr">
+                                   <span>Санкт-Петербург</span><br>
+                                   <span>ул. Маршала Говорова, д.35, к.4</span>
+                               </div>
+                               <div class="city-dropdown-item__time">
+                                   Пн-Пт: 9:30 - 18:00<br>
+                                   Сб-Вс: выходной
+                               </div>
+                               <div class="city-dropdown-item__contacts">
+                                   8(812)676-75-59<br>
+                                   info@ptkor.ru
+                               </div>
+                           </div>
+                           <div class="city-dropdown-item">
+                               <div class="city-dropdown-item__adr">
+                                   <span>Москва</span><br>
+                                   <span>ул. Мира, д.101, к.501</span>
+                               </div>
+                               <div class="city-dropdown-item__time">
+                                   Пн-Пт: 9:30 - 18:00<br>
+                                   Сб-Вс: выходной
+                               </div>
+                               <div class="city-dropdown-item__contacts">
+                                   8(499)550-22-58<br>
+                                   info@ptkor.ru
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="page-header-phone">
+                       <div class="page-header-phone__item">8(499)550-22-58</div>
+                       <div class="page-header-phone__item">8(499)550-22-58</div>
+                   </div>
+               </div>
+
+               <nav class="page-header-nav nav">
+
+                   <button class="nav-toggle">
+                       <span class="nav-toggle__decor"></span>
+                       <span class="nav-toggle__decor"></span>
+                       <span class="nav-toggle__decor"></span>
+                   </button>
+
+                   <div class="nav-list-item">
+                       <picture>
+                           <source media="(max-width: 768px)" srcset="img/logo.png"/>
+                           <img src="img/logo-sticky.png" alt="sticky-logo" class="nav-list-item__logo">
+                       </picture>
+                   </div>
+
+                   <ul class="nav-list">
+                       <li class="nav-list-item"><a href="#" class="nav-list-item__link">Прайс-лист</a></li>
+                       <li class="nav-list-item nav-list-item--has-sub">
+                           <a href="#" class="nav-list-item__link">Компания</a>
+                           <ul class="nav-list-item__submenu submenu">
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">О компании</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">Новости и публикации</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">Партнеры</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">Отзывы и благодарности</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">Вакансии</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">Реквезиты</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-list-item nav-list-item--has-sub">
+                           <a href="#" class="nav-list-item__link">Каталог</a>
+                           <ul class="nav-list-item__submenu submenu">
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">О компании</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">Новости и публикации</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">Партнеры</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">Отзывы и благодарности</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">Вакансии</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-item__link">Реквезиты</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-list-item"><a href="#" class="nav-list-item__link">Объекты</a></li>
+                       <li class="nav-list-item"><a href="#" class="nav-list-item__link">Техсопровождение</a></li>
+                       <li class="nav-list-item"><a href="#" class="nav-list-item__link">Контакты</a></li>
+                   </ul>
+               </nav>
+
+           </div>
+
         </header>
+
+        <section class="page-header-slider slider">
+            <button class="slider-btn slider-btn--prev"> < </button>
+            <button class="slider-btn slider-btn--next"> > </button>
+            <ul class="slider-list">
+                <li class="slider-list-item">
+                    <img src="img/slider-img1.png" alt="slider-img" class="slider-list-item__img">
+                    <div class="slider-list-item__info slider-info">
+                        <h2 class="slider-info__header">Гранитные изделия</h2>
+                        <p class="slider-info__text">Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение форм развития.</p>
+                        <a href="#" class="slider-info__link">Подробнее ...</a>
+                    </div>
+                </li>
+                <li class="slider-list-item"></li>
+                <li class="slider-list-item"></li>
+            </ul>
+        </section>
 
         <main class="page-main main">
 
@@ -584,6 +636,8 @@
                 <p class="copyright-text">&copy <span class="copyright-text__name">ПТК Объедененные ресурсы, 2002-2017</span></p>
             </section>
         </footer>
+        <script src="js/stickynav.js"></script>
+        <script src="js/adaptiveMenu.js"></script>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
