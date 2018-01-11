@@ -35,8 +35,8 @@
   text-transform: uppercase;
   color: $basic-green;
 }
-@media (max-width: 968px) {
-  .page-header .container-flex {
-
+@media (max-width: 900px) {
+  .page-header-info {
+    display: none;
   }
 }

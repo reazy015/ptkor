@@ -15,6 +15,10 @@
   }
 }
 
-* {
-  box-sizing: border-box;
+@media (max-width: 1360px) {
+  .container-flex {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
+
