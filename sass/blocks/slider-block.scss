@@ -33,6 +33,8 @@
 .slider-list {
   @include list-reset;
   display: flex;
+  transition: transform .3s;
+
 }
 .slider-list-item {
   position: relative;
