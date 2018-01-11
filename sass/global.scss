@@ -3,9 +3,6 @@
   max-width: 1360px;
   margin: auto;
 
-  &--contacts {
-  }
-
   &--sum {
     justify-content: flex-start;
     padding-top: 50px;
@@ -14,11 +11,14 @@
     border-bottom: 1px solid $basic-hr-ft-border;
   }
 }
-
+@media (max-width: 1080px) {
+  .container-flex--header {
+    justify-content: space-between;    
+  }
+}
 @media (max-width: 1360px) {
   .container-flex {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-

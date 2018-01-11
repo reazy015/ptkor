@@ -11,8 +11,20 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "img/index.jpg" );
+  }
+
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
     </head>
     <body class="page">
 
@@ -20,7 +32,7 @@
 
            <div class="page-header__sticky-flex">
 
-               <div class="container-flex">
+               <div class="container-flex container-flex--header page-header-top-container">
                    <div class="page-header-logo">
                        <img src="img/logo.png" alt="logo-img" class="page-header-logo__img">
                    </div>
@@ -68,8 +80,8 @@
                    </div>
 
                    <div class="page-header-phone">
-                       <div class="page-header-phone__item">8(499)550-22-58</div>
-                       <div class="page-header-phone__item">8(499)550-22-58</div>
+                       <div class="page-header-phone__item">8 (499) 550-22-58</div>
+                       <div class="page-header-phone__item">8 (812) 676-75-59</div>
                    </div>
                </div>
 
@@ -113,7 +125,17 @@
                            </ul>
                        </li>
                        <li class="nav-list-item"><a href="#" class="nav-list-item__link">Объекты</a></li>
-                       <li class="nav-list-item"><a href="#" class="nav-list-item__link">Техсопровождение</a></li>
+                       <li class="nav-list-item nav-list-item--has-sub">
+                         <a href="#" class="nav-list-item__link ">Техсопровождение</a>
+                         <ul class="nav-list-item__submenu submenu">
+                             <li class="submenu-item"><a href="#" class="submenu-item__link">О компании</a></li>
+                             <li class="submenu-item"><a href="#" class="submenu-item__link">Новости и публикации</a></li>
+                             <li class="submenu-item"><a href="#" class="submenu-item__link">Партнеры</a></li>
+                             <li class="submenu-item"><a href="#" class="submenu-item__link">Отзывы и благодарности</a></li>
+                             <li class="submenu-item"><a href="#" class="submenu-item__link">Вакансии</a></li>
+                             <li class="submenu-item"><a href="#" class="submenu-item__link">Реквезиты</a></li>
+                         </ul>
+                       </li>
                        <li class="nav-list-item"><a href="#" class="nav-list-item__link">Контакты</a></li>
                    </ul>
                </nav>
