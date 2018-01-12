@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 50;
   background-color: $basic-white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   & .page-header__sticky-flex {
     display: flex;
@@ -56,6 +57,9 @@
   }
   & .nav-list-item {
     font-size: 12px;
+    @media (max-width: 830px) {
+      font-size: 14px;
+    }
   }
   & .nav-list-item__logo {
     display: block;
@@ -91,6 +95,10 @@
     }
     & .container-flex {
       padding: 0;
+    }
+    & .city-dropdown {
+      right: -40%;
+      left: auto;
     }
   }
 }

@@ -16,6 +16,8 @@
   @include flex-row;
 }
 .support__header {
+  margin: 0;
+  margin-bottom: 80px;
   font-family: "Merel Light";
   font-size: 30px;
   text-transform: uppercase;

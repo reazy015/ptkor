@@ -3,7 +3,8 @@
 }
 .news__header {
   flex: 1 0 100%;
-  margin-top: 70px;
+  margin: 0;
+  margin-bottom: 50px;
   font-family: "Merel Light";
   font-size: 30px;
   text-transform: uppercase;
@@ -11,11 +12,12 @@
 .news-block {
   display: flex;
   flex-direction: row-reverse;
-  flex: 0 1 361px;
+  flex: 0 1 45%;
   margin-right: auto;
 }
 .news-block-info__header {
-  font-family: "Merel Bold";
+  margin-top: 0;
+  font-family: "Merel";
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -24,7 +26,7 @@
   font-size: 14px;
 }
 .news-block-date {
-  float: left;
+  flex: 0 0 112px;
   width: 112px;
   height: 112px;
   background-color: $basic-white;
@@ -44,4 +46,5 @@
   @include link-green;
   background-color: transparent;
   border: 1px solid $basic-white;
+  align-self: flex-end;
 }

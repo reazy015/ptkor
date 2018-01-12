@@ -16,12 +16,15 @@
   color: $basic-font-grey;
 }
 @mixin link-green {
+  display: block;
+  width: 286px;
+  padding-top: 22px;
+  padding-bottom: 20px;
   background-color: $basic-green;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   color: white;
-  padding: 21px 68px 20px 71px;
   font-family: "Merel Bold";
 }
 @mixin link-black {

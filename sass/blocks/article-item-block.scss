@@ -3,13 +3,19 @@
   font-size: 18px;
 }
 .article-item__header {
+  width: 95%;
   margin: 0;
+  margin-bottom: 6px;
+  margin-top: 5px;
   font-family: "Merel Light";
   font-size: 1em;
+  line-height: 1.4;
   color: $basic-black;
   text-transform: uppercase;
 }
 .article-item__text {
+  margin: 0;
+  margin-bottom: 4px;
   font-family: "Merel";
   font-size: 0.8em;
   color: $basic-font-grey;

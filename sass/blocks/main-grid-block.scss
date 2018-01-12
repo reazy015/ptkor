@@ -3,24 +3,24 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1380px;
+  max-width: 1360px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: auto;
 }
 .main__header {
   flex: 1 1 100%;
-  margin-top: 92px;
+  margin-top: 80px;
   margin-bottom: 97px;
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
   font-family: "Merel Light";
-  font-size: 30px;
+  font-size: 31px;
 }
 .central {
   flex: 1 1 100%;
-  margin-bottom: 42px;
 }
 .part {
   flex: 0 1 47.8%;
-  margin-bottom: 42px;
 }

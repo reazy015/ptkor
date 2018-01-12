@@ -1,18 +1,19 @@
 .callback {
   max-width: 651px;
-  padding-top: 65px;
-  padding-bottom: 64px;
+  padding-top: 52px;
+  padding-bottom: 52px;
   background-color: $basic-green;
   color: $basic-white;
   text-align: center;
 }
 .callback__text {
-  margin-bottom: 47px;
+  margin-bottom: 40px;
   font-family: "Merel Bold";
   font-size: 24px;
 }
 .callback__order {
   @include link-green;
+  margin: auto;
   background-color: $basic-black;
 
 }

@@ -3,6 +3,12 @@
   max-width: 1360px;
   margin: auto;
 
+  &--header {
+    @media(max-width: 830px) {
+      display: none;
+    }
+  }
+
   &--sum {
     justify-content: flex-start;
     padding-top: 50px;
