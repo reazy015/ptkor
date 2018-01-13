@@ -3,31 +3,29 @@
   background-image: url('../img/page-footer-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 111px;
+  padding-top: 101px;
   padding-bottom: 93px;
   color: white;
 }
 .page-footer__support {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 41.69%;
+  margin-right: 16.7%;
 }
 .page-footer__news {
   @include flex-row;
 }
 .support__header {
   margin: 0;
-  margin-bottom: 80px;
   font-family: "Merel Light";
   font-size: 30px;
   text-transform: uppercase;
 }
 .support-list {
   @include list-reset;
-  margin-bottom: 101px;
+  margin-top: 74px;
+  margin-bottom: 103px;
 }
 .support-list-item {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 .support-list-item__link {
   font-family: "Merel";
@@ -37,5 +35,7 @@
 .support__link {
   @include link-green;
   width: 339px;
-  background-color: $basic-black;
+  background-color: $basic-black-btn;
+  padding-top: 19px;
+  padding-bottom: 15px;
 }

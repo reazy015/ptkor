@@ -10,7 +10,7 @@
 }
 .main__header {
   flex: 1 1 100%;
-  margin-top: 80px;
+  margin-top: 0;
   margin-bottom: 97px;
   text-align: center;
   text-transform: uppercase;
@@ -22,5 +22,8 @@
   flex: 1 1 100%;
 }
 .part {
+  display: flex;
+  flex-direction: column;
   flex: 0 1 47.8%;
+  margin-bottom: 50px;
 }

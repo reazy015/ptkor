@@ -350,7 +350,9 @@
                             <a href="#" class="article-item__link">Подробнее ...</a>
                         </div>
                     </article>
-                    <a href="#" class="article-container__link">Перейти в раздел</a>
+                    <div class="central-link-container">
+                            <a href="#" class="article-container__link">Перейти в раздел</a>
+                    </div>
                 </div>
             </div>
 
@@ -418,7 +420,7 @@
                             <img src="img/article-img.png" alt="" class="article-item__img">
                             <h4 class="article-item__header">Армирование асфальтобена</h4>
                             <p class="article-item__text">Разообразный и богатый опыт новая модель организационной деятельности</p>
-                            <div class="article-item__prisce">от 1 999 руб.</div>
+                            <div class="article-item__price">от 1 999 руб.</div>
                             <a href="#" class="article-item__link">Подробнее ...</a>
                         </div>
                     </article>
@@ -440,68 +442,26 @@
                 <input type="radio" name="tab" id="qlty">
                 <label class="main-about__tab" for="qlty">Качество</label>
                 <input type="radio" name="tab" id="callbacks">
-                <label class="main-about__tab" for="callbacks"></label>
+                <label class="main-about__tab" for="callbacks">Отзывы</label>
                 <div class="main-about__decor"></div>
 
-                <ul class="main-about-sliders sliders-list slider">
+                <section class="main-about-slider page-header-slider slider">
                     <button class="slider-btn slider-btn--prev"> < </button>
                     <button class="slider-btn slider-btn--next"> > </button>
-                    <li class="sliders-list__item" data-block-type="partners">
-                        <ul class="slider-list">
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                        </ul>
-                    </li>
-                    <li class="sliders-list__item" data-block-type="trust">
-                        <ul class="slider-list">
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                        </ul>
-                    </li>
-                    <li class="sliders-list__item" data-block-type="obj-orders">
-                        <ul class="slider-list">
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                        </ul>
-                    </li>
-                    <li class="sliders-list__item" data-block-type="qlty">
-                        <ul class="slider-list">
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                        </ul>
-                    </li>
-                    <li class="sliders-list__item" data-block-type="callbacks">
-                        <ul class="slider-list">
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                            <li class="slider-list-item"></li>
-                        </ul>
-                    </li>
-                </ul>
+                    <ul class="slider-list slider-list--about">
+                        <li class="slider-list-item">
+                            <img src="img/about-slider-img.png" alt="slider-img" class="slider-list-item__img">
+                        </li>
+                        <li class="slider-list-item">
+                            <img src="" alt="" class="slider-list-item__img">
+                        </li>
+                        <li class="slider-list-item"></li>
+                    </ul>
+                </section>
             </section>
         </main>
 
         <section class="main-summary central">
-            <div class="main-summary__background"></div>
             <div class="main-summary-wrapper">
                 <h4 class="main-summary__header">Реализованные проекты</h4>
                 <div class="main-summary-info">
@@ -540,54 +500,56 @@
 
                     <section class="page-footer__news news">
                         <h4 class="news__header">Новости</h4>
-                        <article class="news-block">
-                            <div class="news-block-info">
-                                <h4 class="news-block-info__header">Смена Риквизитов</h4>
-                                <p class="news-block-info__text">Уважаемые Партнеры! Информируем
-                                    Вас о том, что с 8.12.2017 произошла
-                                    смена реквизитов...</p>
-                            </div>
-                            <div class="news-block-date">
-                                <div class="news-block-date__number">8</div>
-                                <div class="news-block-date__month">Декабря</div>
-                            </div>
-                        </article>
-                        <article class="news-block">
-                            <div class="news-block-info">
-                                <h4 class="news-block-info__header">ДТП на а/д М-10 "Россия"</h4>
-                                <p class="news-block-info__text">Сегодня утром на трассе М-10 "Россия"
-                                    (Москва - Санкт-Петербург) на обходе...</p>
-                            </div>
-                            <div class="news-block-date">
-                                <div class="news-block-date__number">3</div>
-                                <div class="news-block-date__month">Августа</div>
-                            </div>
-                        </article>
-                        <article class="news-block">
-                            <div class="news-block-info">
-                                <h4 class="news-block-info__header">Окончание выполнения
-                                    подрядных работ
-                                    по капитальному ремонту</h4>
-                                <p class="news-block-info__text">29 августа 2017 года, компания
-                                    «ПТК Объединённые Ресурсы» ...</p>
-                            </div>
-                            <div class="news-block-date">
-                                <div class="news-block-date__number">30</div>
-                                <div class="news-block-date__month">Августа</div>
-                            </div>
-                        </article>
-                        <article class="news-block">
-                            <div class="news-block-info">
-                                <h4 class="news-block-info__header">Люк ГОСТ</h4>
-                                <p class="news-block-info__text">Люки чугунные канализационные
-                                    (и не только) - одна из самых обыденных
-                                    примет...</p>
-                            </div>
-                            <div class="news-block-date">
-                                <div class="news-block-date__number">3</div>
-                                <div class="news-block-date__month">Августа</div>
-                            </div>
-                        </article>
+                        <div class="news-article-container">
+                          <article class="news-block">
+                              <div class="news-block-info">
+                                  <h4 class="news-block-info__header">Смена Риквизитов</h4>
+                                  <p class="news-block-info__text">Уважаемые Партнеры! Информируем
+                                      Вас о том, что с 8.12.2017 произошла
+                                      смена реквизитов...</p>
+                              </div>
+                              <div class="news-block-date">
+                                  <div class="news-block-date__number">8</div>
+                                  <div class="news-block-date__month">Декабря</div>
+                              </div>
+                          </article>
+                          <article class="news-block">
+                              <div class="news-block-info">
+                                  <h4 class="news-block-info__header">ДТП на а/д М-10 "Россия"</h4>
+                                  <p class="news-block-info__text">Сегодня утром на трассе М-10 "Россия"
+                                      (Москва - Санкт-Петербург) на обходе...</p>
+                              </div>
+                              <div class="news-block-date">
+                                  <div class="news-block-date__number">3</div>
+                                  <div class="news-block-date__month">Августа</div>
+                              </div>
+                          </article>
+                          <article class="news-block">
+                              <div class="news-block-info">
+                                  <h4 class="news-block-info__header">Окончание выполнения
+                                      подрядных работ
+                                      по капитальному ремонту</h4>
+                                  <p class="news-block-info__text">29 августа 2017 года, компания
+                                      «ПТК Объединённые Ресурсы» ...</p>
+                              </div>
+                              <div class="news-block-date">
+                                  <div class="news-block-date__number">30</div>
+                                  <div class="news-block-date__month">Августа</div>
+                              </div>
+                          </article>
+                          <article class="news-block">
+                              <div class="news-block-info">
+                                  <h4 class="news-block-info__header">Люк ГОСТ</h4>
+                                  <p class="news-block-info__text">Люки чугунные канализационные
+                                      (и не только) - одна из самых обыденных
+                                      примет...</p>
+                              </div>
+                              <div class="news-block-date">
+                                  <div class="news-block-date__number">3</div>
+                                  <div class="news-block-date__month">Августа</div>
+                              </div>
+                          </article>
+                        </div>
                         <a href="#" class="news__link">Все новости</a>
                     </section>
                 </div>

@@ -3,13 +3,12 @@
   font-size: 18px;
 }
 .article-item__header {
-  width: 95%;
+  width: 90%;
   margin: 0;
-  margin-bottom: 6px;
   margin-top: 5px;
   font-family: "Merel Light";
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.3;
   color: $basic-black;
   text-transform: uppercase;
 }
@@ -33,5 +32,9 @@
 }
 .article-item__img {
   float: left;
-  margin-right: 52px;
+  margin-right: 10%;
+
+  @media (max-width: 1170px) {
+    margin-right: 5%;
+  }
 }

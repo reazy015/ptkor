@@ -1,4 +1,6 @@
 .main-about {
+  margin-top: 78px;
+  margin-bottom: 30px;
   text-align: center;
 
   & input[type="radio"] {
@@ -17,20 +19,18 @@
 }
 .main-about__tab {
   display: inline-block;
-  padding: 14px 21px 14px 24px;
-  font-family: "Merel";
-  font-size: 14px;
+  padding: 10px 21px 8px 26px;
+  font-family: "Merel Light";
+  font-size: 18px;
   color: $basic-font-grey;
   cursor: pointer;
+  transition: background-color .3s;
 }
 .main-about__decor {
-  height: 1px;
+  height: 2px;
   width: 100%;
   background-color: $basic-green;
 }
-.main-about-sliders {
+.main-about-slider {
   margin-top: 85px;
-  padding-left: 5%;
-  padding-right: 5%;
 }
-

@@ -9,6 +9,9 @@
     margin-right: 135px;
   }
 }
+.sum-block {
+  flex: 0 1 210px;
+}
 .sum-block__header {
   font-family: "Merel Light";
   text-transform: uppercase;
@@ -32,6 +35,9 @@
 }
 .sum-rest-list {
   @include list-reset;
+  flex: 0 1 240px;
+  margin-right: auto;
+  margin-left:  auto;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
@@ -56,4 +62,3 @@
   text-transform: uppercase;
   color: $basic-white;
 }
-

@@ -14,13 +14,17 @@
   justify-content: space-between;
 }
 .contacts-socials {
-  margin-right: auto;
+  flex: 0 0 20%;
 }
 .contacts-socials__slogan {
   font-family: "Merel";
   font-size: 16px;
   color: $basic-green;
   text-transform: uppercase;
+}
+
+.contacts-item {
+  flex: 0 1 170px;
 }
 .contacts-item-info {
   font-size: 16px;
@@ -46,16 +50,13 @@
 }
 .city-info-list {
   display: flex;
-  flex: column;
+  flex-direction: column;
   flex-wrap: wrap;
+  flex: 0 0 75%;
+  margin-left: auto;
 }
 .city-info {
   display: flex;
   flex-direction: row;
-  flex: 1 1 100%;
   justify-content: space-between;
-
-  &:last-of-type .contacts-item:first-of-type {
-    margin-right: 5.8%;
-  }
 }

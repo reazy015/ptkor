@@ -3,6 +3,7 @@
   position: relative;
   overflow: hidden;
   list-style: none;
+  margin-bottom: 84px;
 }
 .slider-btn {
   position: absolute;
@@ -35,6 +36,11 @@
   display: flex;
   transition: transform .3s;
 
+  &--about {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
 }
 .slider-list-item {
   position: relative;
@@ -42,7 +48,7 @@
   flex-direction: row;
   justify-content: flex-start;
   flex: 1 0 100%;
-  background-color: $basic-green;
+  max-height: 654px;
 }
 .sliders-list__item[data-block-type] {
   display: none;

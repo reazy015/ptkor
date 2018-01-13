@@ -1,22 +1,30 @@
 .news {
-  flex-wrap: wrap;
+  display: block;
 }
 .news__header {
   flex: 1 0 100%;
   margin: 0;
-  margin-bottom: 50px;
+  margin-top: 38px;
   font-family: "Merel Light";
   font-size: 30px;
   text-transform: uppercase;
 }
+.news-article-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: 65px;
+  margin-bottom: 28px;
+}
 .news-block {
   display: flex;
   flex-direction: row-reverse;
-  flex: 0 1 45%;
+  flex: 0 1 48%;
   margin-right: auto;
+  margin-bottom: 18px;
 }
 .news-block-info__header {
-  margin-top: 0;
+  margin-top: 16px;
   font-family: "Merel";
   font-size: 14px;
   text-transform: uppercase;
@@ -34,10 +42,11 @@
   font-size: 16px;
   color: $basic-green;
   text-align: center;
-  margin-right: 15px;
+  margin-right: 6%;
 }
 .news-block-date__number {
-  font-size: 70px;
+  padding-top: 10px;
+  font-size: 60px;
 }
 .news-blcok-date__month {
   font-size: 16px;
@@ -47,4 +56,7 @@
   background-color: transparent;
   border: 1px solid $basic-white;
   align-self: flex-end;
+  width: 224px;
+  padding-top: 18px;
+  padding-bottom: 13px;
 }
