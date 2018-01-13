@@ -1,5 +1,6 @@
 .news {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 .news__header {
   flex: 1 0 100%;
@@ -11,17 +12,16 @@
 }
 .news-article-container {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
-  align-content: flex-start;
   margin-top: 65px;
   margin-bottom: 28px;
+
 }
 .news-block {
   display: flex;
+  flex:  0 1 390px;
   flex-direction: row-reverse;
-  flex: 0 1 48%;
-  margin-right: auto;
-  margin-bottom: 18px;
 }
 .news-block-info__header {
   margin-top: 16px;
