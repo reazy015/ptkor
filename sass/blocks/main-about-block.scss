@@ -1,4 +1,6 @@
 .main-about {
+  max-width: 1360px;
+  margin: auto;
   margin-top: 78px;
   margin-bottom: 30px;
   text-align: center;
@@ -33,4 +35,7 @@
 }
 .main-about-slider {
   margin-top: 85px;
+}
+.main-about-slider .slider-list-item__img {
+  max-width: 100%;
 }
