@@ -72,28 +72,55 @@
 }
 .slider-list-item__info {
   position: absolute;
-  top: 0;
-  bottom: 0;
   left: 0;
-  width: 650px;
+  height: 100%;
+  width: 40%;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
-  padding-top: 135px;
-  padding-bottom: 135px;
-  padding-left: 122px;
+  padding-left: 120px;
+  padding-top: 5%;
+
+  @media (min-width: 1360px) {
+    padding-top: 120px;
+    width: 640px;
+  }
 }
 .slider-info__header {
+  margin: 0;
   width: 100%;
   font-family: "Merel Bold";
   text-transform: uppercase;
   font-size: 60px;
+
+  @media (min-width: 1360px) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 52px;
+  }
+
+  @media (max-width: 1027px) {
+    font-size: 42px;
+  }
 }
 .slider-info__text {
   width: 80%;
   margin-bottom: 80px;
   font-family: "Merel";
   font-size: 18px;
+
+  @media (max-width: 1200px) {
+    font-size: 17px;
+    margin-bottom: 8%;
+  }
 }
 .slider-info__link {
   @include link-green;
+
+  @media (max-width: 1027px) {
+    width: 234px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+  }
 }

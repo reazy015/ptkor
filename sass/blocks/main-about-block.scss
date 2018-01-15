@@ -39,3 +39,10 @@
 .main-about-slider .slider-list-item__img {
   max-width: 100%;
 }
+.main-about-slider .slider-btn {
+  background: transparent;
+
+  & i {
+    color: $basic-font-grey;
+  }
+}

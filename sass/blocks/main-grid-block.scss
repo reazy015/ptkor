@@ -2,10 +2,17 @@
 }
 .page-main-grid {
   max-width: 1360px;
+  padding-left: 5px;
+  padding-right: 5px;
   margin: auto;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: 830px) {
+    flex-direction: column;
+  }
 }
 .page-main__header{
   margin: 0;
@@ -15,6 +22,10 @@
   color: $basic-black;
   font-family: "Merel Light";
   font-size: 31px;
+
+  @media (max-width: 1080px) {
+    font-size: 26px;
+  }
 }
 .page-main-grid__section{
   display: flex;
@@ -28,6 +39,15 @@
     flex-wrap: wrap;
     padding-left: 6.2%;
     padding-right: 6.2%;
+
+    @media (max-width: 1192px) {
+      padding-left: 1.2%;
+      padding-right: 1.2%;
+    }
+
+    @media (max-width: 830px) {
+      flex-direction: column;
+    }
   }
 
   & div:first-child {
@@ -49,5 +69,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (max-width: 1192px) {
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }

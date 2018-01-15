@@ -5,6 +5,10 @@
   background-color: $basic-green;
   color: $basic-white;
   text-align: center;
+
+  @media (max-width: 830px) {
+    max-width: 100%;
+  }
 }
 .callback__text {
   margin-bottom: 40px;

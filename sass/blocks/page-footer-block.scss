@@ -8,7 +8,14 @@
   color: white;
 }
 .page-footer__support {
-
+  display: flex;
+  flex-direction: column;
+}
+.support-list {
+  margin-top: auto;
+}
+.support__link {
+  margin-top: auto;
 }
 .page-footer__news {
   @include flex-row;

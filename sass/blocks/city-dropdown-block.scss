@@ -5,6 +5,9 @@
     display: flex;
   }
 }
+.city__header {
+  cursor: pointer;
+}
 .city__header  i{
   position: relative;
   cursor: pointer;

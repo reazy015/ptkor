@@ -1,0 +1,18 @@
+.grid-nav {
+  display: none;
+  flex: 1 1 auto;
+  font-family: "Merel Bold";
+  font-size: 18px;
+  text-align: center;
+  color: $basic-green;
+  border: 1px solid $basic-green;
+  border-radius: 5px;
+
+  @media (max-width: 730px) {
+    display: block;
+  }
+}
+.grid-nav-list {
+  @include  list-reset;
+  display: none;
+}

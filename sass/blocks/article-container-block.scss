@@ -49,6 +49,14 @@
   }
   &:last-of-type {
     border: none;
+
+    @media (max-width: 940px) {
+      margin-right: 5px;
+    }
+  }
+
+  @media (max-width: 1192px) {
+    flex: 0 1 49%;
   }
 }
 .grid-section--center .article-container__link {
@@ -61,6 +69,10 @@
 .article-container__link {
   @include link-green;
   margin-bottom: 50px;
+
+  //@media (max-width: 1192px) {
+  //  width: 284px;
+  //}
 }
 .grid-section__article {
   padding-top: 19px;

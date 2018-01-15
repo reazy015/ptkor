@@ -6,27 +6,26 @@ window.adaptiveMenu = (function () {
     var mainNav = document.querySelector('.nav-list');
 
     function toggleMenu() {
-       menuList.classList.toggle('nav-open');
-       menuList.classList.toggle('animation-nav');
+        if (menuList.classList.contains('nav-open')) {
+
+            menuList.classList.toggle('nav-open');
+        } else {
+            menuList.classList.toggle('nav-open');
+        }
+
     }
 
     function hideAllSubmenu() {
-        document.querySelectorAll('.submenu').forEach(function(item){
-            item.style.display = 'none';
-        })
+        var openSubmenus = document.querySelector('.submenu');
+        if (openSubmenu) {
+            console.log(true);
+        } else {
+            console.log(false);
+        }
     }
 
 
     function submenuHandler(evt) {
-        var target = evt.target;
-
-        if (target.classList.contains('nav-list-item--has-sub') && mainNav.classList.contains('nav-open')) {
-            var childSubmenu = target.querySelector('.submenu');
-            hideAllSubmenu();
-            childSubmenu.style.display = 'block';
-        } else {
-            hideAllSubmenu();
-        }
     }
 
     menuToggleBtn.addEventListener('click', toggleMenu);

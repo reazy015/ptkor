@@ -1,8 +1,8 @@
 .news {
   display: flex;
   flex-wrap: wrap;
-  flex: 0 0 800px;
   margin-left: auto;
+  width: 700px;
 }
 .news__header {
   flex: 1 0 100%;
@@ -22,7 +22,7 @@
 }
 .news-block {
   display: flex;
-  flex:  0 1 390px;
+  flex:  0 1 350px;
   flex-direction: row-reverse;
 }
 .news-block-info__header {
