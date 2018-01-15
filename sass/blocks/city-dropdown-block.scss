@@ -5,21 +5,11 @@
     display: flex;
   }
 }
-.city__header {
+.city__header  i{
   position: relative;
   cursor: pointer;
-
-  &:after {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 50%;
-    right: -35px;
-    margin-top: -5px;
-    border: 6px solid transparent;
-    border-top: 6px solid $basic-green;
-    border-radius: 3px;
-  }
+  right: -15px;
+  top: -10px;
 }
 .city-dropdown {
   position: absolute;
@@ -41,7 +31,7 @@
   flex-wrap: wrap;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 2px solid $basic-font-grey;
+  border-bottom: 1px solid $basic-font-grey;
 
   &:last-of-type {
     border-bottom: none;
@@ -50,10 +40,23 @@
 .city-dropdown-item__adr {
   flex: 1 0 100%;
   margin-bottom: 10px;
+
+  & span:last-child {
+    margin-top: 10px;
+    font-family: "Merel";
+    text-transform: none;
+  }
 }
-@media (max-width: 1226px) {
+.city-dropdown-item__time {
+  font-family: "Merel";
+  text-transform: none;
+}
+.city-dropdown-item__contacts {
+  text-transform: none;
+}
+@media (max-width: 1360px) {
   .city-dropdown {
-    right: -50%;
+    right: 0;
     left: auto;
   }
 }

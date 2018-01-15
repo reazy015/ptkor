@@ -12,15 +12,14 @@
   margin-top: -29px;
   width: 58px;
   height: 58px;
-  background-color: $basic-slider-btn-bg;
-  opacity: 0.2;
+  background-color: rgba(0, 0, 0, 0.2);
   border: none;
   z-index: 10;
   cursor: pointer;
   transition: opacity .2s;
 
   &:hover {
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   &--next {
@@ -29,6 +28,13 @@
   }
 
   &--next:after {
+  }
+
+  & i {
+    position: relative;
+    opacity: 1;
+    z-index: 100;
+    color: $basic-white;
   }
 }
 .slider-list {

@@ -34,6 +34,10 @@
   & .city__header {
     display: flex;
     padding-top: 5px;
+
+    & i {
+      top: 0;
+    }
   }
   & .city__header > span:first-child  {
     display: none;

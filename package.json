@@ -16,9 +16,12 @@
     "autoprefixer": "^7.2.4",
     "browser-sync": "^2.23.3",
     "gulp": "^3.9.1",
+    "gulp-cheerio": "^0.6.3",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "pixel-glass": "^1.0.13"
+    "pixel-glass": "^1.0.13",
+    "svgstore": "^2.0.2"
   }
 }

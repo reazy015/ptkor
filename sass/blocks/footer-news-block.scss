@@ -1,6 +1,8 @@
 .news {
   display: flex;
   flex-wrap: wrap;
+  flex: 0 0 800px;
+  margin-left: auto;
 }
 .news__header {
   flex: 1 0 100%;
@@ -12,7 +14,7 @@
 }
 .news-article-container {
   display: flex;
-  width: 100%;
+  flex: 1 1 100%;
   flex-wrap: wrap;
   margin-top: 65px;
   margin-bottom: 28px;

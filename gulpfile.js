@@ -1,5 +1,8 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const svgstore = require('svgstore');
+const cheerio = require('gulp-cheerio');
+const rename = require('gulp-rename');
 const plumber = require('gulp-plumber');
 const postcss = require("gulp-postcss");
 const autoprefixer = require('autoprefixer');
@@ -25,5 +28,5 @@ gulp.task('serve', ['style'], function () {
     gulp.watch('sass/**/*.scss', ['style']);
     gulp.watch('*.html')
         .on('change', server.reload);
-})
+});
 

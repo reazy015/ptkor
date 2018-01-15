@@ -87,7 +87,7 @@
   position: relative;
 
   &:before {
-    display: block;
+    display: none;
     position: absolute;
     content: '';
     top: 50%;
@@ -108,24 +108,6 @@
     z-index: 10;
     @media (max-width:830px) {
       display: none;
-    }
-  }
-
-  & .nav-list-item__link {
-    position: relative;
-
-    &:before {
-      display: block;
-      position: absolute;
-      content: '';
-      top: 50%;
-      right: -20px;
-      margin-top: -5px;
-      border: 6px solid transparent;
-      border-top: 6px solid $basic-font-grey;
-      border-radius: 3px;
-      transition: opacity .3s;
-      transition-delay: .2s;
     }
   }
 }
@@ -246,11 +228,6 @@
   animation-name: showpopup;
   animation-duration: .3s;
 }
-@keyframes showpopup {
-  from {
-    transform: translate(-100%);
-  }
-  to {
-    transform: translate(0%);
-  }
+.fa--custom {
+  padding-left: 10px;
 }

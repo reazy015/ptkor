@@ -22,7 +22,13 @@
   color: $basic-green;
   text-transform: uppercase;
 }
+.soc-list__item a{
+  color: $basic-green;
 
+  &:hover {
+    color: darkcyan;
+  }
+}
 .contacts-item {
   flex: 0 1 170px;
 }
