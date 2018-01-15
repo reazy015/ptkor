@@ -1,18 +1,44 @@
 .grid-nav {
   display: none;
   flex: 1 1 auto;
+  margin-bottom: 10px;
   font-family: "Merel Bold";
   font-size: 18px;
   text-align: center;
   color: $basic-green;
   border: 1px solid $basic-green;
+  border-top: none;
   border-radius: 5px;
 
-  @media (max-width: 730px) {
+  &:hover > .grid-nav-list {
     display: block;
   }
+
+  @media (max-width: 830px) {
+    display: block;
+  }
+}
+.grid-nav__header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid $basic-green;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .grid-nav-list {
   @include  list-reset;
   display: none;
+  margin-top: 10px;
+}
+.grid-nav-list__item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-hover;
+  }
+}
+.fa--grid-nav {
+  padding-left: 10px;
 }
