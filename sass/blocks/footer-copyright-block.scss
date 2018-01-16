@@ -1,6 +1,7 @@
 .copyright {
   padding-top: 32px;
   padding-bottom: 25px;
+  padding-left: 10px;
   background-color: $basic-black;
 
 }
@@ -12,4 +13,8 @@
 }
 .copyright-text__name {
   text-transform: uppercase;
+
+  @media (max-width: 830px) {
+    font-size: 12px;
+  }
 }

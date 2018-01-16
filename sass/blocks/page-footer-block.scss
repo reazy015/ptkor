@@ -10,6 +10,7 @@
 .page-footer__support {
   display: flex;
   flex-direction: column;
+  float: left;
 }
 .support-list {
   margin-top: auto;
@@ -19,6 +20,7 @@
 }
 .page-footer__news {
   @include flex-row;
+  float: right;
 }
 .support__header {
   margin: 0;

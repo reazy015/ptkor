@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   margin-left: auto;
   width: 700px;
+
+  @media (max-width: 478px) {
+    width: auto;
+  }
 }
 .news__header {
   flex: 1 0 100%;
@@ -18,22 +22,30 @@
   flex-wrap: wrap;
   margin-top: 65px;
   margin-bottom: 28px;
-
 }
 .news-block {
   display: flex;
   flex:  0 1 350px;
-  flex-direction: row-reverse;
+  flex-direction: flex-start;
+
 }
 .news-block-info__header {
   margin-top: 16px;
   font-family: "Merel";
   font-size: 14px;
   text-transform: uppercase;
+
+  @media(max-width: 830px) {
+
+  }
 }
 .news-block-info__text {
   font-family: "Merel Light";
   font-size: 14px;
+
+  @media (max-width: 478px) {
+    display: none;
+  }
 }
 .news-block-date {
   flex: 0 0 112px;
@@ -45,6 +57,10 @@
   color: $basic-green;
   text-align: center;
   margin-right: 6%;
+
+  @media (max-width: 830px) {
+    margin-bottom: 10px;
+  }
 }
 .news-block-date__number {
   padding-top: 10px;

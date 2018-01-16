@@ -1,6 +1,10 @@
 .sum {
   background-color: $basic-black;
   color: $basic-white;
+  
+  @media (max-width: 830px) {
+    display: none;
+  }
 }
 .sum-block {
   margin-right: 9.8%;

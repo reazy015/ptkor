@@ -3,6 +3,10 @@
   padding-bottom: 55px;
   background-color: $basic-black;
   color: $basic-white;
+
+  @media (max-width: 830px) {
+    padding-bottom: 0;
+  }
 }
 .contacts-item {
 
@@ -11,16 +15,36 @@
   @include list-reset;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+
+  @media (max-width: 830px) {
+    justify-content: center;
+  }
 }
 .contacts-socials {
   flex: 0 0 20%;
+
+  @media (max-width: 830px) {
+    padding-bottom: 25px;
+    border-bottom: 1px solid $basic-hr-ft-border;
+  }
 }
 .contacts-socials__slogan {
   font-family: "Merel";
   font-size: 16px;
   color: $basic-green;
   text-transform: uppercase;
+
+  @media (max-width: 830px) {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.soc-list__item {
+  margin-right: 25px;
+  @media (max-width: 830px) {
+    margin-right: 10px;
+  }
 }
 .soc-list__item a{
   color: $basic-green;
@@ -31,18 +55,27 @@
 }
 .contacts-item {
   flex: 0 1 170px;
+  
+  @media (max-width: 830px) {
+    &:nth-of-type(2) {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 .contacts-item-info {
   font-size: 16px;
 
   &--time {
     font-family: "Merel";
-  }
 
+    @media (max-width: 830px) {
+      margin-right: 15px;
+    }
+  }
   &--phone {
     font-family: "Merel Bold";
   }
-
   &--mail {
     font-family: "Merel Bold";
   }
@@ -50,6 +83,12 @@
 .contacts-item-info__city {
   font-family: "Merel Bold";
   text-transform: uppercase;
+
+  @media (max-width: 830px) {
+    display: block;
+    color: $basic-green;
+    margin-bottom: 10px;
+  }
 }
 .contacts-item-info__ads {
   font-family: "Merel";
@@ -65,4 +104,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media(max-width: 830px) {
+    display: block;
+
+    &:nth-of-type(2) {
+      padding-bottom: 25px;
+      border-bottom: 1px solid $basic-hr-ft-border;
+    }
+  }
+
 }

@@ -16,6 +16,19 @@
     border-top: 1px solid $basic-hr-ft-border;
     border-bottom: 1px solid $basic-hr-ft-border;
   }
+  
+  &--contacts {
+    text-align: left;
+    
+    @media (max-width: 830px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 830px) {
+    flex-direction: column;
+  }
 }
 @media (max-width: 1080px) {
   .container-flex--header {
@@ -28,3 +41,4 @@
     padding-right: 10px;
   }
 }
+
