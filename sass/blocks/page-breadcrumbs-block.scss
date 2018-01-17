@@ -1,0 +1,26 @@
+.page-breadcrumbs {
+  @include list-reset;
+  display: flex;
+  margin-top: 15px;
+  
+  &--category {
+    position: absolute;
+    top: 0;
+    left: 9%;
+    z-index: 20;
+  }
+}
+.page-breadcrumbs-item {
+  padding-right: 10px;
+}
+.page-breadcrumbs-item__link {
+  @include reset-link;
+  font-family: "Merel Light";
+
+  &--active {
+    text-decoration: underline;
+  }
+}
+.fa--breadcrumbs {
+  color: $basic-font-grey;
+}

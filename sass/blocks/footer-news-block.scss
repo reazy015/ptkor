@@ -1,8 +1,6 @@
 .news {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: auto;
-  width: 700px;
+  flex: 0 1 794px;
+  margin-left:  auto;
 
   @media (max-width: 478px) {
     width: auto;
@@ -25,8 +23,9 @@
 }
 .news-block {
   display: flex;
-  flex:  0 1 350px;
+  flex:  1 1 350px;
   flex-direction: flex-start;
+  margin-bottom: 15px;
 
 }
 .news-block-info__header {
@@ -74,6 +73,7 @@
   background-color: transparent;
   border: 1px solid $basic-white;
   align-self: flex-end;
+  margin-top: 53px;
   width: 224px;
   padding-top: 18px;
   padding-bottom: 13px;

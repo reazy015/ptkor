@@ -25,6 +25,12 @@
       text-align: center;
     }
   }
+  
+  &--footer-top {
+    @media (max-width: 830px) {
+      display: block;
+    }
+  }
 
   @media (max-width: 830px) {
     flex-direction: column;

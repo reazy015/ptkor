@@ -1,0 +1,27 @@
+.page-callback {
+  padding-bottom: 169px;
+  padding-top: 132px;
+  background-image: url('/img/faq-background.png');
+  backgroun-size: cover;
+  text-align: center;
+  color: $basic-white;
+}
+.page-callback__header {
+  font-family: 'Merel Light';
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.page-callback__slogan {
+  font-family: "Merel";
+  font-size: 18px;
+}
+.page-callback__phone {
+  font-family: "Merel Bold";
+  font-size: 24px;
+}
+.page-callback__link {
+  @include link-green;
+  margin: auto;
+  background: transparent;
+  border: 1px solid;
+}

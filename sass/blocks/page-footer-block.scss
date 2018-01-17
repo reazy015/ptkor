@@ -1,5 +1,4 @@
 .page-footer-top {
-  display: flex;
   background-image: url('../img/page-footer-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,17 +9,13 @@
 .page-footer__support {
   display: flex;
   flex-direction: column;
-  float: left;
+  margin-right: 35px;
 }
 .support-list {
   margin-top: auto;
 }
 .support__link {
   margin-top: auto;
-}
-.page-footer__news {
-  @include flex-row;
-  float: right;
 }
 .support__header {
   margin: 0;

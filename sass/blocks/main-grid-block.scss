@@ -16,6 +16,10 @@
     display: block;
   }
 }
+.page-main-grid--category .grid-section--center {
+  padding-left: 2.2%;
+  padding-right: 2.2%;
+}
 .page-main__header{
   margin: 0;
   margin-bottom: 93px;
@@ -24,6 +28,10 @@
   color: $basic-black;
   font-family: "Merel Light";
   font-size: 31px;
+
+  &--catalog {
+    margin-top: 50px;
+  }
 
   @media (max-width: 1080px) {
     font-size: 26px;
@@ -84,6 +92,12 @@
   }
 }
 .grid-section--category {
+  & .grid-section__item {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.grid-section--catalog {
   & .grid-section__item {
     padding-left: 5%;
     padding-right: 5%;

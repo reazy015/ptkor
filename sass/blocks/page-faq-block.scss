@@ -1,0 +1,36 @@
+.page-faq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1360px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: auto;
+  color: $basic-black;
+}
+.page-faq__header {
+  flex: 1 0 100%;
+  text-align: center;
+  font-family: 'Merel Light';
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+.page-faq-column {
+  flex: 0 1 43%;
+}
+.page-faq-column__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Merel";
+  font-size: 16px;
+  line-height: 1.6;
+  color: $basic-paragraph-grey;
+}
+.page-faq-column__header {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Merel Light";
+  font-size: 18px;
+  text-transform: uppercase;
+}
