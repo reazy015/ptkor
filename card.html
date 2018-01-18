@@ -1,0 +1,649 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ptkor</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Pixel Glass -->
+
+    <!-- Picturefill polyfill-->
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement( "picture" );
+    </script>
+    <script src="js/vendor/picturefill.js" async></script>
+    <style>
+        HTML {
+            background-repeat: no-repeat;
+            background-position:  50% 0;
+            /* Mobile layout by default */
+            background-image: url( "img/index.jpg" );
+        }
+
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+</head>
+<body class="page card">
+
+<header class="page-header">
+
+    <div class="page-header__sticky-flex">
+
+        <div class="container-flex container-flex--header page-header-top-container">
+            <div class="page-header-logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo-img" class="page-header-logo__img">
+                </a>
+            </div>
+            <h2 class="page-header__slogan">
+                Поставка материалов<br>для дорожного строительства
+            </h2>
+            <div class="page-header-info">
+                <div class="page-header-info__time">Пн-Пт: 9:30 - 18:00</div>
+                <div class="page-header-info__mail">info@ptkor.ru</div>
+            </div>
+            <div class="page-header-city city">
+                <div class="city__header"><span>Москва</span><br><span>Санкт-Петербург</span><i class="fa fa-caret-down fa--custom" aria-hidden="true"></i></div>
+
+
+                <div class="city-dropdown">
+                    <div class="city-dropdown-item">
+                        <div class="city-dropdown-item__adr">
+                            <span>Санкт-Петербург</span><br>
+                            <span>ул. Маршала Говорова, д.35, к.4</span>
+                        </div>
+                        <div class="city-dropdown-item__time">
+                            Пн-Пт: 9:30 - 18:00<br>
+                            Сб-Вс: выходной
+                        </div>
+                        <div class="city-dropdown-item__contacts">
+                            8(812)676-75-59<br>
+                            info@ptkor.ru
+                        </div>
+                    </div>
+                    <div class="city-dropdown-item">
+                        <div class="city-dropdown-item__adr">
+                            <span>Москва</span><br>
+                            <span>ул. Мира, д.101, к.501</span>
+                        </div>
+                        <div class="city-dropdown-item__time">
+                            Пн-Пт: 9:30 - 18:00<br>
+                            Сб-Вс: выходной
+                        </div>
+                        <div class="city-dropdown-item__contacts">
+                            8(499)550-22-58<br>
+                            info@ptkor.ru
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-header-phone">
+                <div class="page-header-phone__item">8 (499) 550-22-58</div>
+                <div class="page-header-phone__item">8 (812) 676-75-59</div>
+            </div>
+        </div>
+
+        <nav class="page-header-nav nav nav--card">
+
+            <button class="nav-toggle">
+                <span class="nav-toggle__decor"></span>
+                <span class="nav-toggle__decor"></span>
+                <span class="nav-toggle__decor"></span>
+            </button>
+
+            <div class="nav-list-item">
+                <picture>
+                    <source media="(max-width: 830px)" srcset="img/logo.png"/>
+                    <img src="img/logo-sticky.png" alt="sticky-logo" class="nav-list-item__logo">
+                </picture>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#" class="nav-list-item__link">Прайс-лист</a></li>
+                <li class="nav-list-item nav-list-item--has-sub">
+                    <a href="#" class="nav-list-item__link">Компания<i class="fa fa-caret-down fa--custom" aria-hidden="true"></i></a>
+                    <ul class="nav-list-item__submenu submenu">
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">О компании</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Новости и публикации</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Партнеры</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Отзывы и благодарности</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Вакансии</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Реквезиты</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list-item nav-list-item--has-sub">
+                    <a href="#" class="nav-list-item__link">Каталог<i class="fa fa-caret-down fa--custom" aria-hidden="true"></i></a>
+                    <ul class="nav-list-item__submenu submenu">
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">О компании</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Новости и публикации</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Партнеры</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Отзывы и благодарности</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Вакансии</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Реквезиты</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list-item"><a href="#" class="nav-list-item__link">Объекты</a></li>
+                <li class="nav-list-item nav-list-item--has-sub">
+                    <a href="#" class="nav-list-item__link ">Техсопровождение<i class="fa fa-caret-down fa--custom" aria-hidden="true"></i></a>
+                    <ul class="nav-list-item__submenu submenu">
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">О компании</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Новости и публикации</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Партнеры</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Отзывы и благодарности</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Вакансии</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-item__link">Реквезиты</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list-item"><a href="#" class="nav-list-item__link">Контакты</a></li>
+                <li class="nav-list-item nav-list-item--city">
+                    <div class="city-dropdown-item city-dropdown-item--nav">
+                        <div class="city-dropdown-item__adr">
+                            <span>Санкт-Петербург</span><br>
+                            <span>ул. Маршала Говорова, д.35, к.4</span>
+                        </div>
+                        <div class="city-dropdown-item__time">
+                            <span> Пн-Пт: 9:30 - 18:00</span>
+                            <span>Сб-Вс: выходной</span>
+                        </div>
+                        <div class="city-dropdown-item__contacts">
+                            <span>8(812)676-75-59</span>
+                            <span>info@ptkor.ru</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-list-item nav-list-item--city">
+                    <div class="city-dropdown-item city-dropdown-item--nav">
+                        <div class="city-dropdown-item__adr">
+                            <span>Санкт-Петербург</span><br>
+                            <span>ул. Маршала Говорова, д.35, к.4</span>
+                        </div>
+                        <div class="city-dropdown-item__time">
+                            <span> Пн-Пт: 9:30 - 18:00</span>
+                            <span>Сб-Вс: выходной</span>
+                        </div>
+                        <div class="city-dropdown-item__contacts">
+                            <span>8(812)676-75-59</span>
+                            <span>info@ptkor.ru</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="card-info">
+    <div class="container-flex">
+        <div class="card-info-wrapper">
+            <ul class="page-breadcrumbs">
+                <li class="page-breadcrumbs-item"><a href="#" class="page-breadcrumbs-item__link  page-breadcrumbs-item__link--active">Главная</a>&nbsp; <i class="fa fa-angle-right fa--breadcrumbs" aria-hidden="true"></i></li>
+                <li class="page-breadcrumbs-item"><a href="#" class="page-breadcrumbs-item__link  page-breadcrumbs-item__link--active">Каталог</a>&nbsp; <i class="fa fa-angle-right fa--breadcrumbs" aria-hidden="true"></i></li>
+                <li class="page-breadcrumbs-item"><a href="#" class="page-breadcrumbs-item__link  page-breadcrumbs-item__link--active">Средства безопасноти и ОДД</a>&nbsp; <i class="fa fa-angle-right fa--breadcrumbs" aria-hidden="true"></i></li>
+                <li class="page-breadcrumbs-item"><a href="#" class="page-breadcrumbs-item__link  ">Дорожные тумбы</a></li>
+            </ul>
+            <h1 class="card-info__header">Дорожные<br>тумбы</h1>
+            <p class="card-info__text">Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение  нашей деятельности позволяет оценить значение форм развития.</p>
+            <a href="#" class="card-info__link">Заказать</a>
+        </div>
+        <div class="card-info-slider">
+            <ul class="card-info-slider-preview">
+                <li class="card-info-slider-preview__item card-info-slider-preview__item--active"><img class="" src="img/preview-img.png" alt=""></li>
+                <li class="card-info-slider-preview__item"><img class="" src="img/preview-img.png" alt=""></li>
+                <li class="card-info-slider-preview__item"><img class="" src="img/preview-img.png" alt=""></li>
+                <li class="card-info-slider-preview__item"><img class="" src="img/preview-img.png" alt=""></li>
+                <li class="card-info-slider-preview__item"><img class="" src="img/preview-img.png" alt=""></li>
+                <li class="card-info-slider-preview__item"><img class="" src="img/preview-img.png" alt=""></li>
+                <li class="card-info-slider-preview__item"><img class="" src="img/preview-img.png" alt=""></li>
+                <li class="card-info-slider-preview__item"><img class="" src="img/preview-img.png" alt=""></li>
+            </ul>
+            <ul class="card-info-slider-list">
+                <li class="card-info-slider-list__item card-info-slider-list__item--active"><img class="" src="img/card-slider-img1.png" alt=""></li>
+                <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
+                <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
+                <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="card-type">
+        <div class="card-type__select select-panel">
+            <div class="container">
+                <h2 class="select-panel__header">Выберите тип товара</h2>
+                <ul class="select-panel-list">
+                    <li class="select-panel-list__item"><input type="radio" id="type1" name="type"><label for="type1">Тип1</label></li>
+                    <li class="select-panel-list__item"><input type="radio" id="type2" name="type" checked><label for="type2">Тип2</label></li>
+                    <li class="select-panel-list__item"><input type="radio" id="type3" name="type"><label for="type3">Тип3</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-flex">
+            <div class="card-type__params params">
+                <div class="params-img-wrapper">
+                    <img class="params__img" src="img/card-slider-img1.png" alt="item-img">
+                </div>
+                <table class="params-table">
+                    <tr>
+                        <td>Высота, мм</td>
+                        <td>900</td>
+                    </tr>
+                    <tr>
+                        <td>Диметр основания, мм</td>
+                        <td>460</td>
+                    </tr>
+                    <tr>
+                        <td>Масса, кг</td>
+                        <td>3,5</td>
+                    </tr>
+                    <tr>
+                        <td>Материал тумбы</td>
+                        <td>900</td>
+                    </tr>
+                    <tr>
+                        <td>Кол-во и типа световозвращающих элементов</td>
+                        <td>2, пленка тип "А"</td>
+                    </tr>
+                    <tr>
+                        <td>Примечание</td>
+                        <td>
+                            <ul>
+                                <li>неразборная</li>
+                                <li>ручка для переноски</li>
+                                <li>возможность крепления дополнительного оборудования</li>
+                                <li>удобство хранения и переноски </li>
+                            </ul></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-type__descr  descr">
+                <h3 class="descr__header">Тумба дорожная ТД-900 "Колпак"</h3>
+                <p class="descr__text">Предназначены для обозначения опасных участков и препятствий при сужении или разделении проезжей части автомобильной дороги. Для увеличения устойчивости буфера возможно его заполнение водой или песком  Актуальную цену на предлагаемые материалы Вы можете узнать, скачав Прайс лист на товары, представленные в разделе "Безопасность и ОДД"</p>
+                <div class="order-panel">
+                    <table class="orider-panel-table">
+                        <tr>
+                            <td>Количество</td>
+                            <td><span>+</span><span>1</span><span>-</span></td>
+                        </tr>
+                        <tr>
+                            <td>Общий вес</td>
+                            <td>3.5кг</td>
+                        </tr>
+                        <tr>
+                            <td>Общий объем</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Стоимость</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <button class="order-panel__btn">Заказать</button>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+<section class="card-video">
+    <video class="card-video__item" src=""></video>
+</section>
+
+<section class="card-download">
+    <div class="card-download-tech">
+        <h3 class="card-download-tech__header">Технические<br>характеристики</h3>
+        <a class="card-download-tech__link" href="#">Скачать ГОСТ</a>
+        <a class="card-download-tech__link" href="#">Скачать чертеж</a>
+    </div>
+    <div class="card-download-cert cert">
+        <h3 class="cert__header">Сертификаты</h3>
+        <ul class="cert-list">
+            <li class="cert-list-item"><img src="" alt="" class="cert-list-item__img"></li>
+            <li class="cert-list-item"><img src="" alt="" class="cert-list-item__img"></li>
+            <li class="cert-list-item"><img src="" alt="" class="cert-list-item__img"></li>
+            <li class="cert-list-item"><img src="" alt="" class="cert-list-item__img"></li>
+        </ul>
+    </div>
+</section>
+
+<section class="card-add">
+    <div class="conatiner-flex">
+        <div class="card-add-part">
+            <h3 class="card-add__header">Полезная информация</h3>
+            <p class="card-add__text">Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых предложений. </p>
+            <p class="card-add__text">Задача организации, в особенности же начало повседневной работы по формированию позиции требуют от нас анализа направлений прогрессивного развития. Повседневная практика показывает, что постоянное информационно- пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.</p>
+            <h4 class="card-add__header">Дополнтельно</h4>
+            <p class="card-add__text">Не следует, однако забывать, что сложившаяся структура организации представляет собой интересный эксперимент проверки дальнейших направлений развития. Товарищи! рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
+            <p class="card-add__text">Задача организации, в особенности же консультация с широким активом играет важную роль в формировании форм развития. </p>
+        </div>
+        <div class="card-add-part">
+            <div class="card-add-remark">
+                <h4 class="card-add__header">Важно помнить</h4>
+                <p class="card-add__text">Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="card-slider">
+    <h4 class="card-slider__header">С этим товаром покупают</h4>
+    <div class="card-slider-container">
+        <button class="card-slider-btn card-slider-btn--prev">Prev</button>
+        <button class="card-slider-btn card-slider-btn--next">Next</button>
+        <ul class="card-slider-list">
+            <li class="card-slider-list__item"></li>
+            <li class="card-slider-list__item"></li>
+            <li class="card-slider-list__item"></li>
+        </ul>
+    </div>
+</section>
+
+
+
+<section class="page-callback">
+    <h3 class="page-callback__header">
+        Заинтересовало наше<br>предложение?
+    </h3>
+    <p class="page-callback__slogan">
+        Позвоните нам сами или закажите звонок и получите<br>первичную консультацию. Это абсолютно бесплатно, просто и быстро.
+    </p>
+    <p class="page-callback__phone">8&nbsp;(812)&nbsp;676-75-59</p>
+    <a href="#" class="page-callback__link">Заказать звонок</a>
+</section>
+
+<section class="page-faq">
+    <h3 class="page-faq__header">Как оформить заявку<br>на приобретение товара?</h3>
+    <div class="page-faq-column">
+        <p class="page-faq-column__text">
+            Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых предложений.
+        </p>
+        <p class="page-faq-column__text">
+            Задача организации, в особенности же начало повседневной работы по формированию позиции требуют от нас анализа направлений прогрессивного развития. Повседневная практика показывает, что постоянное информационно- пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.
+        </p>
+    </div>
+    <div class="page-faq-column">
+        <h4 class="page-faq-column__header">Дополнительно</h4>
+        <p class="page-faq-column__text">
+            Не следует, однако забывать, что сложившаяся структура организации представляет собой интересный эксперимент проверки дальнейших направлений развития. Товарищи! рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
+        </p>
+        <p class="page-faq-column__text">
+            Задача организации, в особенности же консультация с широким активом играет важную роль в формировании форм развития.
+        </p>
+    </div>
+</section>
+
+<section class="main-about">
+    <div class="main-about-nav">
+        <input type="radio" name="tab" id="partners">
+        <label class="main-about__tab" for="partners">Партнеры</label>
+        <input type="radio" name="tab" id="trust" checked>
+        <label class="main-about__tab main-about__tab--active" for="trust">Нам доверяют</label>
+        <input type="radio" name="tab" id="obj-orders">
+        <label class="main-about__tab" for="obj-orders">Заказчики объектов</label>
+        <input type="radio" name="tab" id="qlty">
+        <label class="main-about__tab" for="qlty">Качество</label>
+        <input type="radio" name="tab" id="callbacks">
+        <label class="main-about__tab" for="callbacks">Отзывы</label>
+        <div class="main-about__decor"></div>
+    </div>
+
+    <section class="main-about-slider slider">
+        <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        <ul class="slider-list slider-list--about">
+            <li class="slider-list-item">
+                <img src="img/about-slider-img.png" alt="slider-img" class="slider-list-item__img">
+            </li>
+            <li class="slider-list-item">
+                <img src="" alt="" class="slider-list-item__img">
+            </li>
+            <li class="slider-list-item"></li>
+        </ul>
+    </section>
+</section>
+
+<section class="main-summary central">
+    <div class="main-summary-wrapper">
+        <h4 class="main-summary__header">Реализованные проекты</h4>
+        <div class="main-summary-info">
+            <div class="main-summary-info__item item">
+                <div class="item__number">1467</div>
+                <div class="item__text">Километров дорог</div>
+            </div>
+            <div class="main-summary-info__item item">
+                <div class="item__number">201</div>
+                <div class="item__text">Объект</div>
+            </div>
+            <div class="main-summary-info__item item">
+                <div class="item__number">158</div>
+                <div class="item__text">Контрагентов</div>
+            </div>
+        </div>
+        <a href="#" class="main-summary__link">Смотерть все проекты</a>
+    </div>
+</section>
+
+<footer class="page-footer">
+    <!--<div class="page-footer-top">-->
+    <!--<div class="container-flex">-->
+    <!--<section class="page-footer__support support">-->
+    <!--<h4 class="support__header">Техническое<br> сопровождение</h4>-->
+    <!--<ul class="support-list">-->
+    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Проективрование</a></li>-->
+    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Выполнение расчетов</a></li>-->
+    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Помощь в подборке материала</a></li>-->
+    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Терминологический словарь</a></li>-->
+    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Ответы на основные вопросы</a></li>-->
+    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Номартивная литература, ГОСТы</a></li>-->
+    <!--</ul>-->
+    <!--<a href="#" class="support__link">Спросить у специалиста</a>-->
+    <!--</section>-->
+
+    <!--<section class="page-footer__news news">-->
+    <!--<h4 class="news__header">Новости</h4>-->
+    <!--<div class="news-article-container">-->
+    <!--<article class="news-block">-->
+    <!--<div class="news-block-date">-->
+    <!--<div class="news-block-date__number">8</div>-->
+    <!--<div class="news-block-date__month">Декабря</div>-->
+    <!--</div>-->
+    <!--<div class="news-block-info">-->
+    <!--<h4 class="news-block-info__header">Смена Риквизитов</h4>-->
+    <!--<p class="news-block-info__text">Уважаемые Партнеры! Информируем-->
+    <!--Вас о том, что с 8.12.2017 произошла-->
+    <!--смена реквизитов...</p>-->
+    <!--</div>-->
+    <!--</article>-->
+    <!--<article class="news-block">-->
+    <!--<div class="news-block-date">-->
+    <!--<div class="news-block-date__number">3</div>-->
+    <!--<div class="news-block-date__month">Августа</div>-->
+    <!--</div>-->
+    <!--<div class="news-block-info">-->
+    <!--<h4 class="news-block-info__header">ДТП на а/д М-10 "Россия"</h4>-->
+    <!--<p class="news-block-info__text">Сегодня утром на трассе М-10 "Россия"-->
+    <!--(Москва - Санкт-Петербург) на обходе...</p>-->
+    <!--</div>-->
+    <!--</article>-->
+    <!--<article class="news-block">-->
+    <!--<div class="news-block-date">-->
+    <!--<div class="news-block-date__number">30</div>-->
+    <!--<div class="news-block-date__month">Августа</div>-->
+    <!--</div>-->
+    <!--<div class="news-block-info">-->
+    <!--<h4 class="news-block-info__header">Окончание выполнения-->
+    <!--подрядных работ-->
+    <!--по капитальному ремонту</h4>-->
+    <!--<p class="news-block-info__text">29 августа 2017 года, компания-->
+    <!--«ПТК Объединённые Ресурсы» ...</p>-->
+    <!--</div>-->
+    <!--</article>-->
+    <!--<article class="news-block">-->
+    <!--<div class="news-block-date">-->
+    <!--<div class="news-block-date__number">3</div>-->
+    <!--<div class="news-block-date__month">Августа</div>-->
+    <!--</div>-->
+    <!--<div class="news-block-info">-->
+    <!--<h4 class="news-block-info__header">Люк ГОСТ</h4>-->
+    <!--<p class="news-block-info__text">Люки чугунные канализационные-->
+    <!--(и не только) - одна из самых обыденных-->
+    <!--примет...</p>-->
+    <!--</div>-->
+    <!--</article>-->
+    <!--</div>-->
+    <!--<a href="#" class="news__link">Все новости</a>-->
+    <!--</section>-->
+    <!--</div>-->
+    <!--</div>-->
+
+
+    <section class="page-footer__contacts contacts">
+        <div class="container-flex container-flex--contacts">
+
+            <div class="contacts-socials">
+                <img src="img/logo-footer.png" alt="logo" class="contacts-socials__logo">
+                <p class="contacts-socials__slogan">Объеденяем лучших<br>для общих побед!</p>
+                <ul class="contacts-socials__list soc-list">
+                    <li class="soc-list__item soc-list__item--vk"><a href=""><i class="fa fa-vk" aria-hidden="true"></a></i></li>
+                    <li class="soc-list__item soc-list__item--fbs"><a href=""><i class="fa fa-facebook" aria-hidden="true"></a></i></li>
+                    <li class="soc-list__item soc-list__item--tw"><a href=""><i class="fa fa-twitter" aria-hidden="true"></a></i></li>
+                    <li class="soc-list__item soc-list__item--inst"><a href=""><i class="fa fa-instagram" aria-hidden="true"></a></i></li>
+                </ul>
+            </div>
+
+            <div class="city-info-list">
+
+                <div class="city-info">
+                    <div class="contacts-item">
+                        <img src="" alt="" class="contacts-item__icon contacts-item__icon--geo">
+                        <p class="contacts-item-info"><span class="contacts-item-info__city">Санкт-Петербург</span><br><span class="contacts-item-info__ads">ул.Маршала Говорова, д.35, к.4</span></p>
+                    </div>
+
+                    <div class="contacts-item">
+                        <img src="" alt="" class="contacts-item__icon contacts-item__icon--time">
+                        <p class="contacts-item-info contacts-item-info--time">Пн-Пт: 9:30 - 18:00</p>
+                        <p class="contacts-item-info contacts-item-info--time">Сб-Вс: выходной</p>
+                    </div>
+
+                    <div class="contacts-item">
+                        <img src="" alt="" class="contacts-item__icon contacts-item__icon--phone">
+                        <p class="contacts-item-info contacts-item-info--phone">8(812)676-75-59</p>
+                    </div>
+
+                    <div class="contacts-item">
+                        <img src="" alt="" class="contacts-item__icon">
+                        <p class="contacts-item-info contacts-item-info--mail">info@ptkor.ru</p>
+                    </div>
+                </div>
+
+                <div class="city-info">
+                    <div class="contacts-item">
+                        <img src="" alt="" class="contacts-item__icon contacts-item__icon--geo">
+                        <p class="contacts-item-info"><span class="contacts-item-info__city">Москва</span><br><span class="contacts-item-info__ads">пр. Мира, д.101, оф.501</span></p>
+                    </div>
+
+                    <div class="contacts-item">
+                        <img src="" alt="" class="contacts-item__icon contacts-item__icon--time">
+                        <p class="contacts-item-info contacts-item-info--time">Пн-Пт: 9:30 - 18:00</p>
+                        <p class="contacts-item-info contacts-item-info--time">Сб-Вс: выходной</p>
+                    </div>
+
+                    <div class="contacts-item">
+                        <img src="" alt="" class="contacts-item__icon contacts-item__icon--phone">
+                        <p class="contacts-item-info contacts-item-info--phone">8(812)676-75-59</p>
+                    </div>
+
+                    <div class="contacts-item">
+                        <img src="" alt="" class="contacts-item__icon">
+                        <p class="contacts-item-info contacts-item-info--mail">info@ptkor.ru</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="page-footer__sum sum">
+        <div class="container-flex container-flex--sum">
+
+            <div class="sum-block">
+                <h5 class="sum-block__header">Компания</h5>
+                <ul class="sum-block-list">
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">О компании</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Новости и публикации</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Партнеры</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Отзывы и благодарности</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Вакансии</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Реквезиты</a></li>
+                </ul>
+            </div>
+            <div class="sum-block">
+                <h5 class="sum-block__header">Продукция</h5>
+                <ul class="sum-block-list">
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Геосентетические материалы</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Дорожные ограждаения "Нью-Джерси"</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Бетонные водоотводные лотки</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Подпорные стенки</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Средства безопасноти и ОДД</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Гранитные изделия</a></li>
+                </ul>
+            </div>
+            <div class="sum-block">
+                <h5 class="sum-block__header">Техсопровождение</h5>
+                <ul class="sum-block-list">
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Проектирование</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Выполнение расчетов</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Помощь в подборе материала</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Терминологический словарь</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Нормативная литература, ГОСТы</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Ответы на основные вопросы</a></li>
+                    <li class="sum-block-list-item"><a href="#" class="sum-block-list-item__link">Задать вопрос специалисту</a></li>
+                </ul>
+            </div>
+            <ul class="sum-rest-list">
+                <li class="sum-rest-list-item"><a class="sum-rest-list-item__link" href="#">Объекты</a></li>
+                <li class="sum-rest-list-item"><a class="sum-rest-list-item__link" href="#">Контакты</a></li>
+                <li class="sum-rest-list-item"><a class="sum-rest-list-item__link" class="sum-rest-list-item__link" href="#">Карта сайта</a></li>
+                <li class="sum-rest-list-item"><a class="sum-rest-list-item__link" href="#">Политика<br>конфеденциальности</a></li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="page-footer__copyright copyright">
+        <p class="copyright-text">&copy <span class="copyright-text__name">ПТК Объедененные ресурсы, 2002-2017</span></p>
+    </section>
+</footer>
+
+<script src="js/slider.js"></script>
+<script src="js/stickynav.js"></script>
+<script src="js/adaptiveMenu.js"></script>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>

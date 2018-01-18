@@ -1,0 +1,12 @@
+.params {
+  flex: 1 1 50%;
+}
+.params-img-wrapper {
+  max-width: 567px;
+  border: 1px solid $basic-border-grey;
+}
+.params__img {
+  display: block;
+  max-width: 80%;
+  margin: auto;
+}

@@ -3,16 +3,17 @@
   padding-left: 10px;
   padding-right: 10px;
 
+  &--catalog, &--card {
+    border-bottom: 1px solid $basic-hr-border;
+  }
+
+
   @media (max-width: 830px) {
     position: relative;
     border-top: none;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-  }
-
-  &--catalog {
-    border-bottom: 1px solid $basic-hr-border;
   }
 }
 .nav-list {

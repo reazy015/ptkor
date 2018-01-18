@@ -1,0 +1,38 @@
+.select-panel {
+  padding-top:  15px;
+  background-color: $basic-black-btn;
+  color: $basic-white;
+  border-bottom: 2px solid $basic-green;
+  margin-bottom: 50px;
+}
+.select-panel__header {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Merel Light";
+  font-size: 30px;
+  text-transform: uppercase;
+
+}
+.select-panel-list {
+  @include list-reset;
+  @include flex-row;
+}
+.select-panel-list__item {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.select-panel-list__item label{
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.select-panel-list__item input[type='radio']{
+  display: none;
+}
+.select-panel-list__item input[type='radio']:checked ~ label {
+  background-color: $basic-green;
+  color: $basic-white;
+}

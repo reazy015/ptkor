@@ -1,0 +1,77 @@
+.card-info {
+  position: relative;
+  background-color: $basic-hover;
+  overflow: hidden;
+}
+.card-info-wrapper {
+  flex: 0 1 640px;
+}
+.card-info__header {
+  font-family: "Merel Bold";
+  font-size: 48px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+.card-info__text {
+  font-family: "Merel";
+  font-size: 18px;
+  color: $basic-black;
+}
+.card-info-slider {
+  position: relative;
+  flex-grow: 1;
+  padding-left: 15px;
+  align-items: center;
+  background-color: $basic-white;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    right: -100%;
+    background-color: $basic-white;
+    z-index: 1;
+  }
+}
+.card-info-slider__btn {
+  position: absolute;
+
+  &--prev {
+    left: 0;
+    top: 50%''
+  }
+
+  &--next {
+    right: 0;
+    left: auto;
+  }
+}
+.card-info-slider-list {
+  @include list-reset;
+  display: flex;
+  overflow: hidden;
+
+}
+.card-info-slider-list__item{
+  flex: 1 0 100%;
+}
+.card-info-slider__img {
+}
+.card-info-slider-preview {
+  @include list-reset;
+  float: right;
+  margin-top: 5%;
+}
+.card-info-slider-list__item {
+  display: none;
+  
+  &--active {
+    display: block;
+  }
+}
+.card-info__link {
+  @include link-green;
+}
