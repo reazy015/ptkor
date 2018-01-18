@@ -10,3 +10,19 @@
   max-width: 80%;
   margin: auto;
 }
+.params-table {
+  border-collapse: collapse;
+  max-width: 567px;
+}
+.params-table td {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-right: 25px;
+  border-bottom: 1px solid $basic-border-grey;
+}
+.params-table ul {
+  @include list-reset;
+}
+.params-table ul li {
+  margin-bottom: 15px;
+}

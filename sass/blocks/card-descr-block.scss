@@ -1,3 +1,20 @@
 .descr {
   flex: 1 1 50%;
 }
+.descr__header {
+  font-family: "Merel Bold";
+  font-size: 24px;
+  color: $basic-black-btn;
+}
+.descr__text {
+  font-family: "Merel";
+  font-size: 14px;
+  line-height: 1.5;
+  color: $basic-font-grey;
+}
+.order-panel {
+  padding-left: 117px;
+  padding-right: 117px;
+  max-width: 571px;
+  background-color: $order-panel-bg;
+}
