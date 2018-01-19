@@ -4,22 +4,27 @@
   overflow: hidden;
 }
 .card-info-wrapper {
-  flex: 0 1 640px;
+  flex: 0 0 510px;
 }
 .card-info__header {
+  margin-top: 100px;
+  margin-bottom: 70px;
   font-family: "Merel Bold";
-  font-size: 48px;
+  font-size: 49px;
   color: $basic-black;
   text-transform: uppercase;
 }
 .card-info__text {
+  width: 80%;
+  margin-bottom: 70px;
   font-family: "Merel";
   font-size: 18px;
+  line-height: 1.2;
   color: $basic-black;
 }
 .card-info-slider {
   position: relative;
-  flex-grow: 1;
+  flex: 1 2 auto;
   padding-left: 15px;
   align-items: center;
   background-color: $basic-white;
@@ -74,4 +79,6 @@
 }
 .card-info__link {
   @include link-green;
+  width: 240px;
+  margin-bottom: 116px;
 }

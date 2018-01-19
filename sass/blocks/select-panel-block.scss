@@ -1,17 +1,16 @@
 .select-panel {
-  padding-top:  15px;
+  padding-top:  44px;
   background-color: $basic-black-btn;
   color: $basic-white;
   border-bottom: 2px solid $basic-green;
-  margin-bottom: 50px;
+  margin-bottom: 68px;
 }
 .select-panel__header {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   font-family: "Merel Light";
-  font-size: 30px;
+  font-size: 31px;
   text-transform: uppercase;
-
 }
 .select-panel-list {
   @include list-reset;
@@ -23,11 +22,12 @@
 }
 .select-panel-list__item label{
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
   cursor: pointer;
+  font-size: 16px;
 }
 .select-panel-list__item input[type='radio']{
   display: none;

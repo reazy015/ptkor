@@ -1,0 +1,21 @@
+.card-video {
+  position: relative;
+  background-color: $basic-black-btn;
+  text-align: center;
+}
+.card-video__item {
+  display: none;
+}
+.card-video__btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  cursor: pointer;
+}
+.fa--video {
+  color: $basic-white;
+}
+.card-photo__temp {
+  max-width: 100%;
+}

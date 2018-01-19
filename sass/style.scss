@@ -3,7 +3,7 @@
 @import "global";
 @import "fonts";
 @import "normalize";
-@import "blocks/header-block";
+@import "blocks/page-header-block";
 @import "blocks/nav-block";
 @import "blocks/slider-block";
 @import "blocks/main-grid-block";
@@ -29,3 +29,8 @@
 @import "blocks/select-panel-block";
 @import "blocks/card-params-block";
 @import "blocks/card-descr-block";
+@import "blocks/order-panel-block";
+@import "blocks/card-video-block";
+@import "blocks/card-download-block";
+@import "blocks/card-add-block";
+@import "blocks/card-slider-block";

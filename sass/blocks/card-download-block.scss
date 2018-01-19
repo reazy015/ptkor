@@ -1,0 +1,49 @@
+.card-download-tech {
+  flex: 1 1 50%;
+}
+.card-download-cert {
+  flex: 1 1 50%;
+}
+.card-download-tech__header,
+.cert__header {
+  font-family: "Merel Light";
+  font-size: 30px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+.card-download-tech__link {
+  text-decoration: none;
+  color: $basic-green;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px dashed $basic-green;
+  border-radius: 5px;
+  margin-right: 18%;
+}
+.cert-list {
+  @include list-reset;
+  @include flex-row;
+  width: 70%;
+  justify-content: space-between;
+}
+.cert-list-item {
+  position: relative;
+  cursor: pointer;
+
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:hover:before {
+    display: none;
+  }
+}

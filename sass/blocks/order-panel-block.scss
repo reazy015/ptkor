@@ -1,0 +1,51 @@
+.order-panel {
+  padding-top: 70px;
+  padding-bottom: 59px;
+  padding-left: 117px;
+  padding-right: 117px;
+  max-width: 571px;
+  background-color: $order-panel-bg;
+}
+.order-panel__btn {
+  @include link-green;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+  width: 283px;
+}
+.order-panel-table {
+  width: 100%;
+}
+.order-panel-table td {
+  padding-bottom: 15px;
+  padding-bottom: 15px;
+}
+.order-panel-table__prop {
+  fonr-family: "Merel";
+  font-size: 14px;
+  color: $basic-font-grey;
+}
+.order-panel-table__value {
+  font-family: "Merel";
+  font-size: 16px;
+  color: $basic-black-btn;
+
+  &--price  {
+    font-family: "Merel Bold";
+    font-size: 24px;
+  }
+
+  &--qty {
+    font-size: 24px;
+  }
+}
+.order-panel-table__plus,
+.order-panel-table__minus {
+  font-family: "Merel Bold";
+  color: $basic-green;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.order-panel-table__minus {
+  padding-left: 15px;
+}

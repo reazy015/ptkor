@@ -1,0 +1,73 @@
+.card-slider {
+  padding-top: 103px;
+  padding-bottom: 135px;
+}
+.card-slider__header {
+  font-family: "Merel Light";
+  font-size: 30px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+.card-slider-container {
+  position: relative;
+}
+.card-slider-list {
+  @include list-reset;
+  @include flex-row;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: flex-start;
+}
+.item {
+  flex: 1 1 38%;
+}
+.item-img-wrapper {
+  float: left;
+  margin-right: 10px;
+}
+.card-slider-btn {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.card-slider-btn--next {
+  right: -30px;
+  left: auto;
+}
+.chevron-card {
+  color: $basic-font-grey;
+}
+.item-info__header {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Merel light";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+.card-info-slider {
+  display: flex;
+}
+.card-info-slider-list {
+  flex: 1 1 auto;
+  text-align: center;
+}
+.item-info__text {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: $basic-font-grey;
+}
+.item-info__price {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Merel Bold";
+  font-size: 18px;
+}
+.item-info__link {
+  @include reset-link;
+  color: $basic-green;
+}
