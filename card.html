@@ -340,7 +340,7 @@
                 <li class="card-info-slider-preview__item"><img class="" src="img/preview-img.png" alt=""></li>
             </ul>
             <ul class="card-info-slider-list">
-                <li class="card-info-slider-list__item card-info-slider-list__item--active"><img class="" src="img/card-slider-img1.png" alt=""></li>
+                <li class="card-info-slider-list__item card-info-slider-list__item--active"><img class="card-info-slider__img" src="img/card-slider-img1.png" alt=""></li>
                 <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
                 <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
                 <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
@@ -360,7 +360,7 @@
                 </ul>
             </div>
         </div>
-        <div class="container-flex">
+        <div class="container-flex container-flex--card">
             <div class="card-type__params params">
                 <div class="params-img-wrapper">
                     <img class="params__img" src="img/card-slider-img1.png" alt="item-img">
@@ -436,34 +436,64 @@
     </div>
 </section>
 
-<section class="card-download container-flex">
+<section class="card-download container-flex container-flex--card">
     <div class="card-download-tech">
         <h3 class="card-download-tech__header">Технические<br>характеристики</h3>
-        <a class="card-download-tech__link" href="#">Скачать ГОСТ</a>
-        <a class="card-download-tech__link" href="#">Скачать чертеж</a>
+        <a class="card-download-tech-link" href="#">
+            <svg class="card-download-tech__icon" width="16px" height="16px">
+                <use xlink:href="#download"></use>
+            </svg>
+            Скачать ГОСТ
+        </a>
+        <a class="card-download-tech-link" href="#">
+            <svg class="card-download-tech__icon" width="16px" height="16px">
+                <use xlink:href="#download"></use>
+            </svg>
+            Скачать чертеж
+        </a>
     </div>
     <div class="card-download-cert cert">
         <h3 class="cert__header">Сертификаты</h3>
         <ul class="cert-list">
-            <li class="cert-list-item"><img src="img/cert-img.png" alt="certificate-img"></li>
-            <li class="cert-list-item"><img src="img/cert-img.png" alt="certificate-img"></li>
-            <li class="cert-list-item"><img src="img/cert-img.png" alt="certificate-img"></li>
-            <li class="cert-list-item"><img src="img/cert-img.png" alt="certificate-img"></li>
+            <li class="cert-list-item">
+                <img src="img/cert-img.png" alt="certificate-img"/>
+                <svg class="cert-list-item__icon" width="32px" height="32px">
+                    <use xlink:href="#zoom-in"></use>
+                </svg>
+            </li>
+            <li class="cert-list-item">
+                <img src="img/cert-img.png" alt="certificate-img"/>
+                <svg class="cert-list-item__icon" width="32px" height="32px">
+                    <use xlink:href="#zoom-in"></use>
+                </svg>
+            </li>
+            <li class="cert-list-item">
+                <img src="img/cert-img.png" alt="certificate-img"/>
+                <svg class="cert-list-item__icon" width="32px" height="32px">
+                    <use xlink:href="#zoom-in"></use>
+                </svg>
+            </li>
+            <li class="cert-list-item">
+                <img src="img/cert-img.png" alt="certificate-img"/>
+                <svg class="cert-list-item__icon" width="32px" height="32px">
+                    <use xlink:href="#zoom-in"></use>
+                </svg>
+            </li>
         </ul>
     </div>
 </section>
 
 <section class="card-add">
-    <div class="container-flex">
+    <div class="container-flex container-flex--card">
         <div class="card-add-part">
             <h3 class="card-add__header">Полезная информация</h3>
-            <p class="card-add__text">Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых предложений. </p>
+            <p class="card-add__text card-add__text--margin-b">Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика, что реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых предложений. </p>
             <p class="card-add__text">Задача организации, в особенности же начало повседневной работы по формированию позиции требуют от нас анализа направлений прогрессивного развития. Повседневная практика показывает, что постоянное информационно- пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.</p>
-            <h4 class="card-add__header">Дополнтельно</h4>
+            <h4 class="card-add__header card-add__header--additional">Дополнтельно</h4>
             <p class="card-add__text">Не следует, однако забывать, что сложившаяся структура организации представляет собой интересный эксперимент проверки дальнейших направлений развития. Товарищи! рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
             <p class="card-add__text">Задача организации, в особенности же консультация с широким активом играет важную роль в формировании форм развития. </p>
         </div>
-        <div class="card-add-part">
+        <div class="card-add-part card-add-part--important">
             <div class="card-add-remark">
                 <h4 class="card-add-remark__header">Важно помнить:</h4>
                 <p class="card-add-remark__text">Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.</p>

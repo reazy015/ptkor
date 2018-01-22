@@ -69,7 +69,7 @@
       border-top: 1px solid $basic-font-grey;
     }
     & .city-dropdown-item__time {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     & .city-dropdown-item__adr span:first-child{
       font-family: "Merel Bold";
@@ -221,6 +221,7 @@
   animation-name: nav-open;
   animation-duration: .5s;
   animation-fill-mode: forwards;
+  z-index: 100;
 
 
   @media(min-width: 830px) {
@@ -237,10 +238,13 @@
 .nav-open .nav-list-item--has-sub:hover > .submenu {
   display: block;
 }
-
+.nav-open .fa--custom {
+  position: absolute;
+}
 .fa--custom {
   padding-left: 10px;
 }
+
 @keyframes nav-open {
   from {
     transform: translate(100%);

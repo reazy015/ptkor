@@ -95,6 +95,10 @@
 }
 .link {
   fill: $basic-green;
+
+  @media (max-width: 830px) {
+    display: none;
+  }
 }
 .city-info-list {
   display: flex;

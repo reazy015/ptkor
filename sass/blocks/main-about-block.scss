@@ -35,6 +35,11 @@
 }
 .main-about-slider {
   margin-top: 85px;
+  display: none;
+
+  &--active {
+    display: block;
+  }
 }
 .main-about-slider .slider-list-item__img {
   width: auto;
@@ -47,7 +52,12 @@
   }
 }
 .main-about-slider .slider-list-item {
-  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 180px;
+}
+.slider-list-item__header {
+  color: $basic-font-grey;
 }
 
 @media (max-width: 768px) {

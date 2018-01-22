@@ -1,5 +1,9 @@
+.card-download {
+  padding-top: 53px;
+  padding-bottom: 120px;
+}
 .card-download-tech {
-  flex: 1 1 50%;
+  flex: 0 1 58%;
 }
 .card-download-cert {
   flex: 1 1 50%;
@@ -11,16 +15,25 @@
   text-transform: uppercase;
   color: $basic-black;
 }
-.card-download-tech__link {
+.card-download-tech__header {
+  margin-bottom: 120px;
+}
+.cert__header {
+  margin-bottom: 69px;
+}
+.card-download-tech-link {
   text-decoration: none;
   color: $basic-green;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 45px;
+  padding-right: 53px;
   border: 1px dashed $basic-green;
   border-radius: 5px;
-  margin-right: 18%;
+  margin-right: 8%;
+}
+.card-download-tech__icon {
+  fill: $basic-green;
 }
 .cert-list {
   @include list-reset;
@@ -46,4 +59,18 @@
   &:hover:before {
     display: none;
   }
+  &:hover > .cert-list-item__icon {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+.cert-list-item__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px;
+  margin-left: -16px;
+  fill: $basic-green;
+  opacity: 0.5;
+  transition: transform .3s;
 }

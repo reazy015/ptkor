@@ -6,21 +6,40 @@
   background-size: cover;
 }
 .card-add-part {
-  flex: 0 1 50%;
+  flex: 0 1 45%;
+
+  &--important {
+    flex: 0 1 32%;
+    margin-right: 8%;
+    margin-top: 111px;
+  }
 }
 .card-add__header {
   margin: 0;
   font-family: "Merel Light";
   font-size: 30px;
   text-transform: uppercase;
+
+  &--additional {
+    font-size: 19px;
+    margin-top: 67px;
+    margin-bottom: 24px;
+  }
 }
 .card-add__text {
   line-height: 1.5;
   font-size: 16px;
   color: $basic-paragraph-grey;
+
+  &--margin-b {
+    margin-bottom: 50px;
+  }
 }
 .card-add-remark {
   padding-left: 30px;
   color: $basic-green;
   border-left: 2px solid $basic-green;
+}
+.card-add-remark__header {
+  font-size: 24px;
 }

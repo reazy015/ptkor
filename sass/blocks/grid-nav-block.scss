@@ -2,8 +2,8 @@
   display: none;
   flex: 1 1 auto;
   margin-bottom: 10px;
-  font-family: "Merel Bold";
-  font-size: 18px;
+  font-family: "Merel";
+  font-size: 16px;
   text-align: center;
   color: $basic-green;
   border: 1px solid $basic-green;
@@ -16,10 +16,36 @@
 
   &--category {
     display: block;
+    transition: transform .3s;
+
+    @media (max-width: 1300px) {
+      position: absolute;
+      transform: translate(-100%);
+      background-color: $basic-white;
+    }
   }
 
   @media (max-width: 830px) {
     display: block;
+  }
+}
+.grid-nav--category:hover {
+  @media (max-width: 1300px) {
+    transform: translate(0%);
+  }
+}
+.grid-nav--category:after {
+  @media (max-width: 1300px) {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 25px;
+    height: 100px;
+    background-color: $basic-font-grey;
+    top: 50%;
+    margin-top: -50px;
+    bottom: 0;
+    right: -25px;
   }
 }
 .grid-nav__header {
@@ -35,6 +61,7 @@
   margin-top: 10px;
 }
 .grid-nav-list__item {
+  padding-left: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
@@ -80,6 +107,18 @@
 
   .grid-nav-list__item {
     color: $basic-black;
+  }
+}
+.fa--grid-nav {
+  visibility: hidden;
+
+  @media (max-width: 1300px) {
+    visibility: visible;
+    position: absolute;
+    right: -23px;
+    top: 44%;
+    color: $basic-green;
+    z-index: 20;
   }
 }
 
