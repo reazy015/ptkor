@@ -2,6 +2,9 @@ body,
 html {
   font-family: "Merel";
 }
+.svg-sprite {
+  display: none;
+}
 .container {
   max-width: 1360px;
   margin: auto;
@@ -24,16 +27,16 @@ html {
     border-top: 1px solid $basic-hr-ft-border;
     border-bottom: 1px solid $basic-hr-ft-border;
   }
-  
+
   &--contacts {
     text-align: left;
-    
+
     @media (max-width: 830px) {
       display: block;
       text-align: center;
     }
   }
-  
+
   &--footer-top {
     @media (max-width: 830px) {
       display: block;
@@ -55,4 +58,3 @@ html {
     padding-right: 10px;
   }
 }
-

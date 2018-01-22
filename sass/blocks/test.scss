@@ -1,0 +1,114 @@
+.slider {
+  width: 100%;
+}
+.slider-list {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-list-item {
+  flex: 1 0 50%;
+  position: relative;
+}
+.slider-list-item:before {
+  position: absolute;
+  display: block;
+  content: '';
+  background-color: rgba(0,0,0, 0.2);
+  width: 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.slider-list > .slider-list-item {
+  position: relative;
+  display: none;
+  animation: 0.5s ease-in-out;
+}
+.slider-list > .active,
+.slider-list > .next {
+  display: block;
+}
+.slider-list > .next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.slider-list > .to-left {
+  animation-name: left;
+}
+.slider-list > .from-right {
+  animation-name: right;
+}
+.slider-list > .to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+.slider-list > .from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+.slider-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  cursor: pointer;
+  z-index: 100;
+}
+.slider-control.right {
+  right: 0;
+  left: auto;
+}
+.slider-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.slider-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+}
+.slider-indicators li.active {
+  background-color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
