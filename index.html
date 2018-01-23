@@ -375,6 +375,11 @@
             </ul>
             <button class="slider-btn slider-btn--prev left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
             <button class="slider-btn slider-btn--next right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+            <ul class="slider-indicators">
+                <li class="slider-indicators__item slider-indicators__item--active"></li>
+                <li class="slider-indicators__item"></li>
+                <li class="slider-indicators__item"></li>
+            </ul>
         </section>
 
 
@@ -382,8 +387,8 @@
               <h1 class="page-main__header">Поставки материалов<br>для дорожного строительства</h1>
               <div class="page-main-grid">
                 <div class="page-main-grid__nav grid-nav">
-                    <div class="grid-nav__header">Геосинтетические материалы<i class="fa fa-caret-down fa--grid-nav" aria-hidden="true"></i></div>
                     <ul class="grid-nav-list">
+                        <li class="grid-nav-list__item grid-nav-list__item--active">Геосинтетические матеариалы</li>
                         <li class="grid-nav-list__item">Гранитные изделия</li>
                         <li class="grid-nav-list__item">Чугунные люки и дождеприемники</li>
                         <li class="grid-nav-list__item">Средства безопасноти и ОДД</li>
@@ -393,7 +398,7 @@
                     </ul>
                 </div>
                 <section class="page-main-grid__section grid-section">
-                  <div class="grid-section__item">
+                  <div class="grid-section__item" nav-label="type1">
                     <h3 class="grid-section__header">Геосинтетические материалы</h3>
                     <article class="grid-section__article article">
                       <div class="article-item">
@@ -451,7 +456,7 @@
                   </div>
                 </section>
                 <section class="page-main-grid__section grid-section">
-                  <div class="grid-section__item">
+                  <div class="grid-section__item" nav-label="type2">
                     <h3 class="grid-section__header">Гранитные изделия</h3>
                     <article class="grid-section__article article">
                       <div class="article-item">
@@ -508,7 +513,7 @@
                     <a href="#" class="article-container__link">Перейти в раздел</a>
                   </div>
                 </section>
-                <section class="page-main-grid__section grid-section grid-section--center">
+                <section class="page-main-grid__section grid-section grid-section--center" nav-label="type5">
                   <h3 class="grid-section__header grid-section__header--center">Средства безопасности и ОДД</h3>
                   <article class="grid-section__article article">
                     <div class="article-item">
@@ -575,7 +580,7 @@
                   </div>
                 </section>
                 <section class="page-main-grid__section grid-section">
-                  <div class="grid-section__item">
+                  <div class="grid-section__item" nav-label="type3">
                     <h3 class="grid-section__header">Геосинтетические материалы</h3>
                     <article class="grid-section__article article">
                       <div class="article-item">
@@ -621,7 +626,7 @@
                   </div>
                 </section>
                 <section class="page-main-grid__section grid-section">
-                  <div class="grid-section__item">
+                  <div class="grid-section__item" nav-label="type4">
                     <h3 class="grid-section__header">Геосинтетические материалы</h3>
                     <article class="grid-section__article article">
                       <div class="article-item">
@@ -1194,6 +1199,7 @@
         <script src="js/main.js"></script>
         <script src="js/aboutTabs.js"></script>
         <script src="js/aboutSlider.js"></script>
+        <script src="js/gridNav.js"></script>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->

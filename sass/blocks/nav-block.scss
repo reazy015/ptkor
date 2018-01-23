@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 .nav-list {
@@ -36,7 +37,9 @@
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
+    flex: 1 1 auto;
   }
+
   &:hover {
     @media(max-width: 830px) {
       background-color: $basic-hover;
@@ -122,6 +125,10 @@
   @media (max-width: 830px) {
     display: block;
     margin-bottom: 10px;
+  }
+
+  @media (max-width: 320px) {
+    width: 50%;
   }
 }
 .nav-list-item__link {
