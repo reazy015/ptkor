@@ -19,19 +19,34 @@
     width: 100px;
   }
 }
-.main-about__tab {
-  display: inline-block;
-  padding: 10px 21px 8px 26px;
-  font-family: "Merel Light";
-  font-size: 18px;
-  color: $basic-font-grey;
-  cursor: pointer;
-  transition: background-color .3s;
+.main-about-nav {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 830px) {
+    flex-direction: column;
+    background-color: $basic-font-grey;
+  }
 }
-.main-about__decor {
-  height: 2px;
-  width: 100%;
-  background-color: $basic-green;
+.main-about-nav__item {
+  margin-right: 15px;
+  cursor: pointer;
+
+  &--active {
+    background-color: $basic-green;
+    color: $basic-white;
+
+    @media (max-width: 830px) {
+      background-color: $basic-font-grey;
+      color: $basic-black;
+    }
+  }
+
+  @media (max-width: 830px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 .main-about-slider {
   margin-top: 85px;
@@ -59,34 +74,14 @@
 .slider-list-item__header {
   color: $basic-font-grey;
 }
-
-@media (max-width: 768px) {
-  .main-about__decor {
+@media (max-width: 830px) {
+  .main-about-nav__item:not(.main-about-nav__item--active) {
     display: none;
   }
-  .main-about-nav {
-    display: flex;
-    flex-direction: column;
-    background-color: $basic-font-grey;
-  }
-  .main-about__tab {
-    display: block;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    font-family: "Merel Bold";
-
-  }
-  .main-about__tab:not(.main-about__tab--active) {
-    display: none;
-    color: $basic-black;
-  }
-
-  .main-about input[type="radio"]:checked + .main-about__tab {
-    background-color: transparent;
-    color: $basic-black;
-  }
-  .main-about:hover > main-about__tab {
+  
+  .main-about-nav--open .main-about-nav__item {
     display: block;
   }
 }
+
 

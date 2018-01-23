@@ -388,17 +388,17 @@
               <div class="page-main-grid">
                 <div class="page-main-grid__nav grid-nav">
                     <ul class="grid-nav-list">
-                        <li class="grid-nav-list__item grid-nav-list__item--active">Геосинтетические матеариалы</li>
-                        <li class="grid-nav-list__item">Гранитные изделия</li>
-                        <li class="grid-nav-list__item">Чугунные люки и дождеприемники</li>
-                        <li class="grid-nav-list__item">Средства безопасноти и ОДД</li>
-                        <li class="grid-nav-list__item">Подпорные стенки</li>
-                        <li class="grid-nav-list__item">Ограждения Нью Джерси</li>
-                        <li class="grid-nav-list__item">Система линейного водоотвода</li>
+                        <li class="grid-nav-list__item grid-nav-list__item--active" data-nav="type1">Геосинтетические матеариалы</li>
+                        <li class="grid-nav-list__item" data-nav="type2">Гранитные изделия</li>
+                        <li class="grid-nav-list__item" data-nav="type3">Чугунные люки и дождеприемники</li>
+                        <li class="grid-nav-list__item" data-nav="type4">Средства безопасноти и ОДД</li>
+                        <li class="grid-nav-list__item" data-nav="type5">Подпорные стенки</li>
+                        <li class="grid-nav-list__item" data-nav="type6">Ограждения Нью Джерси</li>
+                        <li class="grid-nav-list__item" data-nav="type7">Система линейного водоотвода</li>
                     </ul>
                 </div>
                 <section class="page-main-grid__section grid-section">
-                  <div class="grid-section__item" nav-label="type1">
+                  <div class="grid-section__item tablet--active" data-section="type1">
                     <h3 class="grid-section__header">Геосинтетические материалы</h3>
                     <article class="grid-section__article article">
                       <div class="article-item">
@@ -450,13 +450,13 @@
                     </article>
                     <a href="#" class="article-container__link">Перейти в раздел</a>
                   </div>
-                  <div class="callback">
+                  <div class="callback callback--tablet">
                     <p class="callback__text">Нужна помощь специалиста?</p>
                     <a href="#" class="callback__order">Заказать звонок</a>
                   </div>
                 </section>
                 <section class="page-main-grid__section grid-section">
-                  <div class="grid-section__item" nav-label="type2">
+                  <div class="grid-section__item" data-section="type2">
                     <h3 class="grid-section__header">Гранитные изделия</h3>
                     <article class="grid-section__article article">
                       <div class="article-item">
@@ -484,7 +484,7 @@
                     </article>
                     <a href="#" class="article-container__link">Перейти в раздел</a>
                   </div>
-                  <div class="grid-section__item">
+                  <div class="grid-section__item" data-section="type3">
                     <h3 class="grid-section__header">Чугунные люки и дождеприемники</h3>
                     <article class="grid-section__article article">
                       <div class="article-item">
@@ -513,7 +513,7 @@
                     <a href="#" class="article-container__link">Перейти в раздел</a>
                   </div>
                 </section>
-                <section class="page-main-grid__section grid-section grid-section--center" nav-label="type5">
+                <section class="page-main-grid__section grid-section grid-section--center" data-section="type4">
                   <h3 class="grid-section__header grid-section__header--center">Средства безопасности и ОДД</h3>
                   <article class="grid-section__article article">
                     <div class="article-item">
@@ -580,7 +580,7 @@
                   </div>
                 </section>
                 <section class="page-main-grid__section grid-section">
-                  <div class="grid-section__item" nav-label="type3">
+                  <div class="grid-section__item" data-section="type5">
                     <h3 class="grid-section__header">Геосинтетические материалы</h3>
                     <article class="grid-section__article article">
                       <div class="article-item">
@@ -608,7 +608,7 @@
                     </article>
                     <a href="#" class="article-container__link">Перейти в раздел</a>
                   </div>
-                  <div class="grid-section__item">
+                  <div class="grid-section__item" data-section="type6">
                     <h3 class="grid-section__header">Геосинтетические материалы</h3>
                     <article class="grid-section__article article">
                       <div class="article-item">
@@ -626,7 +626,7 @@
                   </div>
                 </section>
                 <section class="page-main-grid__section grid-section">
-                  <div class="grid-section__item" nav-label="type4">
+                  <div class="grid-section__item" data-section="type7">
                     <h3 class="grid-section__header">Геосинтетические материалы</h3>
                     <article class="grid-section__article article">
                       <div class="article-item">
@@ -667,7 +667,7 @@
                     <a href="#" class="article-container__link">Перейти в раздел</a>
                   </div>
                   <div class="callback">
-                    <p class="callback__text">Нужна помощь специалиста?</p>
+                    <p class="callback__text">Не нашли нужный товар?</p>
                     <a href="#" class="callback__order">Заказать звонок</a>
                   </div>
                 </section>
@@ -675,21 +675,16 @@
             </main>
 
         <section class="main-about">
-          <div class="main-about-nav">
-              <input class="main-about__input" type="radio" name="tab" id="partners">
-              <label class="main-about__tab" for="partners">Партнеры</label>
-              <input class="main-about__input" type="radio" name="tab" id="trust" checked>
-              <label class="main-about__tab main-about__tab--active" for="trust">Нам доверяют</label>
-              <input class="main-about__input" type="radio" name="tab" id="obj-orders">
-              <label class="main-about__tab" for="obj-orders">Заказчики объектов</label>
-              <input class="main-about__input" type="radio" name="tab" id="qlty">
-              <label class="main-about__tab" for="qlty">Качество</label>
-              <input class="main-about__input" type="radio" name="tab" id="callbacks">
-              <label class="main-about__tab" for="callbacks">Отзывы</label>
-              <div class="main-about__decor"></div>
-          </div>
 
-          <section class="main-about-slider slider" data-label="partners">
+          <ul class="main-about-nav">
+              <li class="main-about-nav__item" data-slider-nav="partners">Партнеры</li>
+              <li class="main-about-nav__item main-about-nav__item--active" data-slider-nav="trust">Нам доверяют</li>
+              <li class="main-about-nav__item" data-slider-nav="obj-orders">Заказчики объектов</li>
+              <li class="main-about-nav__item" data-slider-nav="qlty">Качество</li>
+              <li class="main-about-nav__item" data-slider-nav="callbacks">Отзывы</li>
+          </ul>
+
+          <section class="main-about-slider slider" data-slider="partners">
             <button class="slider-btn slider-btn--prev left"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
             <button class="slider-btn slider-btn--next right"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
             <ul class="slider-list slider-list--about">
@@ -743,8 +738,7 @@
                 </li>
             </ul>
           </section>
-
-          <section class="main-about-slider slider main-about-slider--active" data-label="trust">
+          <section class="main-about-slider slider main-about-slider--active" data-slider="trust">
             <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
             <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
             <ul class="slider-list slider-list--about">
@@ -798,7 +792,7 @@
                     </li>
                 </ul>
           </section>
-          <section class="main-about-slider slider" data-label="obj-orders">
+          <section class="main-about-slider slider" data-slider="obj-orders">
                 <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
                 <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
                 <ul class="slider-list slider-list--about">
@@ -852,7 +846,7 @@
                     </li>
                 </ul>
             </section>
-          <section class="main-about-slider slider" data-label="qlty">
+          <section class="main-about-slider slider" data-slider="qlty">
                 <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
                 <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
                 <ul class="slider-list slider-list--about">
@@ -906,8 +900,7 @@
                     </li>
                 </ul>
             </section>
-
-          <section class="main-about-slider slider" data-label="callbacks">
+          <section class="main-about-slider slider" data-slider="callbacks">
                 <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
                 <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
                 <ul class="slider-list slider-list--about">
@@ -961,10 +954,6 @@
                     </li>
                 </ul>
             </section>
-
-
-
-
 
         </section>
 

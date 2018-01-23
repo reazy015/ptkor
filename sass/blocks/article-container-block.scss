@@ -70,9 +70,9 @@
   @include link-green;
   margin-bottom: 50px;
 
-  //@media (max-width: 1192px) {
-  //  width: 284px;
-  //}
+  @media (max-width: 420px) {
+    width: 100%;
+  }
 }
 .grid-section__article {
   padding-top: 19px;

@@ -629,24 +629,19 @@
         </div>
     </section>
 
-    <section class="main-about">
-      <div class="main-about-nav">
-          <input type="radio" name="tab" id="partners">
-          <label class="main-about__tab" for="partners">Партнеры</label>
-          <input type="radio" name="tab" id="trust" checked>
-          <label class="main-about__tab main-about__tab--active" for="trust">Нам доверяют</label>
-          <input type="radio" name="tab" id="obj-orders">
-          <label class="main-about__tab" for="obj-orders">Заказчики объектов</label>
-          <input type="radio" name="tab" id="qlty">
-          <label class="main-about__tab" for="qlty">Качество</label>
-          <input type="radio" name="tab" id="callbacks">
-          <label class="main-about__tab" for="callbacks">Отзывы</label>
-          <div class="main-about__decor"></div>
-      </div>
+  <section class="main-about">
 
-      <section class="main-about-slider slider" data-label="partners">
-          <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-          <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
+      <ul class="main-about-nav">
+          <li class="main-about-nav__item" data-slider-nav="partners">Партнеры</li>
+          <li class="main-about-nav__item main-about-nav__item--active" data-slider-nav="trust">Нам доверяют</li>
+          <li class="main-about-nav__item" data-slider-nav="obj-orders">Заказчики объектов</li>
+          <li class="main-about-nav__item" data-slider-nav="qlty">Качество</li>
+          <li class="main-about-nav__item" data-slider-nav="callbacks">Отзывы</li>
+      </ul>
+
+      <section class="main-about-slider slider" data-slider="partners">
+          <button class="slider-btn slider-btn--prev left"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
+          <button class="slider-btn slider-btn--next right"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
           <ul class="slider-list slider-list--about">
               <li class="slider-list-item">
                   <div class="main-about-image-wrapper">
@@ -698,8 +693,7 @@
               </li>
           </ul>
       </section>
-
-      <section class="main-about-slider slider main-about-slider--active" data-label="trust">
+      <section class="main-about-slider slider main-about-slider--active" data-slider="trust">
           <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
           <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
           <ul class="slider-list slider-list--about">
@@ -753,7 +747,7 @@
               </li>
           </ul>
       </section>
-      <section class="main-about-slider slider" data-label="obj-orders">
+      <section class="main-about-slider slider" data-slider="obj-orders">
           <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
           <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
           <ul class="slider-list slider-list--about">
@@ -807,8 +801,7 @@
               </li>
           </ul>
       </section>
-
-      <section class="main-about-slider slider" data-label="qlty">
+      <section class="main-about-slider slider" data-slider="qlty">
           <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
           <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
           <ul class="slider-list slider-list--about">
@@ -862,8 +855,7 @@
               </li>
           </ul>
       </section>
-
-      <section class="main-about-slider slider" data-label="callbacks">
+      <section class="main-about-slider slider" data-slider="callbacks">
           <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
           <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
           <ul class="slider-list slider-list--about">
@@ -917,10 +909,6 @@
               </li>
           </ul>
       </section>
-
-
-
-
 
   </section>
 

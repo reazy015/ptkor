@@ -9,6 +9,12 @@
   @media (max-width: 830px) {
     max-width: 100%;
   }
+
+  &--tablet {
+    @media (max-width: 830px) {
+      display: none;
+    }
+  }
 }
 .callback__text {
   margin-bottom: 40px;
@@ -19,5 +25,5 @@
   @include link-green;
   margin: auto;
   background-color: $basic-black;
-
 }
+

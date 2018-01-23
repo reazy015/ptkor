@@ -10,6 +10,10 @@
   display: flex;
   flex-direction: column;
   margin-right: 35px;
+
+  @media (max-width: 420px) {
+    margin-right: 0;
+  }
 }
 .support-list {
   margin-top: auto;
@@ -42,4 +46,8 @@
   background-color: $basic-black-btn;
   padding-top: 19px;
   padding-bottom: 15px;
+
+  @media (max-width: 420px) {
+    width: 100%;
+  }
 }

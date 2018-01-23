@@ -77,4 +77,8 @@
   width: 224px;
   padding-top: 18px;
   padding-bottom: 13px;
+
+  @media (max-width: 420px) {
+    width: 100%;
+  }
 }

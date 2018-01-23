@@ -1,27 +1,48 @@
 'use strict'
 
 window.aboutTabs = ( function () {
-    var aboutSlidersList = document.querySelectorAll('[data-label]');
-    var aboutNav = document.querySelector('.main-about-nav');
+    var tabsNav = document.querySelector('.main-about-nav');
+    var tabs = document.querySelectorAll('.main-about-nav__item');
+    var sliders = document.querySelectorAll('[data-slider]');
 
-    function hideSliders() {
-        for (var i = 0; i < aboutSlidersList.length; i++) {
-            aboutSlidersList[i].style.display = 'none';
-            aboutSlidersList[i].style.backgrounColor = 'red';
+    function disableActiveTab() {
+        for (var i = 0; i < tabs.length; i++) {
+            if (tabs[i].classList.contains('main-about-nav__item--active')) {
+                tabs[i].classList.remove('main-about-nav__item--active');
+            }
         }
     }
 
-    aboutNav.addEventListener('click', function (e) {
-        var target = e.target;
-        var targetId = target.id;
+    function disableActiveSliders() {
+        for (var i = 0; i < sliders.length; i++) {
+            sliders[i].style.display = 'none';
+        }
+    }
 
-
-        hideSliders();
-
-        for (var i = 0; i < aboutSlidersList.length; i++) {
-            if (targetId === aboutSlidersList[i].dataset.label) {
-               aboutSlidersList[i].style.display = 'block';
+    function findAppropriateSlider(label) {
+        for (var i = 0; i < sliders.length; i++) {
+            if (sliders[i].dataset.slider == label) {
+                return sliders[i];
             }
         }
-    });
-})()
+    }
+
+    function showAllTabs() {
+        if (window.innerWidth < 830 ) {
+            tabsNav.classList.toggle('main-about-nav--open');
+        }
+    }
+
+    function openAppropriateSlider(e) {
+        var target = e.target;
+        if (target.classList.contains('main-about-nav__item')) {
+            disableActiveTab();
+            disableActiveSliders();
+            target.classList.add('main-about-nav__item--active');
+            findAppropriateSlider(target.dataset.sliderNav).style.display = 'block';
+        }
+    }
+    console.log(sliders);
+    tabsNav.addEventListener('click', openAppropriateSlider);
+    tabsNav.addEventListener('click', showAllTabs);
+})();

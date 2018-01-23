@@ -112,3 +112,18 @@
     padding-right: 5%;
   }
 }
+@media (max-width: 830px) {
+  .grid-section__item {
+    display: none;
+  }
+  .grid-section--center {
+    display: none;
+  }
+  .grid-section__item[nav-label="type1"] {
+    display: block;
+  }
+  .tablet--active {
+    display: block;
+  }
+}
+

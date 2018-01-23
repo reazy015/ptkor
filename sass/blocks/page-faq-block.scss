@@ -18,6 +18,10 @@
 }
 .page-faq-column {
   flex: 0 1 43%;
+
+  @media (max-width: 830px) {
+    flex: 1 1 100%;
+  }
 }
 .page-faq-column__text {
   margin: 0;
