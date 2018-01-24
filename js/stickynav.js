@@ -15,5 +15,6 @@ window.stickyNav = (function () {
         }
     }
 
+
     document.addEventListener('scroll', fixHeader);
 })()

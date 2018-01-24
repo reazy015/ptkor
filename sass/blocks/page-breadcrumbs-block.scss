@@ -1,7 +1,8 @@
 .page-breadcrumbs {
   @include list-reset;
-  display: flex;
+  display: block;
   margin-top: 25px;
+  margin-left: 10px;
   
   &--category {
     position: absolute;
@@ -13,6 +14,7 @@
 .page-breadcrumbs-item {
   font-size: 14px;
   padding-right: 4px;
+  display: inline;
 }
 .page-breadcrumbs-item__link {
   @include reset-link;

@@ -25,11 +25,17 @@
   & .page-header-info {
 	display: none;
   }
-  & .page-header__phone {
+  & .page-header-phone {
+    display: flex;
+    margin-top: 18px;
     margin-left: auto;
+
+    & .page-header-phone__item {
+      margin-right: 10px;
+    }
   }
   & .page-header-city {
-    margin-left: auto;
+    display: none;
   }
   & .city__header {
     display: flex;

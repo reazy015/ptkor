@@ -13,9 +13,15 @@ html {
   display: flex;
   max-width: 1360px;
   margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
   &--card {
     justify-content: space-between;
+
+    @media (max-width: 1156px) {
+      display: block;
+    }
 
     @media (max-width: 830px) {
       display: block;

@@ -23,6 +23,7 @@
   @include list-reset;
   display: flex;
   justify-content: center;
+  border-bottom: 2px solid $basic-green;
 
   @media (max-width: 830px) {
     flex-direction: column;
@@ -31,7 +32,9 @@
 }
 .main-about-nav__item {
   margin-right: 15px;
+  padding: 10px 15px;
   cursor: pointer;
+  font-family: "Merel Light";
 
   &--active {
     background-color: $basic-green;
@@ -51,10 +54,14 @@
 .main-about-slider {
   margin-top: 85px;
   display: none;
+  min-height: 120px;
 
   &--active {
     display: block;
   }
+}
+.main-about-slider .slider-list-item {
+  min-height: auto;
 }
 .main-about-slider .slider-list-item__img {
   width: auto;
@@ -69,10 +76,14 @@
 .main-about-slider .slider-list-item {
   display: flex;
   flex-direction: column;
-  flex: 1 0 180px;
+  flex: 1 0 120px;
 }
 .slider-list-item__header {
   color: $basic-font-grey;
+}
+.slider-list--about {
+  flex-wrap: wrap;
+  height: 120px;
 }
 @media (max-width: 830px) {
   .main-about-nav__item:not(.main-about-nav__item--active) {

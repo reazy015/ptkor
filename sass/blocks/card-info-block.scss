@@ -25,7 +25,7 @@
 .card-info-slider {
   position: relative;
   flex: 1 2 auto;
-  padding-left: 15px;
+
   align-items: center;
   background-color: $basic-white;
 
@@ -39,19 +39,10 @@
     right: -100%;
     background-color: $basic-white;
     z-index: 1;
-  }
-}
-.card-info-slider__btn {
-  position: absolute;
-
-  &--prev {
-    left: 0;
-    top: 50%''
-  }
-
-  &--next {
-    right: 0;
-    left: auto;
+    
+    @media (max-width: 1156px) {
+      display: none;
+    }
   }
 }
 .card-info-slider-list {
@@ -64,12 +55,17 @@
   flex: 1 0 100%;
 }
 .card-info-slider__img {
-  width: 70%;
+  min-width: 70%;
 }
 .card-info-slider-preview {
   @include list-reset;
-  float: right;
-  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+
+  
+  @media (max-width: 1156px) {
+    display: flex;
+  }
 }
 .card-info-slider-list__item {
   display: none;
@@ -82,4 +78,8 @@
   @include link-green;
   width: 240px;
   margin-bottom: 116px;
+
+  @media (max-width: 830px) {
+    margin-bottom: 50px;
+  }
 }

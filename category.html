@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- Pixel Glass -->
 
     <!-- Picturefill polyfill-->
     <script>
@@ -21,18 +20,6 @@
         document.createElement( "picture" );
     </script>
     <script src="js/vendor/picturefill.js" async></script>
-    <style>
-        HTML {
-            background-repeat: no-repeat;
-            background-position:  50% 0;
-            /* Mobile layout by default */
-            background-image: url( "img/index.jpg" );
-        }
-
-    </style>
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
 </head>
 <body class="page category">
 
@@ -380,7 +367,15 @@
                 <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Геосинтетические материалы</li>
                 <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Гранитные изделия</li>
                 <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Чугунные люки и дождеприемники</li>
-                <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Средства безопасноти и ОДД</li>
+                <li class="grid-nav-list__item grid-nav-list__item--sub"><i class="fa fa-caret-right" aria-hidden="true"></i>Средства безопасноти и ОДД
+                    <ul class="grid-nav-list-submenu">
+                         <li class="grid-nav-list-submenu__item">Направляющие устройства</li>
+                         <li class="grid-nav-list-submenu__item">Ограждающие устройства</li>
+                         <li class="grid-nav-list-submenu__item">Средства сигнализации и регулировки</li>
+                         <li class="grid-nav-list-submenu__item">Устройства воздействия на ТС</li>
+                         <li class="grid-nav-list-submenu__item">Защитные элементы и устройства</li>
+                     </ul>
+                </li>
                 <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Подпорные стенки</li>
                 <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Дорожные ограждения</li>
                 <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Система линейного водоотвода</li>
@@ -920,7 +915,7 @@
                     <div class="item__number">1467</div>
                     <div class="item__text">Километров дорог</div>
                 </div>
-                <div class="main-summary-info__item item">
+                <div class="main-summary-info__item item item--center">
                     <div class="item__number">201</div>
                     <div class="item__text">Объект</div>
                 </div>
@@ -1064,10 +1059,13 @@
         </section>
     </footer>
 
-    <script src="js/slider.js"></script>
-    <script src="js/stickynav.js"></script>
-    <script src="js/adaptiveMenu.js"></script>
-    <script src="js/aboutTabs.js"></script>
+  <script src="js/stickynav.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/adaptiveMenu.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/aboutTabs.js"></script>
+  <script src="js/aboutSlider.js"></script>
+  <script src="js/gridNav.js"></script>
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->

@@ -1,6 +1,8 @@
 .card-slider {
   padding-top: 121px;
   padding-bottom: 158px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .card-slider__header {
   font-family: "Merel Light";
@@ -16,10 +18,13 @@
   @include flex-row;
   padding-left: 20px;
   padding-right: 20px;
-  justify-content: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 138px;
+  overflow: hidden;
 }
-.item {
-  flex: 1 1 38%;
+.card-slider-list .item {
+  flex: 0 0 320px;
 }
 .item-img-wrapper {
   float: left;
@@ -27,14 +32,14 @@
 }
 .card-slider-btn {
   position: absolute;
-  left: -30px;
+  left: 0;
   top: 50%;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 .card-slider-btn--next {
-  right: -30px;
+  right: 0;
   left: auto;
 }
 .chevron-card {
@@ -49,7 +54,27 @@
   color: $basic-black;
 }
 .card-info-slider {
-  display: flex;
+  position: relative;
+}
+.card-info-slider-btn {
+  position: absolute;
+  bottom: 23%;
+  width: 58px;
+  height: 58px;
+  background: transparent;
+  border: none;
+  z-index: 80;
+  cursor: pointer;
+  transition: opacity .2s;
+
+  &--right {
+    right: 10%;
+  }
+  &--left {
+    left: 10%;
+  }
+  &:hover {
+  }
 }
 .card-info-slider-list {
   flex: 1 1 auto;

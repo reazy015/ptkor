@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- Pixel Glass -->
+
 
     <!-- Picturefill polyfill-->
     <script>
@@ -21,18 +21,6 @@
         document.createElement( "picture" );
     </script>
     <script src="js/vendor/picturefill.js" async></script>
-    <style>
-        HTML {
-            background-repeat: no-repeat;
-            background-position:  50% 0;
-            /* Mobile layout by default */
-            background-image: url( "img/index.jpg" );
-        }
-
-    </style>
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
 </head>
 <body class="page catalog">
 
@@ -323,18 +311,23 @@
     <h1 class="page-main__header page-main__header--catalog">Поставки материалов<br>для дорожного строительства</h1>
     <aside class="page-main__nav grid-nav grid-nav--category">
         <ul class="grid-nav-list">
-            <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Геосинтетические материалы</li>
+            <li class="grid-nav-list__item grid-nav-list__item--active"><i class="fa fa-caret-right" aria-hidden="true"></i>Геосинтетические материалы</li>
             <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Гранитные изделия</li>
             <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Чугунные люки и дождеприемники</li>
             <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Средства безопасноти и ОДД</li>
-            <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Подпорные стенки</li>
+            <li class="grid-nav-list__item grid-nav-list__item--sub"><i class="fa fa-caret-right" aria-hidden="true"></i>Подпорные стенки
+                <ul class="grid-nav-list-submenu">
+                    <li class="grid-nav-list-submenu__item">Армогрунтовые</li>
+                    <li class="grid-nav-list-submenu__item">Гравитационные</li>
+                </ul>
+            </li>
             <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Дорожные ограждения</li>
             <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Система линейного водоотвода</li>
         </ul>
     </aside>
     <div class="page-main-grid page-main-grid--category">
-        <section class="page-main-grid__section grid-section grid-section--catalog">
-            <div class="grid-section__item">
+        <section class="page-main-grid__section grid-section">
+            <div class="grid-section__item tablet--active" data-section="type1">
                 <h3 class="grid-section__header">Геосинтетические материалы</h3>
                 <article class="grid-section__article article">
                     <div class="article-item">
@@ -357,7 +350,7 @@
                         <h4 class="article-item__header">Армирование основания</h4>
                         <p class="article-item__text">Разообразный и богатый опыт новая модель организационной деятельности</p>
                         <div class="article-item__price">от 1 999 руб.</div>
-                        <a href="#" class="article-item__link">Подробнее ...</a>
+                        <a href="card.html" class="article-item__link">Подробнее ...</a>
                     </div>
                 </article>
                 <article class="grid-section__article article">
@@ -386,13 +379,13 @@
                 </article>
                 <a href="#" class="article-container__link">Перейти в раздел</a>
             </div>
-            <div class="callback">
+            <div class="callback callback--tablet">
                 <p class="callback__text">Нужна помощь специалиста?</p>
                 <a href="#" class="callback__order">Заказать звонок</a>
             </div>
         </section>
-        <section class="page-main-grid__section grid-section grid-section--catalog">
-            <div class="grid-section__item">
+        <section class="page-main-grid__section grid-section">
+            <div class="grid-section__item" data-section="type2">
                 <h3 class="grid-section__header">Гранитные изделия</h3>
                 <article class="grid-section__article article">
                     <div class="article-item">
@@ -420,7 +413,7 @@
                 </article>
                 <a href="#" class="article-container__link">Перейти в раздел</a>
             </div>
-            <div class="grid-section__item">
+            <div class="grid-section__item" data-section="type3">
                 <h3 class="grid-section__header">Чугунные люки и дождеприемники</h3>
                 <article class="grid-section__article article">
                     <div class="article-item">
@@ -449,7 +442,7 @@
                 <a href="#" class="article-container__link">Перейти в раздел</a>
             </div>
         </section>
-        <section class="page-main-grid__section grid-section grid-section--center">
+        <section class="page-main-grid__section grid-section grid-section--center" data-section="type4">
             <h3 class="grid-section__header grid-section__header--center">Средства безопасности и ОДД</h3>
             <article class="grid-section__article article">
                 <div class="article-item">
@@ -515,8 +508,8 @@
                 <a href="#" class="article-container__link">Перейти в раздел</a>
             </div>
         </section>
-        <section class="page-main-grid__section grid-section grid-section--catalog">
-            <div class="grid-section__item">
+        <section class="page-main-grid__section grid-section">
+            <div class="grid-section__item" data-section="type5">
                 <h3 class="grid-section__header">Геосинтетические материалы</h3>
                 <article class="grid-section__article article">
                     <div class="article-item">
@@ -544,7 +537,7 @@
                 </article>
                 <a href="#" class="article-container__link">Перейти в раздел</a>
             </div>
-            <div class="grid-section__item">
+            <div class="grid-section__item" data-section="type6">
                 <h3 class="grid-section__header">Геосинтетические материалы</h3>
                 <article class="grid-section__article article">
                     <div class="article-item">
@@ -561,8 +554,8 @@
                 <a href="#" class="article-container__link">Перейти в раздел</a>
             </div>
         </section>
-        <section class="page-main-grid__section grid-section grid-section--catalog">
-            <div class="grid-section__item">
+        <section class="page-main-grid__section grid-section">
+            <div class="grid-section__item" data-section="type7">
                 <h3 class="grid-section__header">Геосинтетические материалы</h3>
                 <article class="grid-section__article article">
                     <div class="article-item">
@@ -603,7 +596,7 @@
                 <a href="#" class="article-container__link">Перейти в раздел</a>
             </div>
             <div class="callback">
-                <p class="callback__text">Нужна помощь специалиста?</p>
+                <p class="callback__text">Не нашли нужный товар?</p>
                 <a href="#" class="callback__order">Заказать звонок</a>
             </div>
         </section>
@@ -935,7 +928,7 @@
                 <div class="item__number">1467</div>
                 <div class="item__text">Километров дорог</div>
             </div>
-            <div class="main-summary-info__item item">
+            <div class="main-summary-info__item item--center">
                 <div class="item__number">201</div>
                 <div class="item__text">Объект</div>
             </div>
@@ -1150,10 +1143,12 @@
     </section>
 </footer>
 
-<script src="js/slider.js"></script>
 <script src="js/stickynav.js"></script>
 <script src="js/adaptiveMenu.js"></script>
+<script src="js/main.js"></script>
 <script src="js/aboutTabs.js"></script>
+<script src="js/aboutSlider.js"></script>
+<script src="js/gridNav.js"></script>
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->

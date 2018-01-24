@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- Pixel Glass -->
 
     <!-- Picturefill polyfill-->
     <script>
@@ -28,7 +27,6 @@
             /* Mobile layout by default */
             background-image: url( "img/item-card.jpg" );
         }
-
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
     <script src="../node_modules/pixel-glass/script.js"></script>
@@ -316,7 +314,7 @@
 </header>
 
 <section class="card-info">
-    <div class="container-flex">
+    <div class="container-flex container-flex--card">
         <div class="card-info-wrapper">
             <ul class="page-breadcrumbs">
                 <li class="page-breadcrumbs-item"><a href="#" class="page-breadcrumbs-item__link  page-breadcrumbs-item__link--active">Главная</a>&nbsp; <i class="fa fa-angle-right fa--breadcrumbs" aria-hidden="true"></i></li>
@@ -329,6 +327,12 @@
             <a href="#" class="card-info__link">Заказать</a>
         </div>
         <div class="card-info-slider">
+            <ul class="card-info-slider-list">
+                <li class="card-info-slider-list__item card-info-slider-list__item--active"><img class="card-info-slider__img" src="img/card-slider-img1.png" alt=""></li>
+                <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
+                <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
+                <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
+            </ul>
             <ul class="card-info-slider-preview">
                 <li class="card-info-slider-preview__item card-info-slider-preview__item--active"><img class="" src="img/preview-img.png" alt=""></li>
                 <li class="card-info-slider-preview__item"><img class="" src="img/preview-img.png" alt=""></li>
@@ -339,12 +343,8 @@
                 <li class="card-info-slider-preview__item"><img class="" src="img/preview-img.png" alt=""></li>
                 <li class="card-info-slider-preview__item"><img class="" src="img/preview-img.png" alt=""></li>
             </ul>
-            <ul class="card-info-slider-list">
-                <li class="card-info-slider-list__item card-info-slider-list__item--active"><img class="card-info-slider__img" src="img/card-slider-img1.png" alt=""></li>
-                <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
-                <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
-                <li class="card-info-slider-list__item"><img class="" src="img/card-slider-img1.png" alt=""></li>
-            </ul>
+            <button class="card-info-slider-btn card-info-slider-btn--right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+            <button class="card-info-slider-btn card-info-slider-btn--left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
         </div>
     </div>
 </section>
@@ -353,11 +353,14 @@
         <div class="card-type__select select-panel">
             <div class="container">
                 <h2 class="select-panel__header">Выберите тип товара</h2>
-                <ul class="select-panel-list">
-                    <li class="select-panel-list__item"><input type="radio" id="type1" name="type"><label for="type1">Тип1</label></li>
-                    <li class="select-panel-list__item"><input type="radio" id="type2" name="type" checked><label for="type2">Тип2</label></li>
-                    <li class="select-panel-list__item"><input type="radio" id="type3" name="type"><label for="type3">Тип3</label></li>
-                </ul>
+                <div class="select-panel-dropdown">
+                    <span class="select-panel-dropdown__selected">Тип 2</span>
+                    <ul class="select-panel-list">
+                        <li class="select-panel-list__item">Тип 1</li>
+                        <li class="select-panel-list__item select-panel-list__item--active">Тип 2</li>
+                        <li class="select-panel-list__item">Тип 3</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="container-flex container-flex--card">
@@ -689,9 +692,9 @@
     </section>
 </footer>
 
-<script src="js/slider.js"></script>
 <script src="js/stickynav.js"></script>
 <script src="js/adaptiveMenu.js"></script>
+<script src="js/cardSelectPanel.js"></script>
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
