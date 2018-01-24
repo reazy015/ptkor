@@ -4,6 +4,11 @@
   color: $basic-white;
   border-bottom: 2px solid $basic-green;
   margin-bottom: 68px;
+
+  @media (max-width: 830px) {
+    border-bottom: none;
+    padding-bottom: 44px;
+  }
 }
 .select-panel__header {
   margin: 0;
@@ -28,8 +33,17 @@
   &--active {
     background-color: $basic-green;
   }
+  &:hover {
+    @media (max-width: 830px) {
+      background-color: $basic-hover;
+      margin-right: 0;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
   @media(max-width: 830px) {
     color: $basic-black;
+    margin-right: 0;
   }
 }
 .select-panel-dropdown {
@@ -37,12 +51,16 @@
 
   @media (max-width: 830px) {
     border: 1px solid $basic-green;
+    border-radius: 5px;
   }
 }
 .select-panel-dropdown__selected {
   display: none;
+  cursor: pointer;
+
   @media (max-width: 830px) {
     display: block;
+    padding: 10px 15px;
   }
 }
 @media (max-width: 830px) {
@@ -51,13 +69,26 @@
   }
 }
 @media (max-width: 830px) {
-  .select-panel-list--open {
-      display: block;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: red;
-      z-index: 100;
+  .select-panel-dropdown--open {
+    border-bottom: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .select-panel-dropdown--open .select-panel-list {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    background-color: $basic-white;
+    border: 1px solid $basic-green;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .select-panel-dropdown--open .select-panel-dropdown__selected {
+    background-color: $basic-white;
+    color: $basic-black;
+    border-bottom: 1px solid $basic-hr-border;
   }
 }
-

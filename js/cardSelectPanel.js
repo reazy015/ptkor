@@ -13,7 +13,7 @@ window.cardSelectPanel = ( function () {
 
    function openSubmenu() {
        if (window.innerWidth < 830) {
-            panelList.classList.toggle('select-panel-list--open');
+            dropDown.classList.toggle('select-panel-dropdown--open');
        }
    }
 
