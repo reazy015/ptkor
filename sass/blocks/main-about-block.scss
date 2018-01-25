@@ -4,6 +4,11 @@
   margin-top: 78px;
   margin-bottom: 30px;
   text-align: center;
+  overflow: hidden;
+
+  @media (max-width: 830px) {
+    margin-top: 0;
+  }
 }
 .main-about-nav {
   @include list-reset;
@@ -12,13 +17,25 @@
   border-bottom: 2px solid $basic-green;
 
   @media (max-width: 830px) {
-    flex-direction: column;
-    background-color: $basic-font-grey;
+    display: none;
+    border-bottom: none;
+  }
+}
+.main-about-nav--open {
+  @media (max-width: 830px) {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $basic-hover;
+    color: $basic-black;
+    z-index: 50;
   }
 }
 .main-about-nav__item {
   margin-right: 15px;
-  padding: 10px 15px;
+  padding: 10px 10px;
   cursor: pointer;
   font-family: "Merel Light";
 
@@ -27,7 +44,7 @@
     color: $basic-white;
 
     @media (max-width: 830px) {
-      background-color: $basic-font-grey;
+      background-color: transparent;
       color: $basic-black;
     }
   }
@@ -35,6 +52,7 @@
   @media (max-width: 830px) {
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-right: 0;
   }
 }
 .main-about-slider {
@@ -42,9 +60,16 @@
   display: block;
   min-height: 120px;
   visibility: hidden;
+  position: absolute;
+  z-index: -100;
+  overflow: visible;
+  width: 100%;
+  left: 0;
 
   &--active {
     visibility: visible;
+    position: static;
+    z-index: 1;
   }
 }
 .main-about-slider .slider-list-item {
@@ -68,10 +93,6 @@
 .slider-list-item__header {
   color: $basic-font-grey;
 }
-//.slider-list--about {
-//  flex-wrap: wrap;
-//  height: 120px;
-//}
 @media (max-width: 830px) {
   .main-about-nav__item:not(.main-about-nav__item--active) {
     display: none;
@@ -90,21 +111,24 @@
   cursor: pointer;
   
   @media (max-width: 420px) {
-    display: none;
+    visibility: hidden;
   }
 }
 .slick-dots {
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: -50px;
+  left: 25%;
   display: flex;
   list-style: none;
 }
 .slick-dots li button {
+  width: 10px;
+  height: 10px;
   border: none;
   color: transparent;
   margin-right: 10px;
   border-radius: 50%;
+  cursor: pointer;
   
   @media (min-width: 420px) {
     display: none;
@@ -113,6 +137,28 @@
 .slick-active  button{
   background-color: $basic-green;
   outline: none;
+}
+.main-about-dropdown {
+  position: relative;
+
+  @media (max-width: 420px) {
+    text-align: left;
+  }
+}
+.main-about-dropdown__current {
+  display: none;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: $basic-hover;
+  font-family: "Merel Bold";
+  font-size: 18px;
+
+
+  @media (max-width: 830px) {
+    display: block;
+  }
 }
 
 

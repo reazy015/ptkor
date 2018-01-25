@@ -1,10 +1,20 @@
 'use strict';
 
 window.gridNav = ( function () {
+    var nav = document.querySelector('.grid-nav');
     var gridNav = document.querySelector('.grid-nav-list');
     var gridNavItems = gridNav.children;
     var gridSections = document.querySelectorAll('[data-section]');
     var gridNavItemInactive = gridNav.querySelectorAll('.grid-nav-list__item:not(.grid-nav-list__item--active)');
+    var gridNavCurrent = nav.querySelector('.grid-nav__current-item');
+
+
+
+    function openGridNavList() {
+        gridNav.classList.toggle('grid-nav-list--open');
+        nav.classList.toggle('grid-nav--open');
+
+    }
 
 
     function removeAllActiveClass() {
@@ -17,6 +27,7 @@ window.gridNav = ( function () {
 
     function openGridNav() {
         gridNav.classList.toggle('grid-nav--open');
+        openGridNavList();
     }
 
     function closeAllSections() {
@@ -31,6 +42,8 @@ window.gridNav = ( function () {
                 gridSections[i].style.display = 'block';
             }
         }
+
+
     }
 
     function markAsActive(e) {
@@ -39,10 +52,13 @@ window.gridNav = ( function () {
             e.target.classList.add('grid-nav-list__item--active');
             closeAllSections();
             openAppropriateSection(e.target.dataset.nav);
+            gridNavCurrent.textContent = e.target.textContent;
         }
     }
+
     console.log(gridSections);
     gridNav.addEventListener('click', openGridNav);
     gridNav.addEventListener('click', markAsActive);
+    gridNavCurrent.addEventListener('click', openGridNavList);
 
 })();

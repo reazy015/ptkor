@@ -57,19 +57,42 @@
 .card-info-slider__img {
   min-width: 70%;
 }
+.card-info-slider-wrapper {
+  text-align: center;
+}
+.card-info-slider-wrapper__img {
+
+}
 .card-info-slider-preview {
   @include list-reset;
   display: flex;
   justify-content: center;
 
-  
+
   @media (max-width: 1156px) {
     display: flex;
   }
 }
+.card-img--active {
+  opacity: 1;
+}
+.card-info-slider-preview-item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $basic-hr-border;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.card-info-slider-preview-item img {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
 .card-info-slider-list__item {
   display: none;
-  
+
   &--active {
     display: block;
   }

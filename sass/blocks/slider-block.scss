@@ -47,12 +47,6 @@
   @include list-reset;
   display: flex;
   transition: transform .3s;
-
-  &--about {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
 }
 .slider-list--bg .slider-list-item:before {
   position: absolute;

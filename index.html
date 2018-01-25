@@ -372,8 +372,9 @@
               <h1 class="page-main__header">Поставки материалов<br>для дорожного строительства</h1>
               <div class="page-main-grid">
                 <div class="page-main-grid__nav grid-nav">
+                    <div class="grid-nav__current-item">Геосинтетические материалы</div>
                     <ul class="grid-nav-list">
-                        <li class="grid-nav-list__item grid-nav-list__item--active" data-nav="type1">Геосинтетические матеариалы</li>
+                        <li class="grid-nav-list__item" data-nav="type1">Геосинтетические матеариалы</li>
                         <li class="grid-nav-list__item" data-nav="type2">Гранитные изделия</li>
                         <li class="grid-nav-list__item" data-nav="type3">Чугунные люки и дождеприемники</li>
                         <li class="grid-nav-list__item" data-nav="type4">Средства безопасноти и ОДД</li>
@@ -661,13 +662,16 @@
 
         <section class="main-about">
 
-          <ul class="main-about-nav">
-              <li class="main-about-nav__item" data-slider-nav="partners">Партнеры</li>
-              <li class="main-about-nav__item main-about-nav__item--active" data-slider-nav="trust">Нам доверяют</li>
-              <li class="main-about-nav__item" data-slider-nav="obj-orders">Заказчики объектов</li>
-              <li class="main-about-nav__item" data-slider-nav="qlty">Качество</li>
-              <li class="main-about-nav__item" data-slider-nav="callbacks">Отзывы</li>
-          </ul>
+          <div class="main-about-dropdown">
+              <div class="main-about-dropdown__current">Нам доверяют</div>
+              <ul class="main-about-nav">
+                  <li class="main-about-nav__item" data-slider-nav="partners">Партнеры</li>
+                  <li class="main-about-nav__item main-about-nav__item--active" data-slider-nav="trust">Нам доверяют</li>
+                  <li class="main-about-nav__item" data-slider-nav="obj-orders">Заказчики объектов</li>
+                  <li class="main-about-nav__item" data-slider-nav="qlty">Качество</li>
+                  <li class="main-about-nav__item" data-slider-nav="callbacks">Отзывы</li>
+              </ul>
+          </div>
 
           <section class="main-about-slider slider" data-slider="partners">
 
@@ -777,7 +781,7 @@
           </section>
           <section class="main-about-slider slider" data-slider="obj-orders">
 
-                <ul class="slider-list slider-list--about">
+                <ul class="slider-list slider-list--about slider-list--objects">
                     <li class="slider-list-item">
                         <div class="main-about-image-wrapper">
                             <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -830,7 +834,7 @@
             </section>
           <section class="main-about-slider slider" data-slider="qlty">
 
-                <ul class="slider-list slider-list--about">
+                <ul class="slider-list slider-list--about slider-list--qlty">
                     <li class="slider-list-item">
                         <div class="main-about-image-wrapper">
                             <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -882,7 +886,7 @@
                 </ul>
             </section>
           <section class="main-about-slider slider" data-slider="callbacks">
-                <ul class="slider-list slider-list--about">
+                <ul class="slider-list slider-list--about slider-list--callbacks">
                     <li class="slider-list-item">
                         <div class="main-about-image-wrapper">
                             <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -1164,7 +1168,6 @@
         <script src="js/stickynav.js"></script>
         <script src="js/slider.js"></script>
         <script src="js/adaptiveMenu.js"></script>
-        <script src="js/main.js"></script>
         <script src="js/aboutTabs.js"></script>
         <script src="js/aboutSlider.js"></script>
         <script src="js/gridNav.js"></script>
@@ -1176,8 +1179,8 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
         <script src="js/vendor/slick.min.js"></script>
+        <script src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
