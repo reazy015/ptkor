@@ -10,7 +10,7 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -368,7 +368,6 @@
             </ul>
         </section>
 
-
         <main class="page-main">
               <h1 class="page-main__header">Поставки материалов<br>для дорожного строительства</h1>
               <div class="page-main-grid">
@@ -671,9 +670,8 @@
           </ul>
 
           <section class="main-about-slider slider" data-slider="partners">
-            <button class="slider-btn slider-btn--prev left"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-            <button class="slider-btn slider-btn--next right"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-            <ul class="slider-list slider-list--about">
+
+            <ul class="slider-list slider-list--about slider-list--partners">
                 <li class="slider-list-item">
                     <div class="main-about-image-wrapper">
                         <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -725,9 +723,8 @@
             </ul>
           </section>
           <section class="main-about-slider slider main-about-slider--active" data-slider="trust">
-            <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-            <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-            <ul class="slider-list slider-list--about">
+
+            <ul class="slider-list slider-list--about slider-list--trust">
                     <li class="slider-list-item">
                         <div class="main-about-image-wrapper">
                             <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -1184,7 +1181,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <script src="js/vendor/slick.min.js"></script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;

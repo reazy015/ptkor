@@ -15,7 +15,7 @@ window.aboutTabs = ( function () {
 
     function disableActiveSliders() {
         for (var i = 0; i < sliders.length; i++) {
-            sliders[i].style.display = 'none';
+            sliders[i].style.visibiliy = 'hidden';
         }
     }
 
@@ -39,7 +39,7 @@ window.aboutTabs = ( function () {
             disableActiveTab();
             disableActiveSliders();
             target.classList.add('main-about-nav__item--active');
-            findAppropriateSlider(target.dataset.sliderNav).style.display = 'block';
+            findAppropriateSlider(target.dataset.sliderNav).style.visibility = 'visible';
         }
     }
     console.log(sliders);

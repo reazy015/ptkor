@@ -4,20 +4,6 @@
   margin-top: 78px;
   margin-bottom: 30px;
   text-align: center;
-
-  & input[type="radio"] {
-    display: none;
-  }
-  & input[type="radio"]:checked + .main-about__tab {
-    background-color: $basic-green;
-    color: $basic-white;
-  }
-  & input[id="trust"]:checked + .main-about-sliders {
-    display: block;
-    background-color: red;
-    height: 100px;
-    width: 100px;
-  }
 }
 .main-about-nav {
   @include list-reset;
@@ -53,11 +39,12 @@
 }
 .main-about-slider {
   margin-top: 85px;
-  display: none;
+  display: block;
   min-height: 120px;
+  visibility: hidden;
 
   &--active {
-    display: block;
+    visibility: visible;
   }
 }
 .main-about-slider .slider-list-item {
@@ -76,15 +63,15 @@
 .main-about-slider .slider-list-item {
   display: flex;
   flex-direction: column;
-  flex: 1 0 120px;
+  align-items: center;
 }
 .slider-list-item__header {
   color: $basic-font-grey;
 }
-.slider-list--about {
-  flex-wrap: wrap;
-  height: 120px;
-}
+//.slider-list--about {
+//  flex-wrap: wrap;
+//  height: 120px;
+//}
 @media (max-width: 830px) {
   .main-about-nav__item:not(.main-about-nav__item--active) {
     display: none;
@@ -94,5 +81,39 @@
     display: block;
   }
 }
+.about-left,
+.about-right{
+  background-color: transparent;
+  border: none;
+  color: $basic-font-grey;
+  outline: none;
+  cursor: pointer;
+  
+  @media (max-width: 420px) {
+    display: none;
+  }
+}
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  list-style: none;
+}
+.slick-dots li button {
+  border: none;
+  color: transparent;
+  margin-right: 10px;
+  border-radius: 50%;
+  
+  @media (min-width: 420px) {
+    display: none;
+  }
+}
+.slick-active  button{
+  background-color: $basic-green;
+  outline: none;
+}
+
 
 
