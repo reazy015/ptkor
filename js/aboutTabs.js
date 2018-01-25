@@ -15,7 +15,7 @@ window.aboutTabs = ( function () {
 
     function disableActiveSliders() {
         for (var i = 0; i < sliders.length; i++) {
-            sliders[i].style.visibiliy = 'hidden';
+            sliders[i].style.visibility = 'hidden';
         }
     }
 
@@ -25,12 +25,7 @@ window.aboutTabs = ( function () {
                 return sliders[i];
             }
         }
-    }
-
-    function showAllTabs() {
-        if (window.innerWidth < 830 ) {
-            tabsNav.classList.toggle('main-about-nav--open');
-        }
+        console.log(sliders);
     }
 
     function openAppropriateSlider(e) {
@@ -44,5 +39,4 @@ window.aboutTabs = ( function () {
     }
     console.log(sliders);
     tabsNav.addEventListener('click', openAppropriateSlider);
-    tabsNav.addEventListener('click', showAllTabs);
 })();
