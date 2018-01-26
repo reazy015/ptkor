@@ -309,20 +309,24 @@
         <li class="page-breadcrumbs-item"><a href="#" class="page-breadcrumbs-item__link  page-breadcrumbs-item__link--active">Каталог</a></li>
     </ul>
     <h1 class="page-main__header page-main__header--catalog">Поставки материалов<br>для дорожного строительства</h1>
-    <aside class="page-main__nav grid-nav grid-nav--category">
-        <ul class="grid-nav-list">
-            <li class="grid-nav-list__item grid-nav-list__item--active"><i class="fa fa-caret-right" aria-hidden="true"></i>Геосинтетические материалы</li>
-            <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Гранитные изделия</li>
-            <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Чугунные люки и дождеприемники</li>
-            <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Средства безопасноти и ОДД</li>
-            <li class="grid-nav-list__item grid-nav-list__item--sub"><i class="fa fa-caret-right" aria-hidden="true"></i>Подпорные стенки
-                <ul class="grid-nav-list-submenu">
-                    <li class="grid-nav-list-submenu__item">Армогрунтовые</li>
-                    <li class="grid-nav-list-submenu__item">Гравитационные</li>
+    <aside class="aside-nav">
+        <div class="aside-nav-current">Средства регулирования</div>
+        <ul class="aside-nav-list">
+            <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Геосинтетические материалы</a></li>
+            <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Гранитыне изделия</a></li>
+            <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Чугуные люки и дождеприемники</a></li>
+            <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Средства безопасности и ОДД</a>
+                <ul class="aside-nav-submenu">
+                    <li class="aside-nav-submenu-item"><a class="aside-nav-submenu-item__link" href="">Направляющие устройства</a></li>
+                    <li class="aside-nav-submenu-item"><a class="aside-nav-submenu-item__link" href="">Ограждающие устройства</a></li>
+                    <li class="aside-nav-submenu-item"><a class="aside-nav-submenu-item__link" href="">Средства сигнализации и регулировки</a></li>
+                    <li class="aside-nav-submenu-item"><a class="aside-nav-submenu-item__link" href="">Устройства воздействия на ТС</a></li>
+                    <li class="aside-nav-submenu-item"><a class="aside-nav-submenu-item__link" href="">Защитыне элементы и устройства</a></li>
                 </ul>
             </li>
-            <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Дорожные ограждения</li>
-            <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Система линейного водоотвода</li>
+            <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Подпорные стенки</a></li>
+            <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Дорожные ограждения</a></li>
+            <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Система линейного водоотвода</a></li>
         </ul>
     </aside>
     <div class="page-main-grid page-main-grid--category">
@@ -639,18 +643,20 @@
 
 <section class="main-about">
 
-    <ul class="main-about-nav">
-        <li class="main-about-nav__item" data-slider-nav="partners">Партнеры</li>
-        <li class="main-about-nav__item main-about-nav__item--active" data-slider-nav="trust">Нам доверяют</li>
-        <li class="main-about-nav__item" data-slider-nav="obj-orders">Заказчики объектов</li>
-        <li class="main-about-nav__item" data-slider-nav="qlty">Качество</li>
-        <li class="main-about-nav__item" data-slider-nav="callbacks">Отзывы</li>
-    </ul>
+    <div class="main-about-dropdown">
+        <div class="main-about-dropdown__current">Нам доверяют</div>
+        <ul class="main-about-nav">
+            <li class="main-about-nav__item" data-slider-nav="partners">Партнеры</li>
+            <li class="main-about-nav__item main-about-nav__item--active" data-slider-nav="trust">Нам доверяют</li>
+            <li class="main-about-nav__item" data-slider-nav="obj-orders">Заказчики объектов</li>
+            <li class="main-about-nav__item" data-slider-nav="qlty">Качество</li>
+            <li class="main-about-nav__item" data-slider-nav="callbacks">Отзывы</li>
+        </ul>
+    </div>
 
     <section class="main-about-slider slider" data-slider="partners">
-        <button class="slider-btn slider-btn--prev left"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-        <button class="slider-btn slider-btn--next right"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-        <ul class="slider-list slider-list--about">
+
+        <ul class="slider-list slider-list--about slider-list--partners">
             <li class="slider-list-item">
                 <div class="main-about-image-wrapper">
                     <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -702,9 +708,8 @@
         </ul>
     </section>
     <section class="main-about-slider slider main-about-slider--active" data-slider="trust">
-        <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-        <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-        <ul class="slider-list slider-list--about">
+
+        <ul class="slider-list slider-list--about slider-list--trust">
             <li class="slider-list-item">
                 <div class="main-about-image-wrapper">
                     <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -756,9 +761,8 @@
         </ul>
     </section>
     <section class="main-about-slider slider" data-slider="obj-orders">
-        <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-        <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-        <ul class="slider-list slider-list--about">
+
+        <ul class="slider-list slider-list--about slider-list--objects">
             <li class="slider-list-item">
                 <div class="main-about-image-wrapper">
                     <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -810,9 +814,8 @@
         </ul>
     </section>
     <section class="main-about-slider slider" data-slider="qlty">
-        <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-        <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-        <ul class="slider-list slider-list--about">
+
+        <ul class="slider-list slider-list--about slider-list--qlty">
             <li class="slider-list-item">
                 <div class="main-about-image-wrapper">
                     <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -864,9 +867,7 @@
         </ul>
     </section>
     <section class="main-about-slider slider" data-slider="callbacks">
-        <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-        <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-        <ul class="slider-list slider-list--about">
+        <ul class="slider-list slider-list--about slider-list--callbacks">
             <li class="slider-list-item">
                 <div class="main-about-image-wrapper">
                     <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -942,77 +943,6 @@
 </section>
 
 <footer class="page-footer">
-    <!--<div class="page-footer-top">-->
-    <!--<div class="container-flex">-->
-    <!--<section class="page-footer__support support">-->
-    <!--<h4 class="support__header">Техническое<br> сопровождение</h4>-->
-    <!--<ul class="support-list">-->
-    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Проективрование</a></li>-->
-    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Выполнение расчетов</a></li>-->
-    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Помощь в подборке материала</a></li>-->
-    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Терминологический словарь</a></li>-->
-    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Ответы на основные вопросы</a></li>-->
-    <!--<li class="support-list-item"><a href="#" class="support-list-item__link">Номартивная литература, ГОСТы</a></li>-->
-    <!--</ul>-->
-    <!--<a href="#" class="support__link">Спросить у специалиста</a>-->
-    <!--</section>-->
-
-    <!--<section class="page-footer__news news">-->
-    <!--<h4 class="news__header">Новости</h4>-->
-    <!--<div class="news-article-container">-->
-    <!--<article class="news-block">-->
-    <!--<div class="news-block-date">-->
-    <!--<div class="news-block-date__number">8</div>-->
-    <!--<div class="news-block-date__month">Декабря</div>-->
-    <!--</div>-->
-    <!--<div class="news-block-info">-->
-    <!--<h4 class="news-block-info__header">Смена Риквизитов</h4>-->
-    <!--<p class="news-block-info__text">Уважаемые Партнеры! Информируем-->
-    <!--Вас о том, что с 8.12.2017 произошла-->
-    <!--смена реквизитов...</p>-->
-    <!--</div>-->
-    <!--</article>-->
-    <!--<article class="news-block">-->
-    <!--<div class="news-block-date">-->
-    <!--<div class="news-block-date__number">3</div>-->
-    <!--<div class="news-block-date__month">Августа</div>-->
-    <!--</div>-->
-    <!--<div class="news-block-info">-->
-    <!--<h4 class="news-block-info__header">ДТП на а/д М-10 "Россия"</h4>-->
-    <!--<p class="news-block-info__text">Сегодня утром на трассе М-10 "Россия"-->
-    <!--(Москва - Санкт-Петербург) на обходе...</p>-->
-    <!--</div>-->
-    <!--</article>-->
-    <!--<article class="news-block">-->
-    <!--<div class="news-block-date">-->
-    <!--<div class="news-block-date__number">30</div>-->
-    <!--<div class="news-block-date__month">Августа</div>-->
-    <!--</div>-->
-    <!--<div class="news-block-info">-->
-    <!--<h4 class="news-block-info__header">Окончание выполнения-->
-    <!--подрядных работ-->
-    <!--по капитальному ремонту</h4>-->
-    <!--<p class="news-block-info__text">29 августа 2017 года, компания-->
-    <!--«ПТК Объединённые Ресурсы» ...</p>-->
-    <!--</div>-->
-    <!--</article>-->
-    <!--<article class="news-block">-->
-    <!--<div class="news-block-date">-->
-    <!--<div class="news-block-date__number">3</div>-->
-    <!--<div class="news-block-date__month">Августа</div>-->
-    <!--</div>-->
-    <!--<div class="news-block-info">-->
-    <!--<h4 class="news-block-info__header">Люк ГОСТ</h4>-->
-    <!--<p class="news-block-info__text">Люки чугунные канализационные-->
-    <!--(и не только) - одна из самых обыденных-->
-    <!--примет...</p>-->
-    <!--</div>-->
-    <!--</article>-->
-    <!--</div>-->
-    <!--<a href="#" class="news__link">Все новости</a>-->
-    <!--</section>-->
-    <!--</div>-->
-    <!--</div>-->
 
 
     <section class="page-footer__contacts contacts">
@@ -1157,6 +1087,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
+<script src="js/vendor/slick.min.js"></script>
 <script src="js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

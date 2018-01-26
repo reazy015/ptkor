@@ -362,26 +362,27 @@
     </section>
 
     <main class="page-main">
-        <div class="page-main__nav grid-nav grid-nav--category">
-            <ul class="grid-nav-list">
-                <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Геосинтетические материалы</li>
-                <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Гранитные изделия</li>
-                <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Чугунные люки и дождеприемники</li>
-                <li class="grid-nav-list__item grid-nav-list__item--sub"><i class="fa fa-caret-right" aria-hidden="true"></i>Средства безопасноти и ОДД
-                    <ul class="grid-nav-list-submenu">
-                         <li class="grid-nav-list-submenu__item">Направляющие устройства</li>
-                         <li class="grid-nav-list-submenu__item">Ограждающие устройства</li>
-                         <li class="grid-nav-list-submenu__item">Средства сигнализации и регулировки</li>
-                         <li class="grid-nav-list-submenu__item">Устройства воздействия на ТС</li>
-                         <li class="grid-nav-list-submenu__item">Защитные элементы и устройства</li>
-                     </ul>
+        <aside class="aside-nav">
+            <div class="aside-nav-current">Средства регулирования</div>
+            <ul class="aside-nav-list">
+                <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Геосинтетические материалы</a></li>
+                <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Гранитыне изделия</a></li>
+                <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Чугуные люки и дождеприемники</a></li>
+                <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Средства безопасности и ОДД</a>
+                    <ul class="aside-nav-submenu">
+                        <li class="aside-nav-submenu-item"><a class="aside-nav-submenu-item__link" href="">Направляющие устройства</a></li>
+                        <li class="aside-nav-submenu-item"><a class="aside-nav-submenu-item__link" href="">Ограждающие устройства</a></li>
+                        <li class="aside-nav-submenu-item"><a class="aside-nav-submenu-item__link" href="">Средства сигнализации и регулировки</a></li>
+                        <li class="aside-nav-submenu-item"><a class="aside-nav-submenu-item__link" href="">Устройства воздействия на ТС</a></li>
+                        <li class="aside-nav-submenu-item"><a class="aside-nav-submenu-item__link" href="">Защитыне элементы и устройства</a></li>
+                    </ul>
                 </li>
-                <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Подпорные стенки</li>
-                <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Дорожные ограждения</li>
-                <li class="grid-nav-list__item"><i class="fa fa-caret-right" aria-hidden="true"></i>Система линейного водоотвода</li>
+                <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Подпорные стенки</a></li>
+                <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Дорожные ограждения</a></li>
+                <li class="aside-nav-list-item"><a class="aside-nav-list-item__link" href="">Система линейного водоотвода</a></li>
             </ul>
-            <i class="fa fa-angle-double-right fa--grid-nav fa-2x" aria-hidden="true"></i>
-        </div>
+        </aside>
+
         <div class="page-main-grid">
             <section class="page-main-grid__section grid-section grid-section--category">
                 <div class="grid-section__item">
@@ -624,63 +625,65 @@
         </div>
     </section>
 
-  <section class="main-about">
+    <section class="main-about">
 
-      <ul class="main-about-nav">
-          <li class="main-about-nav__item" data-slider-nav="partners">Партнеры</li>
-          <li class="main-about-nav__item main-about-nav__item--active" data-slider-nav="trust">Нам доверяют</li>
-          <li class="main-about-nav__item" data-slider-nav="obj-orders">Заказчики объектов</li>
-          <li class="main-about-nav__item" data-slider-nav="qlty">Качество</li>
-          <li class="main-about-nav__item" data-slider-nav="callbacks">Отзывы</li>
-      </ul>
+      <div class="main-about-dropdown">
+          <div class="main-about-dropdown__current">Нам доверяют</div>
+          <ul class="main-about-nav">
+              <li class="main-about-nav__item" data-slider-nav="partners">Партнеры</li>
+              <li class="main-about-nav__item main-about-nav__item--active" data-slider-nav="trust">Нам доверяют</li>
+              <li class="main-about-nav__item" data-slider-nav="obj-orders">Заказчики объектов</li>
+              <li class="main-about-nav__item" data-slider-nav="qlty">Качество</li>
+              <li class="main-about-nav__item" data-slider-nav="callbacks">Отзывы</li>
+          </ul>
+      </div>
 
       <section class="main-about-slider slider" data-slider="partners">
-          <button class="slider-btn slider-btn--prev left"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-          <button class="slider-btn slider-btn--next right"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-          <ul class="slider-list slider-list--about">
-              <li class="slider-list-item">
+
+          <ul class="slider-list slider-list--about slider-list--partners">
+              <li class="">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
                   </div>
                   <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
               </li>
-              <li class="slider-list-item">
+              <li class="">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
                   </div>
                   <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
               </li>
-              <li class="slider-list-item">
+              <li class="">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
                   </div>
                   <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
               </li>
-              <li class="slider-list-item">
+              <li class="">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
                   </div>
                   <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
               </li>
-              <li class="slider-list-item">
+              <li class="">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
                   </div>
                   <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
               </li>
-              <li class="slider-list-item">
+              <li class="">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
                   </div>
                   <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
               </li>
-              <li class="slider-list-item">
+              <li class="">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
                   </div>
                   <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
               </li>
-              <li class="slider-list-item">
+              <li class="">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
                   </div>
@@ -689,9 +692,8 @@
           </ul>
       </section>
       <section class="main-about-slider slider main-about-slider--active" data-slider="trust">
-          <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-          <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-          <ul class="slider-list slider-list--about">
+
+          <ul class="slider-list slider-list--about slider-list--trust">
               <li class="slider-list-item">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -743,9 +745,8 @@
           </ul>
       </section>
       <section class="main-about-slider slider" data-slider="obj-orders">
-          <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-          <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-          <ul class="slider-list slider-list--about">
+
+          <ul class="slider-list slider-list--about slider-list--objects">
               <li class="slider-list-item">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -797,9 +798,8 @@
           </ul>
       </section>
       <section class="main-about-slider slider" data-slider="qlty">
-          <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-          <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-          <ul class="slider-list slider-list--about">
+
+          <ul class="slider-list slider-list--about slider-list--qlty">
               <li class="slider-list-item">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -851,9 +851,7 @@
           </ul>
       </section>
       <section class="main-about-slider slider" data-slider="callbacks">
-          <button class="slider-btn slider-btn--prev"><i class="fa fa-chevron-left chevron-card" aria-hidden="true"></i></button>
-          <button class="slider-btn slider-btn--next"><i class="fa fa-chevron-right chevron-card" aria-hidden="true"></i></button>
-          <ul class="slider-list slider-list--about">
+          <ul class="slider-list slider-list--about slider-list--callbacks">
               <li class="slider-list-item">
                   <div class="main-about-image-wrapper">
                       <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
@@ -1062,10 +1060,8 @@
   <script src="js/stickynav.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/adaptiveMenu.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/aboutTabs.js"></script>
+  <!--<script src="js/aboutTabs.js"></script>-->
   <script src="js/aboutSlider.js"></script>
-  <script src="js/gridNav.js"></script>
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
@@ -1074,7 +1070,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/vendor/slick.min.js"></script>
+
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

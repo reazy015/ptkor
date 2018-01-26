@@ -5,6 +5,7 @@
   margin-bottom: 30px;
   text-align: center;
   overflow: hidden;
+  position: relative;
 
   @media (max-width: 830px) {
     margin-top: 0;
@@ -74,6 +75,7 @@
 }
 .main-about-slider .slider-list-item {
   min-height: auto;
+  flex: 1 1 auto;
 }
 .main-about-slider .slider-list-item__img {
   width: auto;

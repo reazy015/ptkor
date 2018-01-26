@@ -13,19 +13,6 @@
 .card-slider-container {
   position: relative;
 }
-.card-slider-list {
-  @include list-reset;
-  @include flex-row;
-  padding-left: 20px;
-  padding-right: 20px;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  height: 138px;
-  overflow: hidden;
-}
-.card-slider-list .item {
-  flex: 0 0 320px;
-}
 .item-img-wrapper {
   float: left;
   margin-right: 10px;
@@ -56,6 +43,7 @@
 .card-info-slider {
   position: relative;
 }
+
 .card-info-slider-btn {
   position: absolute;
   bottom: 23%;
@@ -76,6 +64,9 @@
   &:hover {
   }
 }
+.card-slider-list {
+  position: relative;
+}
 .card-info-slider-list {
   flex: 1 1 auto;
   text-align: center;
@@ -95,4 +86,7 @@
 .item-info__link {
   @include reset-link;
   color: $basic-green;
+}
+.fa-card {
+  color: $basic-black;
 }

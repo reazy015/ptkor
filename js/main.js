@@ -2,8 +2,8 @@
 
 window.onload = function () {
 
-    $('.slider-list--about').each(function(){
-        $(this).slick({
+    $('.slider-list--about').slick({
+
             prevArrow: '<button class="about-left"><i class="fa fa-chevron-left fa-about" aria-hidden="true"></i></button>',
             nextArrow: '<button class="about-right"><i class="fa fa-chevron-right fa-about" aria-hidden="true"></i></button>',
             dots: true,
@@ -37,5 +37,4 @@ window.onload = function () {
                 }
             ]
         })
-    })
 }

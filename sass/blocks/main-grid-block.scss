@@ -2,7 +2,8 @@
   max-width: 1360px;
   margin: auto;
 
-  @media (max-width: 420px) {
+  @media (max-width: 1024px) {
+    position: relative;
   }
 }
 .page-main-grid {
