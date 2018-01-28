@@ -65,7 +65,10 @@
   }
 }
 .card-slider-list {
+  @include list-reset;
   position: relative;
+  padding-left: 40px;
+  overflow: hidden;
 }
 .card-info-slider-list {
   flex: 1 1 auto;
@@ -89,4 +92,28 @@
 }
 .fa-card {
   color: $basic-black;
+}
+@media (max-width: 768px) {
+  .card-slider-list {
+    padding-left: 0;
+  }
+  .card-slider-list .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+  .card-slider-list .slick-arrow{
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .card-slider-list .slick-dots {
+    bottom: -70px;
+    left: 15%;
+  }
+  .card-slider-list {
+    position: static;
+  }
+  .card-slider-container {
+    position: relative;
+  }
 }
