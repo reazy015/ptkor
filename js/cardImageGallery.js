@@ -4,7 +4,6 @@ window.cardGallery = ( function () {
     var mainImg = document.querySelector('.card-info-slider__main');
     var galleryPreview = document.querySelector('.card-info-slider-preview');
     var galleryPreviewItemsList = galleryPreview.querySelectorAll('.card-img');
-    var mainImgSrc = mainImg.firstElementChild.src;
 
     function disableActiveImg() {
         for (var i = 0; i < galleryPreviewItemsList.length; i++) {
@@ -17,7 +16,7 @@ window.cardGallery = ( function () {
     }
 
     function displayToMain(item) {
-        mainImgSrc = 'img/download2.png';
+       mainImg.firstElementChild.src = item.src;
 
     }
 

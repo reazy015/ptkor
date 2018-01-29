@@ -55,8 +55,21 @@
   }
 }
 .select-panel-dropdown__selected {
+  position: relative;
   display: none;
   cursor: pointer;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: "\f0d7";
+    font-family: "Font Awesome";
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $basic-white;
+    transition: transform .3s;
+  }
 
   @media (max-width: 830px) {
     display: block;
@@ -90,5 +103,9 @@
     background-color: $basic-white;
     color: $basic-black;
     border-bottom: 1px solid $basic-hr-border;
+  }
+  .select-panel-dropdown--open .select-panel-dropdown__selected:after {
+    color: $basic-black;
+    transform: rotate(180deg) translate(15%, 50%);
   }
 }

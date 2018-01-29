@@ -32,6 +32,14 @@ html {
       display: block;
     }
   }
+  
+  &--type {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+      display: block;
+    }
+  }
 
   &--header {
     @media(max-width: 830px) {
@@ -75,5 +83,11 @@ html {
   .container-flex {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .card .container-flex {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

@@ -1,5 +1,5 @@
 .descr {
-  flex: 1 1 42%;
+  flex: 0 1 48.5%;
 }
 .descr__header {
   margin-top: 40px;
@@ -14,4 +14,12 @@
   font-size: 14px;
   line-height: 1.4;
   color: $basic-font-grey;
+
+  @media (max-width: 1148px) {
+    width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 }

@@ -30,6 +30,7 @@
   line-height: 1.5;
   font-size: 16px;
   color: $basic-paragraph-grey;
+  width: 48%;
 
   &--margin-b {
     margin-bottom: 50px;
@@ -39,6 +40,8 @@
   padding-left: 30px;
   color: $basic-green;
   border-left: 2px solid $basic-green;
+  float: right;
+  width: 40%;
 }
 .card-add-remark__header {
   font-size: 24px;

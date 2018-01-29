@@ -5,7 +5,7 @@
   margin-bottom: 10px;
   font-family: "Merel";
   font-size: 16px;
-  text-align: center;
+  text-align: left;
   border-top: none;
   border-radius: 5px;
   margin-right: 5px;
@@ -49,12 +49,24 @@
   }
 }
 .grid-nav__current-item {
+  position: relative;
   display: none;
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
   color: $basic-green;
   padding-left: 10px;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: "\f0d7";
+    font-family: "Font Awesome";
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $basic-green;
+  }
 
   @media (max-width: 830px) {
     display: block;

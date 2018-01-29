@@ -31,7 +31,7 @@
     width: 100%;
     background-color: $basic-hover;
     color: $basic-black;
-    z-index: 50;
+    z-index: 80;
   }
 }
 .main-about-nav__item {
@@ -160,12 +160,14 @@
 }
 .main-about-dropdown {
   position: relative;
+  text-align: left;
 
   @media (max-width: 420px) {
     text-align: left;
   }
 }
 .main-about-dropdown__current {
+  position: relative;
   display: none;
   cursor: pointer;
   padding-left: 10px;
@@ -174,6 +176,17 @@
   background-color: $basic-hover;
   font-family: "Merel Bold";
   font-size: 18px;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: "\f0d7";
+    font-family: "Font Awesome";
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $basic-black;
+  }
 
 
   @media (max-width: 830px) {

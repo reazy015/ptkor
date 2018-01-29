@@ -1,19 +1,32 @@
 .params {
   flex: 1 1 50%;
+  margin-right: 15px;
 }
 .params-img-wrapper {
-  max-width: 567px;
+  flex: 0 1 48.5%;
   margin-bottom: 18px;
   border: 1px solid $basic-border-grey;
+
+  @media (max-width: 900px) {
+    width: auto;
+    max-width: none;
+  }
 }
 .params__img {
   display: block;
   max-width: 60%;
   margin: auto;
 }
+.card-type-table-wrapper {
+  flex: 0 1 48.5%;
+}
 .params-table {
   border-collapse: collapse;
-  max-width: 567px;
+
+  @media (max-width: 900px) {
+    max-width: none;
+    width: auto;
+  }
 }
 .params-table tr {
   border-bottom: 1px solid $basic-border-grey;
@@ -27,6 +40,10 @@
   font-size: 14px;
   line-height: 1.1;
   color: $basic-font-grey;
+  @media (max-width: 420px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .params-table__value {
   padding-top: 17px;
@@ -37,10 +54,41 @@
   font-size: 16px;
   line-height: 1.1;
   color: $basic-black;
+
+  @media (max-width: 420px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .params-table ul {
   @include list-reset;
+
+  @media (max-width: 420px) {
+    padding-left: 30px;
+  }
 }
 .params-table ul li {
+  position: relative;
   margin-bottom: 7px;
+
+  &:before {
+    @media (max-width: 420px) {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: -15px;
+      transform: translateY(-50%);
+      content: '-';
+      color: $basic-black;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-row td {
+    border: none;
+  }
 }
