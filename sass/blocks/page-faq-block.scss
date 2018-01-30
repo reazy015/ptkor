@@ -7,6 +7,11 @@
   padding-right: 10%;
   margin: auto;
   color: $basic-black;
+
+  @media (max-width: 830px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .page-faq__header {
   flex: 1 0 100%;

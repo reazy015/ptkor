@@ -1,5 +1,10 @@
 .descr {
   flex: 0 1 48.5%;
+
+  @media (max-width: 768px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .descr__header {
   margin-top: 40px;

@@ -12,9 +12,12 @@ html {
 }
 .container {
   max-width: 1360px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: auto;
 }
 .container-flex {
+  position: relative;
   display: flex;
   max-width: 1360px;
   margin: auto;

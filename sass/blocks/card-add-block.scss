@@ -4,6 +4,11 @@
   background-image: url("/img/card-add-bg.png");
   background-repeate: no-repeat;
   background-size: cover;
+
+  @media (max-width: 768px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }
 .card-add-part {
   flex: 0 1 45%;
@@ -30,18 +35,37 @@
   line-height: 1.5;
   font-size: 16px;
   color: $basic-paragraph-grey;
-  width: 48%;
+  width: 49%;
 
   &--margin-b {
     margin-bottom: 50px;
   }
+
+  @media (max-width: 1021px) {
+    width: 100%;
+  }
 }
 .card-add-remark {
+  position: relative;
+  top: -200px;
+  margin-right: 115px;
   padding-left: 30px;
   color: $basic-green;
   border-left: 2px solid $basic-green;
   float: right;
-  width: 40%;
+  width: 27%;
+
+  @media (max-width: 1021px) {
+    position: static;
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    padding-left: 10px;
+  }
+
+  @media (max-width: 420px) {
+    width: auto;
+  }
 }
 .card-add-remark__header {
   font-size: 24px;

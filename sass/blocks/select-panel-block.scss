@@ -9,6 +9,12 @@
     border-bottom: none;
     padding-bottom: 44px;
   }
+
+  @media (max-width: 768px) {
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 .select-panel__header {
   margin: 0;

@@ -1,5 +1,9 @@
 .card-type {
   padding-bottom: 120px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 25px;
+  }
 }
 .card-type__select {
   padding-left: 10px;

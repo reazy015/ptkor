@@ -1,3 +1,4 @@
+
 .callback {
   max-width: 651px;
   padding-top: 52px;
@@ -15,6 +16,10 @@
       display: none;
     }
   }
+}
+.category .callback {
+  flex: 1 0 auto;
+  padding-top: 77px;
 }
 .callback__text {
   margin-bottom: 40px;

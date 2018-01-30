@@ -1,9 +1,23 @@
 .card-download {
+  max-width: 1360px;
   padding-top: 53px;
   padding-bottom: 120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+
+  @media (max-width: 436px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 .card-download-tech {
-  flex: 0 1 58%;
+  float: left;
+  margin-right: auto;
+
+  @media (max-width: 1184px) {
+    float: none;
+  }
 
   @media (max-width: 768px) {
     display: flex;
@@ -11,7 +25,16 @@
   }
 }
 .card-download-cert {
-  flex: 1 1 50%;
+  float: right;
+  margin-right: 170px;
+
+  @media (max-width: 1184px) {
+    float: none;
+  }
+
+  @media (max-width: 436px) {
+    margin-right: 0;
+  }
 }
 .card-download-tech__header,
 .cert__header {
@@ -19,16 +42,26 @@
   font-size: 30px;
   text-transform: uppercase;
   color: $basic-black;
+
 }
 .card-download-tech__header {
   margin-bottom: 120px;
 
-  @media (max-width: 768px) {
-    margin-bottom: 25px;
+  @media (max-width: 1184px) {
+    margin-bottom: 50px;
   }
 }
 .cert__header {
   margin-bottom: 69px;
+
+  @media (max-width: 1184px) {
+    margin-bottom: 25px;
+    margin-top: 75px;
+  }
+
+  @media (max-width: 436px) {
+    margin-top: 25px;
+  }
 }
 .card-download-tech-link {
   text-decoration: none;
@@ -54,10 +87,15 @@
   @include flex-row;
   width: 70%;
   justify-content: space-between;
+
+  @media (max-width: 436px) {
+    width: auto;
+  }
 }
 .cert-list-item {
   position: relative;
   cursor: pointer;
+  margin-right: 15px;
 
   &:before {
     position: absolute;
@@ -76,6 +114,16 @@
   &:hover > .cert-list-item__icon {
     opacity: 1;
     transform: scale(1.2);
+  }
+
+  img {
+    @media (max-width: 436px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-width: 436px) {
+    width: 90px;
   }
 }
 .cert-list-item__icon {

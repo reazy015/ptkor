@@ -226,6 +226,27 @@
     z-index: 20;
   }
 }
+.about .aside-nav,
+.news-page .aside-nav,
+.partners .aside-nav,
+.gratitudes .aside-nav,
+.job-page .aside-nav,
+.details-page .aside-nav,
+.geosynt-page .aside-nav,
+.geosynt-card .aside-nav{
+  margin-top: 50px;
+  margin-right: 15px;
+  flex: 0 0 300px;
+  align-self: end;
+  bottom: auto;
+
+  @media (max-width: 830px) {
+    flex: 1 1 auto;
+    align-self: stretch;
+    margin-right: 0;
+    background-color: $basic-white;
+  }
+}
 
 
 

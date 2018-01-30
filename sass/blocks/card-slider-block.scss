@@ -3,6 +3,11 @@
   padding-bottom: 158px;
   padding-left: 10px;
   padding-right: 10px;
+
+  @media (max-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
 }
 .card-slider__header {
   font-family: "Merel Light";
