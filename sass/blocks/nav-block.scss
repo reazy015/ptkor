@@ -46,6 +46,16 @@
     }
   }
 }
+.nav-list-item--logo-link {
+  flex: 0 0 auto;
+
+
+  &:hover {
+    @media (max-width: 830px) {
+      background-color: transparent;
+    }
+  }
+}
 .nav-list-item:nth-of-type(2) {
   margin-left: -10px;
 }
@@ -152,7 +162,7 @@
   z-index: -90;
   background-color: $basic-white;
   padding: 12px;
-  width: 256px;
+  width: 290px;
   border-top: 2px solid $basic-green;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 

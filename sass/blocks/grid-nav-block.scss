@@ -40,7 +40,7 @@
       float: none;
     }
   }
-  
+
   @media (max-width: 830px) {
     display: block;
   }
@@ -119,7 +119,7 @@
   border: 1px solid $basic-green;
   border-radius: 5px;
   display: none;
-  
+
   &--open {
     position: absolute;
     display: block;
@@ -233,7 +233,9 @@
 .job-page .aside-nav,
 .details-page .aside-nav,
 .geosynt-page .aside-nav,
-.geosynt-card .aside-nav{
+.geosynt-card .aside-nav,
+.walls-page .aside-nav,
+.walls-arm .aside-nav{
   margin-top: 50px;
   margin-right: 15px;
   flex: 0 0 300px;
@@ -244,9 +246,8 @@
     flex: 1 1 auto;
     align-self: stretch;
     margin-right: 0;
+    margin-left: 0;
+    margin-top: 30px;
     background-color: $basic-white;
   }
 }
-
-
-

@@ -7,6 +7,8 @@
 }
 .aside-nav-list {
   @include list-reset;
+  background-color: $basic-white;
+  z-index: 70;
 }
 .aside-nav-list-item {
   position: relative;
@@ -50,33 +52,63 @@
 .aside-nav-current {
   display: none;
 }
-@media (max-width: 1024px) {
+.aside-nav-toggle {
+  color: $basic-green;
+  cursor: pointer;
+  visibility: hidden;
+  position: absolute;
+  left: -500px;
+  z-index: -100;
+  width: 220px;
+
+  @media (max-width: 1150px) {
+    visibility: visible;
+    position: static;
+    z-index: 2;
+  }
+  @media (max-width: 830px) {
+    position: absolute;
+    left: -500px;
+    z-index: -100;
+  }
+}
+.aside-nav-toggle:hover {
+  text-decoration: underline;
+}
+.aside-nav--open {
+  transform: translate(0%);
+}
+
+@media (max-width: 1150px) {
   .aside-nav {
     float: none;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    transform: translate(-95%);
+    transform: translate(-150%);
     background-color: $basic-white;
-
-    &:hover {
-      transform: translate(0%);
-    }
+    z-index: 70;
+  }
+  .aside-nav--open {
+    transform: translate(0%);
+    background-color: $basic-white;
+    z-index: 70;
   }
 }
 @media (max-width: 830px) {
-  .aside-nav {
+  .aside-nav  {
     position: static;
     width: auto;
     transform: translate(0%);
-    margin-right: 5px;
-    margin-left: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
   }
   .aside-nav-list {
     display: none;
+  }
+  .aside-nav-list--open {
+    display: block;
   }
   .aside-nav-current {
     display: block;
