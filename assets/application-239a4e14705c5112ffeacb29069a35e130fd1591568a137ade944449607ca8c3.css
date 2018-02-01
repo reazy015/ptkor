@@ -4812,7 +4812,7 @@ blockquote {
 }
 
 .contactsPage .partnersPage_content {
-    width: 640px
+    max-width: 640px
 }
 
 .contactsPage_headPhoto {
@@ -5134,7 +5134,7 @@ blockquote {
 }
 
 .feedbackPage .partnersPage_content {
-    width: 640px
+    max-width: 640px
 }
 
 .feedbackPage_item {
@@ -5430,7 +5430,9 @@ input[type="checkbox"] {
     font-size: 12px;
     font-family: "Merel"
 }
-
+.faqPage_search form {
+  display: flex;
+}
 .faqPage_search_title {
     text-transform: uppercase;
     font-size: 12px;
@@ -5443,7 +5445,7 @@ input[type="checkbox"] {
     display: inline-block;
     background: #f8f8f8;
     border: 1px solid #c4c4c4;
-    width: 517px;
+    width: 100%;
     height: 36px;
     text-indent: 10px;
     font-size: 14px;
@@ -5515,7 +5517,7 @@ input[type="checkbox"] {
 }
 
 .questionPage .partnersPage_content {
-    width: 990px
+    max-width: 990px
 }
 
 .questionPage .wrap-form {
@@ -11938,6 +11940,9 @@ table.lightbox-table td a:hover:before {
     background-position: 50%
 }
 /* Новые стили */
+.news-page .partnersPage_content{
+  flex: 1 1 auto;
+}
 .container-mod {
   display: flex;
 }
@@ -11983,6 +11988,44 @@ table.lightbox-table td a:hover:before {
   .product-table-params {
     display: block;
     overflow-x: scroll;
+  }
+  .tech-page table {
+    display: block;
+    overflow-x: scroll;
+  }
+  .tech-page .new_question_form {
+    display: flex;
+    flex-direction: column;
+  }
+  .questionPage .wrap-form {
+    width: 100%;
+  }
+  .questionPage_item {
+    float: none;
+    width: 100%;
+  }
+  .questionPage textarea {
+    width: 100%;
+  }
+  .questionPage_send button {
+    width: 100%;
+  }
+  .new_feedback {
+    display: flex;
+    flex-direction: column;
+  }
+  .new_feedback .feedbackPage_item {
+    width: 100%;
+    float: none;
+  }
+  .feedbackPage input {
+    width: 100%;
+  }
+  .feedbackPage textarea {
+    width: 100%;
+  }
+  .feedbackPage_send button {
+    width: 100%;
   }
 }
 @media (max-width: 620px) {
@@ -12057,5 +12100,13 @@ table.lightbox-table td a:hover:before {
   }
   .cardPage_images {
     margin: auto;
+  }
+  .faqPage_search form {
+    flex-direction: column;
+  }
+  .faqPage_search button {
+    width: auto;
+    margin-top: 10px;
+    margin-left: 0;
   }
 }
