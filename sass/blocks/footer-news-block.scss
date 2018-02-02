@@ -60,13 +60,28 @@
   @media (max-width: 830px) {
     margin-bottom: 10px;
   }
+
+  @media (max-width: 420px) {
+    flex: 0 0 76px;
+    width: 76px;
+    height: 76px;
+  }
 }
 .news-block-date__number {
   padding-top: 10px;
   font-size: 60px;
+
+  @media (max-width: 420px) {
+    padding-top: 5px;
+    font-size: 36px;
+  }
 }
 .news-blcok-date__month {
   font-size: 16px;
+
+  @media (max-width: 420px) {
+    font-size: 14px;
+  }
 }
 .news__link {
   @include link-green;
@@ -77,6 +92,13 @@
   width: 224px;
   padding-top: 18px;
   padding-bottom: 13px;
+  transition: color .3s, background-color .3s, box-shadow .3s;
+
+  &:hover {
+    color: $basic-green;
+    background-color: $basic-white;
+    box-shadow: -3px 3px 61px -11px $basic-white;
+  }
 
   @media (max-width: 420px) {
     width: 100%;

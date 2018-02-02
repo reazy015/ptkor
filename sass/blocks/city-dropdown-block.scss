@@ -1,6 +1,10 @@
 .city {
   position: relative;
 
+  &:hover .city__header > i {
+    transform: rotate(180deg);
+  }
+
   &:hover > .city-dropdown {
     display: flex;
   }
@@ -13,6 +17,8 @@
   cursor: pointer;
   right: -15px;
   top: -10px;
+  transition: transform .3s;
+  transform-origin: 75%;
 }
 .city-dropdown {
   position: absolute;

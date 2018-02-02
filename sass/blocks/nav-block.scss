@@ -39,7 +39,22 @@
     cursor: pointer;
     flex: 1 1 auto;
   }
-
+  & > a {
+    transition: color .3s;
+  }
+  &:hover > a {
+    color: $basic-green;
+  }
+  & a > i {
+    transition: transform .3s;
+    transform-origin: 76%;
+  }
+  &:hover > a > i{
+    transform: rotate(180deg);
+  }
+  &:hover {
+    color: $basic-green;
+  }
   &:hover {
     @media(max-width: 830px) {
       background-color: $basic-hover;
@@ -137,8 +152,8 @@
     margin-bottom: 10px;
   }
 
-  @media (max-width: 320px) {
-    width: 50%;
+  @media (max-width: 420px) {
+    width: 70%;
   }
 }
 .nav-list-item__link {
@@ -185,11 +200,13 @@
   @include reset-link;
   padding: 12px 10px;
   font-family: "Merel";
-  font-size: 14px;
+  font-size: 14px;transform-origin: 80%;
   display: block;
+  transition: background-color .2s, color .2s;
 
   &:hover {
     background-color: $basic-hover;
+    color: $basic-green;
   }
 }
 .nav-toggle {
@@ -198,8 +215,23 @@
   cursor: pointer;
   display: none;
   outline: none;
+
   @media (max-width: 830px) {
     display: block;
+  }
+}
+.nav-toggle--open {
+  & .nav-toggle__decor:before {
+    opacity: 0;
+  }
+  & .nav-toggle__decor:nth-of-type(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  & .nav-toggle__decor:nth-of-type(2) {
+    opacity: 0;
+  }
+  & .nav-toggle__decor:nth-of-type(3) {
+    transform: translateY(-12px) rotate(-45deg);
   }
 }
 .nav-toggle__decor {
@@ -209,6 +241,7 @@
   height: 2px;
   margin-bottom: 9px;
   background-color: $menu-toggle;
+  transition: opacity .3s, transform .3s;
 
   &:before {
     position: absolute;
@@ -221,6 +254,7 @@
     margin-top: -4px;
     border-radius: 50%;
     border: 1px solid $menu-toggle;
+    transition: opacity .3s;
   }
 }
 .nav-open {
@@ -232,7 +266,7 @@
   background-color: $basic-white;
   border-top: 1px solid $basic-font-grey;
   text-align: center;
-  z-index: 20;
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: translate(100%);
   animation-name: nav-open;
@@ -249,6 +283,10 @@
     right: auto;
     box-shadow: none;
     border-top: none;
+  }
+
+  .nav-list-item--city:hover {
+    color: $basic-black-btn;
   }
 }
 

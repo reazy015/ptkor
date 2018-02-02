@@ -30,5 +30,14 @@
   @include link-green;
   margin: auto;
   background-color: $basic-black;
+  transition: box-shadow .3s, color .3s;
+
+  &:hover {
+    color: $basic-green;
+    box-shadow: -3px 3px 61px -11px $basic-black;
+  }
+  &:active {
+    box-shadow: none;
+  }
 }
 

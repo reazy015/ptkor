@@ -6,6 +6,10 @@
   z-index: 90;
   background-color: $basic-white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: smoothOpening;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+
 
   & .page-header__sticky-flex {
     display: flex;
@@ -114,5 +118,13 @@
       right: -40%;
       left: auto;
     }
+  }
+}
+@keyframes smoothOpening {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
   }
 }

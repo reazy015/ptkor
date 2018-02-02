@@ -73,6 +73,11 @@
 .article-container__link {
   @include link-green;
   margin-bottom: 50px;
+  transition: box-shadow .3s;
+
+  &:hover {
+    box-shadow: -3px 3px 61px -11px $basic-green-shadow;
+  }
 
   @media (max-width: 420px) {
     width: 100%;

@@ -9,7 +9,8 @@ window.stickyNav = (function () {
     var headerOffsetTop = header.offsetHeight;
 
     function toggleMenu() {
-        menuList.classList.toggle('nav-open');
+        menuList.classList.toggle('nav-open')
+        menuToggleBtn.classList.toggle('nav-toggle--open');
     }
 
 

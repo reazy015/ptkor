@@ -64,6 +64,13 @@
   border: 1px solid $basic-white;
   z-index: 10;
   margin: auto;
+  transition: box-shadow .3s, color .3s, background-color .3s;
+
+  &:hover {
+    color: $basic-green;
+    background-color: $basic-white;
+    box-shadow: -3px 3px 61px -11px $basic-white;
+  }
 }
 .main-summary__background {
   position: absolute;

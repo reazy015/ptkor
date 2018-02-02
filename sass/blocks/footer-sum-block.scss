@@ -32,6 +32,11 @@
   @include reset-link;
   font-family: "Merel Light";
   font-size: 14px;
+  transition: color .2s;
+
+  &:hover {
+    color: $basic-green;
+  }
 }
 .sum-rest-list {
   @include list-reset;
@@ -53,6 +58,11 @@
   &:last-of-type .sum-rest-list-item__link {
     text-transform: none;
     color: $basic-font-grey;
+    transition: color .3s;
+
+    &:hover {
+      color: $basic-green;
+    }
   }
 }
 .sum-rest-list-item__link {
@@ -61,4 +71,5 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $basic-white;
+  transition: color .3s;
 }

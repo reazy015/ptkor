@@ -39,6 +39,7 @@
   padding: 10px 10px;
   cursor: pointer;
   font-family: "Merel Light";
+  transition: background-color .3s;
 
   &--active {
     background-color: $basic-green;
@@ -119,6 +120,10 @@
   outline: none;
   cursor: pointer;
   z-index: 70;
+
+  &:hover > i {
+    color: $basic-green;
+  }
 
   @media (max-width: 420px) {
     visibility: hidden;

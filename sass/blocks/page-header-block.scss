@@ -6,6 +6,9 @@
 .page-header-logo {
   margin-bottom: 5px;
 }
+.page-header-logo > a:focus {
+  outline: none;
+}
 .page-header__slogan {
   font-size: 14px;
   color: $basic-font-grey;

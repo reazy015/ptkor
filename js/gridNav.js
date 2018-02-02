@@ -12,6 +12,11 @@ window.gridNav = ( function () {
 
     function openGridNavList() {
         gridNav.classList.toggle('grid-nav-list--open');
+        if (gridNav.style.maxHeight) {
+            gridNav.style.maxHeight = null;
+        } else {
+            gridNav.style.maxHeight = gridNav.scrollHeight + 'px';
+        }
         nav.classList.toggle('grid-nav--open');
 
     }
