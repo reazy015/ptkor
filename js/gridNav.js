@@ -61,7 +61,7 @@ window.gridNav = ( function () {
         }
     }
 
-    console.log(gridSections);
+
     gridNav.addEventListener('click', openGridNav);
     gridNav.addEventListener('click', markAsActive);
     gridNavCurrent.addEventListener('click', openGridNavList);

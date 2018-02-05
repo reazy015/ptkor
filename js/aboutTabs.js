@@ -51,7 +51,7 @@ window.aboutTabs = ( function () {
             toggleDropDown();
         }
     }
-    console.log(sliders);
+
     tabsNav.addEventListener('click', openAppropriateSlider);
     tabsDropDownCurrentItem.addEventListener('click', toggleDropDown);
 })();
