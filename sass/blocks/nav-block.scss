@@ -39,6 +39,12 @@
     cursor: pointer;
     flex: 1 1 auto;
   }
+
+  @media (min-width: 830px) {
+    &:hover > a > i{
+      transform: rotate(180deg);
+    }
+  }
   & > a {
     transition: color .3s;
   }
@@ -49,15 +55,23 @@
     transition: transform .3s;
     transform-origin: 76%;
   }
-  &:hover > a > i{
-    transform: rotate(180deg);
-  }
   &:hover {
     color: $basic-green;
   }
   &:hover {
     @media(max-width: 830px) {
       background-color: $basic-hover;
+    }
+  }
+
+  &--active {
+    color: $basic-green;
+
+    & > a {
+      color: $basic-green;
+    }
+    & > a > i {
+      transform: rotate(180deg);
     }
   }
 }
@@ -183,9 +197,16 @@
 
   @media (max-width: 830px) {
     position: static;
-    display: none;
+    display: block;
     flex-direction: column;
     width: auto;
+    max-height: 0;
+    padding: 0;
+    border-top: none;
+    overflow: hidden;
+    transition: max-height .2s;
+    box-shadow: inset 0px 2px 8px 0px rgba(0,0,0,0.37),
+                inset 0px -2px 8px 0px rgba(0,0,0,0.37);;
 
     & .submenu-item__link {
       font-size: 14px;

@@ -6,6 +6,7 @@ window.stickyNav = (function () {
     var menuList = document.querySelector('.nav-list');
     var menuToggleBtn = document.querySelector('.nav-toggle');
     var mainNav = document.querySelector('.nav-list');
+    var submenuList = document.querySelectorAll('.submenu');
     var headerOffsetTop = header.offsetHeight;
 
     function toggleMenu() {
@@ -24,7 +25,30 @@ window.stickyNav = (function () {
         }
     }
 
+    function closeAllSubs() {
+        for (var i = 0; i < submenuList.length; i++) {
+            if (submenuList[i].style.maxHeight) {
+                submenuList[i].style.maxHeight = null;
+                submenuList[i].closest('.nav-list-item').classList.toggle('nav-list-item--active');
+            }
+        }
+    }
 
+    function openSubmenu(evt) {
+        var target = evt.target;
+        closeAllSubs();
+        if (target.classList.contains('nav-list-item--has-sub') && window.innerWidth < 830) {
+            target.classList.toggle('nav-list-item--active');
+            var child = target.querySelector('.submenu')
+            if (child.style.maxHeight) {
+                child.style.maxHeight = null;
+            } else {
+                child.style.maxHeight = child.scrollHeight + 'px';
+            }
+        }
+    }
+
+    mainNav.addEventListener('click', openSubmenu);
     document.addEventListener('scroll', fixHeader);
     menuToggleBtn.addEventListener('click', toggleMenu);
 })()
