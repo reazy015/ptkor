@@ -36,13 +36,14 @@ window.stickyNav = (function () {
 
     function openSubmenu(evt) {
         var target = evt.target;
-        closeAllSubs();
+
         if (target.classList.contains('nav-list-item--has-sub') && window.innerWidth < 830) {
             target.classList.toggle('nav-list-item--active');
             var child = target.querySelector('.submenu')
             if (child.style.maxHeight) {
                 child.style.maxHeight = null;
             } else {
+                closeAllSubs();
                 child.style.maxHeight = child.scrollHeight + 'px';
             }
         }

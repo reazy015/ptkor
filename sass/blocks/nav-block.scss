@@ -65,13 +65,15 @@
   }
 
   &--active {
-    color: $basic-green;
-
-    & > a {
+    @media(max-width: 830px) {
       color: $basic-green;
-    }
-    & > a > i {
-      transform: rotate(180deg);
+
+      & > a {
+        color: $basic-green;
+      }
+      & > a > i {
+        transform: rotate(180deg);
+      }
     }
   }
 }
