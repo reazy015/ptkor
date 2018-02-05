@@ -8,7 +8,7 @@
   border: 1px solid $basic-border-grey;
 
   @media (max-width: 900px) {
-    width: auto;
+    width: 100%;
     max-width: none;
   }
 }
@@ -91,4 +91,10 @@
   .flex-row td {
     border: none;
   }
+}
+.card-item {
+  display: none;
+}
+.card-item--active {
+  display: flex;
 }
