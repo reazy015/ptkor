@@ -279,11 +279,12 @@
   }
 }
 .nav-open {
-  position: absolute;
+  position: fixed;
   display: block;
   top: 100%;
   right: 0;
   left: 0;
+  bottom: 0;
   background-color: $basic-white;
   border-top: 1px solid $basic-font-grey;
   text-align: center;
@@ -294,6 +295,7 @@
   animation-duration: .5s;
   animation-fill-mode: forwards;
   z-index: 100;
+  overflow-y: scroll;
 
 
   @media(min-width: 830px) {

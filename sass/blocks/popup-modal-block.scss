@@ -26,8 +26,8 @@
 }
 .popup-modal-close {
   position: absolute;
-  top: -43px;
-  right: -43px;
+  top: -33px;
+  right: -33px;
   cursor: pointer;
 
   &:hover > .popup-modal-close__icon {
@@ -83,6 +83,7 @@
 }
 .popup-modal-form__phone,
 .popup-modal-form__name {
+  width: 30%;
   margin-right: 15px;
   padding: 20px 15px;
   color: $basic-font-grey;

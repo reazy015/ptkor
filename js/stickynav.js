@@ -12,6 +12,13 @@ window.stickyNav = (function () {
     function toggleMenu() {
         menuList.classList.toggle('nav-open')
         menuToggleBtn.classList.toggle('nav-toggle--open');
+        body.classList.toggle('no-scroll');
+
+        if (!menuList.style.top) {
+            menuList.style.top = headerOffsetTop + 'px';
+        } else {
+            menuList.style.top = null;
+        }
     }
 
 

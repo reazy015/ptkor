@@ -15,5 +15,10 @@ window.modalPopup = ( function () {
         callbackOrder[i].addEventListener('click', openClosePopup);
     }
 
+    window.addEventListener('click', function(evt) {
+        if (evt.target == popup && popup.classList.contains('popup--open')) {
+            popup.classList.remove('popup--open');
+        }
+    })
     popupModalCloseBtn.addEventListener('click', openClosePopup);
 })();

@@ -2,6 +2,9 @@ body,
 html {
   font-family: "Merel";
 }
+.no-scroll {
+  overflow: hidden;
+}
 .clearfix::after {
   content: '';
   display: table;
