@@ -959,6 +959,27 @@
         </div>
     </section>
 
+    <section class="popup popup--open">
+        <div class="popup-modal">
+            <span class="popup-modal-close">
+                <svg class="popup-modal-close__icon" width="23px" height="23px">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </span>
+            <div class="popup-modal-img-wrapper">
+
+            </div>
+            <h2 class="popup-modal__header">Заказать обратный<br>звонок</h2>
+            <form class="popup-modal-form" action="">
+                <input class="popup-modal-form__name" type="text" placeholder="Имя">
+                <input class="popup-modal-form__phone" type="phone" placeholder="Телефон">
+                <input class="popup-modal-form__submit" type="submit" value="Отправить">
+            </form>
+            <p class="popup-modal__comment">Нажимая на кнопку "Отправить"<br>вы даете согласие на обработку своих персональных данных.</p>
+            <a class="popup-modal__link" href="#">Политика конфиденциальности</a>
+        </div>
+    </section>
+
     <footer class="page-footer">
 
         <div class="page-footer-top">
@@ -1054,14 +1075,14 @@
                         <div class="contacts-item">
                             <svg class="link" width="27px" height="27px">
                                   <use xlink:href="#003-placeholder"></use>
-                                </svg>
+                            </svg>
                             <p class="contacts-item-info"><span class="contacts-item-info__city">Санкт-Петербург</span><br><span class="contacts-item-info__ads">ул.Маршала Говорова, д.35, к.4</span></p>
                         </div>
 
                         <div class="contacts-item">
                             <svg class="link" width="27px" height="27px">
                                   <use xlink:href="#004-clock"></use>
-                                </svg>
+                            </svg>
                             <p class="contacts-item-info contacts-item-info--time">Пн-Пт: 9:30 - 18:00</p>
                             <p class="contacts-item-info contacts-item-info--time">Сб-Вс: выходной</p>
                         </div>
@@ -1161,6 +1182,8 @@
             <p class="copyright-text">&copy <span class="copyright-text__name">ПТК Объедененные ресурсы, 2002-2017</span></p>
         </section>
     </footer>
+
+
     <script src="js/vendor/IEpolyfill.js"></script>
     <!--<script src="js/slider.js"></script>-->
     <script src="js/stickynav.js"></script>
@@ -1169,6 +1192,7 @@
     <script src="js/aboutTabs.js"></script>
     <script src="js/aboutSlider.js"></script>
     <script src="js/gridNav.js"></script>
+    <script src="js/popup.js"></script>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
