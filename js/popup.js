@@ -9,6 +9,7 @@ window.modalPopup = ( function () {
     function openClosePopup(evt) {
         evt.preventDefault();
         popup.classList.toggle('popup--open');
+        document.body.classList.toggle('no-scroll');
     }
 
     for (var i = 0; i < callbackOrder.length; i++) {

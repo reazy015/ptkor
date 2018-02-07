@@ -9,16 +9,19 @@ window.stickyNav = (function () {
     var submenuList = document.querySelectorAll('.submenu');
     var headerOffsetTop = header.offsetHeight;
 
+
     function toggleMenu() {
-        menuList.classList.toggle('nav-open')
+        header.classList.toggle('page-header--mobile-nav-open');
+        menuList.classList.toggle('nav-open');
         menuToggleBtn.classList.toggle('nav-toggle--open');
-        body.classList.toggle('no-scroll');
 
         if (!menuList.style.top) {
-            menuList.style.top = headerOffsetTop + 'px';
+           menuList.style.top = header.offsetHeight + 'px';
         } else {
             menuList.style.top = null;
         }
+
+        body.classList.toggle('no-scroll');
     }
 
 

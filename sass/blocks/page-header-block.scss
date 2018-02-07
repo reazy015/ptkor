@@ -2,6 +2,30 @@
   padding-top: 10px;
   font-family: "Merel";
   font-size: 16px;
+
+  &--mobile-nav-open {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: $basic-white;
+    overflow-y: scroll;
+
+    & .nav {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    & .nav-toggle {
+      margin-right: 10px;
+    }
+
+    & .nav-list-item--logo-link {
+      margin-left: 10px;
+    }
+  }
 }
 .page-header-logo {
   margin-bottom: 5px;
