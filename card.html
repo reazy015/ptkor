@@ -359,221 +359,363 @@
                         <li class="select-panel-list__item" data-card-type="1">Тип 1</li>
                         <li class="select-panel-list__item select-panel-list__item--active" data-card-type="2">Тип 2</li>
                         <li class="select-panel-list__item" data-card-type="3">Тип 3</li>
+                        <li class="select-panel-list__item" data-card-type="additional">Дополнительно</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="container-flex container-flex--type card-item" data-card-type="1">
-            <div class="params-img-wrapper">
-                <img class="params__img" src="img/card-slider-img1.png" alt="item-img">
-            </div>
-            <div class="card-type__descr  descr">
-                <h3 class="descr__header">Тумба дорожная ТД-900 "Колпак2"</h3>
-                <p class="descr__text">Предназначены для обозначения опасных участков и препятствий при сужении или разделении проезжей части автомобильной дороги. Для увеличения устойчивости буфера возможно его заполнение водой или песком </p>
-                <p class="descr__text">Актуальную цену на предлагаемые материалы Вы можете узнать, скачав Прайс лист на товары, представленные в разделе "Безопасность и ОДД"</p>
-            </div>
-            <div class="card-type-table-wrapper">
-                <table class="params-table">
-                    <tr>
-                        <td class="params-table__param">Высота, мм</td>
-                        <td class="params-table__value">900</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Диметр основания, мм</td>
-                        <td class="params-table__value">460</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Масса, кг</td>
-                        <td class="params-table__value">3,5</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Материал тумбы</td>
-                        <td class="params-table__value">ПВХ</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Кол-во и типа световозвращающих элементов</td>
-                        <td class="params-table__value">2, пленка тип "А"</td>
-                    </tr>
-                    <tr class="flex-row">
-                        <td class="params-table__param">Примечание</td>
-                        <td class="params-table__value">
-                            <ul>
-                                <li>неразборная</li>
-                                <li>ручка для переноски</li>
-                                <li>возможность крепления дополнительного оборудования</li>
-                                <li>удобство хранения и переноски </li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="order-panel-wrapper">
-                <div class="order-panel">
-                    <table class="order-panel-table">
-                        <tr>
-                            <td class="order-panel-table__prop">Количество</td>
-                            <td class="order-panel-table__value order-panel-table__value--qty"><span class="order-panel-table__plus">+</span><span>1</span><span class="order-panel-table__minus">-</span></td>
-                        </tr>
-                        <tr>
-                            <td class="order-panel-table__prop">Общий вес</td>
-                            <td class="order-panel-table__value">3.5кг</td>
-                        </tr>
-                        <tr>
-                            <td class="order-panel-table__prop">Общий объем</td>
-                            <td class="order-panel-table__value">0,02м<sup>3</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="order-panel-table__prop">Стоимость</td>
-                            <td class="order-panel-table__value order-panel-table__value--price">1 999 руб.</td>
-                        </tr>
-                    </table>
-                    <button class="order-panel__btn">Заказать</button>
+            <!--new-->
+
+            <div class="card-item-ls">
+                <div class="card-item-slider">
+                    <div class="card-item-slider-img-wrapper">
+                        <img src="img/card-slider-img1.png" alt="slider-img" class="card-item-slider__img">
+                    </div>
+                </div>
+                <div class="card-item-info">
+                    <h4 class="card-item-info__header">Тумба дорожная ТД-900 "Колпак"</h4>
+                    <div class="card-item-info-params">
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Высота, мм</div>
+                            <div class="card-item-info-params__value">900</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Диаметр основания, мм</div>
+                            <div class="card-item-info-params__value">Ø460</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Масса, кг</div>
+                            <div class="card-item-info-params__value">3,5</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Материал тумбы</div>
+                            <div class="card-item-info-params__value">ПВХ</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Кол-во и тип световозвращающих элементов</div>
+                            <div class="card-item-info-params__value">2, пленка тип "А"</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Примечание</div>
+                            <div class="card-item-info-params__value">
+                                <ul class="card-item-info-list">
+                                    <li class="card-item-info-list__item">неразборная</li>
+                                    <li class="card-item-info-list__item">ручка для переноски</li>
+                                    <li class="card-item-info-list__item">возможность крепления дополнительного оборудования</li>
+                                    <li class="card-item-info-list__item">удобство хранения и переноски</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item-info-buy">
+                        <span class="card-item-info__old-price">2 399 руб.</span>
+                        <span class="card-item-info__new-price">1 999 руб.</span>
+                        <button class="card-item-info-buy__btn">Купить</button>
+                    </div>
+                </div>
+                <div class="card-item-info">
+                    <h4 class="card-item-info__header">Тумба дорожная ТД-900 "Колпак"</h4>
+                    <div class="card-item-info-params">
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Высота, мм</div>
+                            <div class="card-item-info-params__value">900</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Диаметр основания, мм</div>
+                            <div class="card-item-info-params__value">Ø460</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Масса, кг</div>
+                            <div class="card-item-info-params__value">3,5</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Материал тумбы</div>
+                            <div class="card-item-info-params__value">ПВХ</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Кол-во и тип световозвращающих элементов</div>
+                            <div class="card-item-info-params__value">2, пленка тип "А"</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Примечание</div>
+                            <div class="card-item-info-params__value">
+                                <ul class="card-item-info-list">
+                                    <li class="card-item-info-list__item">неразборная</li>
+                                    <li class="card-item-info-list__item">ручка для переноски</li>
+                                    <li class="card-item-info-list__item">возможность крепления дополнительного оборудования</li>
+                                    <li class="card-item-info-list__item">удобство хранения и переноски</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item-info-buy">
+                        <span class="card-item-info__old-price">2 399 руб.</span>
+                        <span class="card-item-info__new-price">1 999 руб.</span>
+                        <button class="card-item-info-buy__btn">Купить</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container-flex container-flex--type card-item card-item--active" data-card-type="2">
-            <div class="params-img-wrapper">
-                <img class="params__img" src="img/card-slider-img1.png" alt="item-img">
-            </div>
-            <div class="card-type__descr  descr">
-                <h3 class="descr__header">Тумба дорожная ТД-900 "Колпак1"</h3>
-                <p class="descr__text">Предназначены для обозначения опасных участков и препятствий при сужении или разделении проезжей части автомобильной дороги. Для увеличения устойчивости буфера возможно его заполнение водой или песком </p>
-                <p class="descr__text">Актуальную цену на предлагаемые материалы Вы можете узнать, скачав Прайс лист на товары, представленные в разделе "Безопасность и ОДД"</p>
-            </div>
-            <div class="card-type-table-wrapper">
-                <table class="params-table">
-                    <tr>
-                        <td class="params-table__param">Высота, мм</td>
-                        <td class="params-table__value">900</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Диметр основания, мм</td>
-                        <td class="params-table__value">460</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Масса, кг</td>
-                        <td class="params-table__value">3,5</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Материал тумбы</td>
-                        <td class="params-table__value">ПВХ</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Кол-во и типа световозвращающих элементов</td>
-                        <td class="params-table__value">2, пленка тип "А"</td>
-                    </tr>
-                    <tr class="flex-row">
-                        <td class="params-table__param">Примечание</td>
-                        <td class="params-table__value">
-                            <ul>
-                                <li>неразборная</li>
-                                <li>ручка для переноски</li>
-                                <li>возможность крепления дополнительного оборудования</li>
-                                <li>удобство хранения и переноски </li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="order-panel-wrapper">
-                <div class="order-panel">
-                    <table class="order-panel-table">
-                        <tr>
-                            <td class="order-panel-table__prop">Количество</td>
-                            <td class="order-panel-table__value order-panel-table__value--qty"><span class="order-panel-table__plus">+</span><span>1</span><span class="order-panel-table__minus">-</span></td>
-                        </tr>
-                        <tr>
-                            <td class="order-panel-table__prop">Общий вес</td>
-                            <td class="order-panel-table__value">3.5кг</td>
-                        </tr>
-                        <tr>
-                            <td class="order-panel-table__prop">Общий объем</td>
-                            <td class="order-panel-table__value">0,02м<sup>3</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="order-panel-table__prop">Стоимость</td>
-                            <td class="order-panel-table__value order-panel-table__value--price">1 999 руб.</td>
-                        </tr>
-                    </table>
-                    <button class="order-panel__btn">Заказать</button>
+
+            <div class="card-item-ls">
+                <div class="card-item-slider">
+                    <div class="card-item-slider-img-wrapper">
+                        <img src="img/card-slider-img1.png" alt="slider-img" class="card-item-slider__img">
+                    </div>
+                </div>
+                <div class="card-item-info">
+                    <h4 class="card-item-info__header">Тумба дорожная ТД-900 "Колпак"</h4>
+                    <div class="card-item-info-params">
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Высота, мм</div>
+                            <div class="card-item-info-params__value">900</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Диаметр основания, мм</div>
+                            <div class="card-item-info-params__value">Ø460</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Масса, кг</div>
+                            <div class="card-item-info-params__value">3,5</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Материал тумбы</div>
+                            <div class="card-item-info-params__value">ПВХ</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Кол-во и тип световозвращающих элементов</div>
+                            <div class="card-item-info-params__value">2, пленка тип "А"</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Примечание</div>
+                            <div class="card-item-info-params__value">
+                                <ul class="card-item-info-list">
+                                    <li class="card-item-info-list__item">неразборная</li>
+                                    <li class="card-item-info-list__item">ручка для переноски</li>
+                                    <li class="card-item-info-list__item">возможность крепления дополнительного оборудования</li>
+                                    <li class="card-item-info-list__item">удобство хранения и переноски</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item-info-buy">
+                        <span class="card-item-info__old-price">2 399 руб.</span>
+                        <span class="card-item-info__new-price">1 999 руб.</span>
+                        <button class="card-item-info-buy__btn">Купить</button>
+                    </div>
+                </div>
+                <div class="card-item-info">
+                    <h4 class="card-item-info__header">Тумба дорожная ТД-900 "Колпак"</h4>
+                    <div class="card-item-info-params">
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Высота, мм</div>
+                            <div class="card-item-info-params__value">900</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Диаметр основания, мм</div>
+                            <div class="card-item-info-params__value">Ø460</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Масса, кг</div>
+                            <div class="card-item-info-params__value">3,5</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Материал тумбы</div>
+                            <div class="card-item-info-params__value">ПВХ</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Кол-во и тип световозвращающих элементов</div>
+                            <div class="card-item-info-params__value">2, пленка тип "А"</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Примечание</div>
+                            <div class="card-item-info-params__value">
+                                <ul class="card-item-info-list">
+                                    <li class="card-item-info-list__item">неразборная</li>
+                                    <li class="card-item-info-list__item">ручка для переноски</li>
+                                    <li class="card-item-info-list__item">возможность крепления дополнительного оборудования</li>
+                                    <li class="card-item-info-list__item">удобство хранения и переноски</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item-info-buy">
+                        <span class="card-item-info__old-price">2 399 руб.</span>
+                        <span class="card-item-info__new-price">1 999 руб.</span>
+                        <button class="card-item-info-buy__btn">Купить</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container-flex container-flex--type card-item" data-card-type="3">
-            <div class="params-img-wrapper">
-                <img class="params__img" src="img/card-slider-img1.png" alt="item-img">
-            </div>
-            <div class="card-type__descr  descr">
-                <h3 class="descr__header">Тумба дорожная ТД-900 "Колпак"</h3>
-                <p class="descr__text">Предназначены для обозначения опасных участков и препятствий при сужении или разделении проезжей части автомобильной дороги. Для увеличения устойчивости буфера возможно его заполнение водой или песком </p>
-                <p class="descr__text">Актуальную цену на предлагаемые материалы Вы можете узнать, скачав Прайс лист на товары, представленные в разделе "Безопасность и ОДД"</p>
-            </div>
-            <div class="card-type-table-wrapper">
-                <table class="params-table">
-                    <tr>
-                        <td class="params-table__param">Высота, мм</td>
-                        <td class="params-table__value">900</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Диметр основания, мм</td>
-                        <td class="params-table__value">460</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Масса, кг</td>
-                        <td class="params-table__value">3,5</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Материал тумбы</td>
-                        <td class="params-table__value">ПВХ</td>
-                    </tr>
-                    <tr>
-                        <td class="params-table__param">Кол-во и типа световозвращающих элементов</td>
-                        <td class="params-table__value">2, пленка тип "А"</td>
-                    </tr>
-                    <tr class="flex-row">
-                        <td class="params-table__param">Примечание</td>
-                        <td class="params-table__value">
-                            <ul>
-                                <li>неразборная</li>
-                                <li>ручка для переноски</li>
-                                <li>возможность крепления дополнительного оборудования</li>
-                                <li>удобство хранения и переноски </li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="order-panel-wrapper">
-                <div class="order-panel">
-                    <table class="order-panel-table">
-                        <tr>
-                            <td class="order-panel-table__prop">Количество</td>
-                            <td class="order-panel-table__value order-panel-table__value--qty"><span class="order-panel-table__plus">+</span><span>1</span><span class="order-panel-table__minus">-</span></td>
-                        </tr>
-                        <tr>
-                            <td class="order-panel-table__prop">Общий вес</td>
-                            <td class="order-panel-table__value">3.5кг</td>
-                        </tr>
-                        <tr>
-                            <td class="order-panel-table__prop">Общий объем</td>
-                            <td class="order-panel-table__value">0,02м<sup>3</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="order-panel-table__prop">Стоимость</td>
-                            <td class="order-panel-table__value order-panel-table__value--price">1 999 руб.</td>
-                        </tr>
-                    </table>
-                    <button class="order-panel__btn">Заказать</button>
+
+            <div class="card-item-ls">
+                <div class="card-item-slider">
+                    <div class="card-item-slider-img-wrapper">
+                        <img src="img/card-slider-img1.png" alt="slider-img" class="card-item-slider__img">
+                    </div>
+                </div>
+                <div class="card-item-info">
+                    <h4 class="card-item-info__header">Тумба дорожная ТД-900 "Колпак"</h4>
+                    <div class="card-item-info-params">
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Высота, мм</div>
+                            <div class="card-item-info-params__value">900</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Диаметр основания, мм</div>
+                            <div class="card-item-info-params__value">Ø460</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Масса, кг</div>
+                            <div class="card-item-info-params__value">3,5</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Материал тумбы</div>
+                            <div class="card-item-info-params__value">ПВХ</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Кол-во и тип световозвращающих элементов</div>
+                            <div class="card-item-info-params__value">2, пленка тип "А"</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Примечание</div>
+                            <div class="card-item-info-params__value">
+                                <ul class="card-item-info-list">
+                                    <li class="card-item-info-list__item">неразборная</li>
+                                    <li class="card-item-info-list__item">ручка для переноски</li>
+                                    <li class="card-item-info-list__item">возможность крепления дополнительного оборудования</li>
+                                    <li class="card-item-info-list__item">удобство хранения и переноски</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item-info-buy">
+                        <span class="card-item-info__old-price">2 399 руб.</span>
+                        <span class="card-item-info__new-price">1 999 руб.</span>
+                        <button class="card-item-info-buy__btn">Купить</button>
+                    </div>
+                </div>
+                <div class="card-item-info">
+                    <h4 class="card-item-info__header">Тумба дорожная ТД-900 "Колпак"</h4>
+                    <div class="card-item-info-params">
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Высота, мм</div>
+                            <div class="card-item-info-params__value">900</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Диаметр основания, мм</div>
+                            <div class="card-item-info-params__value">Ø460</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Масса, кг</div>
+                            <div class="card-item-info-params__value">3,5</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Материал тумбы</div>
+                            <div class="card-item-info-params__value">ПВХ</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Кол-во и тип световозвращающих элементов</div>
+                            <div class="card-item-info-params__value">2, пленка тип "А"</div>
+                        </div>
+                        <div class="card-item-info-params-row">
+                            <div class="card-item-info-params__name">Примечание</div>
+                            <div class="card-item-info-params__value">
+                                <ul class="card-item-info-list">
+                                    <li class="card-item-info-list__item">неразборная</li>
+                                    <li class="card-item-info-list__item">ручка для переноски</li>
+                                    <li class="card-item-info-list__item">возможность крепления дополнительного оборудования</li>
+                                    <li class="card-item-info-list__item">удобство хранения и переноски</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item-info-buy">
+                        <span class="card-item-info__old-price">2 399 руб.</span>
+                        <span class="card-item-info__new-price">1 999 руб.</span>
+                        <button class="card-item-info-buy__btn">Купить</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="card-video">
-        <div class="container">
-            <video class="card-video__item" src=""></video>
-            <img src="img/video-bg-temp.png" alt="video-bg" class="card-photo__temp">
-            <div class="card-video__btn"><i class="fa fa-play fa-5x fa--video" aria-hidden="true"></i></div>
+    <section class="card-slider">
+        <div class="container container--card">
+            <h4 class="card-slider__header">С этим товаром покупают</h4>
+            <div class="card-slider-container">
+                <ul class="card-slider-list clearfix">
+                    <li class="card-slider-list-item item">
+                        <div class="item-img-wrapper">
+                            <img class="card-slider-list__img" src="img/card-slider-img2.png" alt="slider-img">
+                        </div>
+                        <div class="item-info">
+                            <h5 class="item-info__header">Дорожная тумба</h5>
+                            <span class="item-info__text">ТД-900 "Колпак"</span>
+                            <span class="item-info__price">от 1999 руб.</span>
+                            <a href="#" class="item-info__link">Подробнее ...</a>
+                        </div>
+                    </li>
+                    <li class="card-slider-list-item item">
+                        <div class="item-img-wrapper">
+                            <img class="card-slider-list__img" src="img/card-slider-img3.png" alt="slider-img">
+                        </div>
+                        <div class="item-info">
+                            <h5 class="item-info__header">Дорожный столбик</h5>
+                            <span class="item-info__text">ТД-900 "Колпак"</span>
+                            <span class="item-info__price">от 1999 руб.</span>
+                            <a href="#" class="item-info__link">Подробнее ...</a>
+                        </div>
+                    </li>
+                    <li class="card-slider-list-item item">
+                        <div class="item-img-wrapper">
+                            <img class="card-slider-list__imgsrc=" src="img/card-slider-img4.png" alt="slider-img">
+                        </div>
+                        <div class="item-info">
+                            <h5 class="item-info__header">Искусственные<br> неровности</h5>
+                            <span class="item-info__text">ТД-900 "Колпак"</span>
+                            <span class="item-info__price">от 1999 руб.</span>
+                            <a href="#" class="item-info__link">Подробнее ...</a>
+                        </div>
+                    </li>
+                    <li class="card-slider-list-item item">
+                        <div class="item-img-wrapper">
+                            <img class="card-slider-list__img" src="img/card-slider-img2.png" alt="slider-img">
+                        </div>
+                        <div class="item-info">
+                            <h5 class="item-info__header">Дорожная тумба</h5>
+                            <span class="item-info__text">ТД-900 "Колпак"</span>
+                            <span class="item-info__price">от 1999 руб.</span>
+                            <a href="#" class="item-info__link">Подробнее ...</a>
+                        </div>
+                    </li>
+                    <li class="card-slider-list-item item">
+                        <div class="item-img-wrapper">
+                            <img class="card-slider-list__img" src="img/card-slider-img3.png" alt="slider-img">
+                        </div>
+                        <div class="item-info">
+                            <h5 class="item-info__header">Дорожный столбик</h5>
+                            <span class="item-info__text">ТД-900 "Колпак"</span>
+                            <span class="item-info__price">от 1999 руб.</span>
+                            <a href="#" class="item-info__link">Подробнее ...</a>
+                        </div>
+                    </li>
+                    <li class="card-slider-list-item item">
+                        <div class="item-img-wrapper">
+                            <img class="card-slider-list__imgsrc=" src="img/card-slider-img4.png" alt="slider-img">
+                        </div>
+                        <div class="item-info">
+                            <h5 class="item-info__header">Искусственные<br> неровности</h5>
+                            <span class="item-info__text">ТД-900 "Колпак"</span>
+                            <span class="item-info__price">от 1999 руб.</span>
+                            <a href="#" class="item-info__link">Подробнее ...</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
