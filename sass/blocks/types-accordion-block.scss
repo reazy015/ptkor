@@ -1,0 +1,108 @@
+.types-acc-block .container {
+  max-width: 1360px;
+  margin: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.types-acc-block {
+  border-top: 5px solid $basic-border-grey;
+
+  &--active {
+    border-top: 5px solid $basic-border-grey;
+    border-bottom: none;
+  }
+
+  &:last-of-type {
+    border-bottom: 5px solid $basic-border-grey;
+  }
+
+  & .types-acc-block-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s;
+  }
+
+  & .types-acc-block-list--active {
+    max-height: 9999px;
+    transition: max-height .3s;
+  }
+}
+.types-acc-block:first-of-type.types-acc-block--active {
+  border-top: none;
+}
+.types-acc-block__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-bottom: 40px;
+  font-family: "Merel Light", Arial, Sans-Serif;
+  font-size: 30px;
+  text-transform: uppercase;
+
+  & span {
+    font-family: "Merel Bold";
+    font-weight: bold;
+  }
+}
+.types-acc-block__switcher {
+  position: relative;
+  margin-left: auto;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background-color: $basic-font-grey;
+    margin-top: -1px
+  }
+
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: 48%;
+    transform: rotate(90deg);
+    background-color: $basic-font-grey;
+  }
+}
+.types-acc-block--active .types-acc-block__header {
+  color: $basic-green;
+  border-bottom: 1px dashed $basic-border-grey;
+}
+.types-acc-block--active .types-acc-block__switcher:before {
+  opacity: 0;
+}
+.types-acc-block--active .types-acc-block__switcher:after {
+  background-color: $basic-green;
+}
+.types-acc-block-list {
+  @include list-reset;
+}
+.types-acc-block-item {
+  display: flex;
+  padding: 55px 33px;
+  border-bottom: 1px solid $basic-border-grey;
+}
+.types-acc-block-item:last-of-type {
+  border-bottom: none;
+}
+.types-acc-block-img-wrapper {
+  flex: 0 0 227px;
+}
+.types-acc-block-img {
+  width: 100%;
+  height: auto;
+}
+.types-acc-block-descr {
+  flex: 0 1 614px;
+  margin-left: auto;
+  margin-right: auto;
+}

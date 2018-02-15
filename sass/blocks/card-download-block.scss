@@ -1,4 +1,5 @@
 .card-download {
+  display: flex;
   max-width: 1360px;
   padding-top: 53px;
   padding-bottom: 120px;
@@ -12,11 +13,14 @@
   }
 }
 .card-download-tech {
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
   margin-right: auto;
+  flex: 0 1 580px;
+  align-self: flex-start;
 
   @media (max-width: 1184px) {
-    float: none;
+    flex: 0 0 580px;
   }
 
   @media (max-width: 768px) {
@@ -25,8 +29,9 @@
   }
 }
 .card-download-cert {
-  float: right;
+  flex: 0 1 454px;
   margin-right: 170px;
+  margin-left: auto;
 
   @media (max-width: 1184px) {
     float: none;
@@ -42,37 +47,24 @@
   font-size: 30px;
   text-transform: uppercase;
   color: $basic-black;
-
 }
 .card-download-tech__header {
-  margin-bottom: 120px;
-
-  @media (max-width: 1184px) {
-    margin-bottom: 50px;
-  }
+  flex: 1 1 100%;
 }
 .cert__header {
-  margin-bottom: 69px;
-
-  @media (max-width: 1184px) {
-    margin-bottom: 25px;
-    margin-top: 75px;
-  }
-
-  @media (max-width: 436px) {
-    margin-top: 25px;
-  }
+  margin-bottom: 55px;
 }
 .card-download-tech-link {
   text-decoration: none;
   color: $basic-green;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  padding-left: 45px;
-  padding-right: 53px;
+  padding: 15px 0px;
   border: 1px dashed $basic-green;
   border-radius: 5px;
-  margin-right: 8%;
+  margin-bottom: 10px;
+  text-align: center;
+  flex: 0 0 228px;
+  margin-right: auto;
+  align-self: flex-start;
 
   @media (max-width: 768px) {
     margin-bottom: 15px;
@@ -85,8 +77,9 @@
 .cert-list {
   @include list-reset;
   @include flex-row;
-  width: 70%;
-  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
   @media (max-width: 436px) {
     width: auto;

@@ -1,8 +1,16 @@
+.container-flex--type {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 .card-item-ls {
   display: flex;
   flex-wrap: wrap;
-  max-width: 850px;
+  flex: 0 0 850px;
   justify-content: space-between;
+  margin-right: 10px;
+}
+.card-item-rs {
+  flex: 0 1 454px;
 }
 .card-item-slider {
   flex: 1 1 100%;
@@ -82,4 +90,53 @@
   text-decoration: line-through;
   text-decoration-color: $basic-font-grey;
   padding-right: 20px;
+}
+.card-item__header {
+  font-family: "Merel Bold", Arial, Sans-Serif;
+  font-size: 24px;
+}
+.card-item__text {
+  font-family: "Merel";
+  font-size: 14px;
+  color: $basic-font-grey;
+}
+.card-item__link {
+  display: block;
+  font-family: "Merel";
+  font-size: 14px;
+  color: $basic-green;
+  text-decoration: none;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.card-item-advantages {
+  background-color: $basic-border-grey;
+  padding-left: 36px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.card-item-advantages__header {
+  margin-bottom: 50px;
+  font-family: "Merel Bold", Arial, Sans-Serif;
+  font-size: 21px;
+}
+.card-item-advantages-list {
+  @include list-reset;
+}
+.card-item-advantages__item {
+  position: relative;
+  margin-bottom: 35px;
+  padding-left: 34px;
+}
+.card-item-advantages__item:before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("/img/list-icon.png");
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
 }

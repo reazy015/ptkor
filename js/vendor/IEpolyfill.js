@@ -1,6 +1,6 @@
-'use stric';
+'use strict';
 
-window.onload = function () {
+(function () {
     if (!Element.prototype.matches)
         Element.prototype.matches = Element.prototype.msMatchesSelector ||
             Element.prototype.webkitMatchesSelector;
@@ -15,4 +15,4 @@ window.onload = function () {
             } while (el !== null && el.nodeType === 1);
             return null;
         };
-}
+})();
