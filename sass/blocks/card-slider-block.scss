@@ -59,17 +59,20 @@
 .card-info-slider {
   position: relative;
 }
-
+.card-info-slider-video {
+  width: 100%;
+  height: auto;
+}
 .card-info-slider-btn {
-  position: absolute;
-  bottom: 23%;
-  width: 58px;
-  height: 58px;
+  display: block;
   background: transparent;
   border: none;
   z-index: 80;
   cursor: pointer;
   transition: opacity .2s;
+  color: $basic-font-grey;
+  transition: color .3s;
+  outline: none;
 
   &--right {
     right: 10%;
@@ -78,6 +81,10 @@
     left: 10%;
   }
   &:hover {
+    color: $basic-green;
+  }
+  &:focus {
+   outline: none;
   }
 }
 .card-slider-list {
@@ -95,6 +102,34 @@
   margin-bottom: 15px;
   font-size: 14px;
   color: $basic-font-grey;
+}
+.card-info-slider-video {
+  position: relative;
+}
+.video-controls {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  outline: none;
+
+  &--hidden {
+    visibility: hidden;
+    right: -9999px;
+    z-index: -100;
+  }
+}
+.video-controls__play {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.video-controls__play:focus {
+  outline: none;
 }
 .item-info__price {
   display: block;

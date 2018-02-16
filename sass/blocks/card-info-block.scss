@@ -1,11 +1,22 @@
 .card-info {
   position: relative;
-  background-color: $basic-hover;
   overflow: hidden;
 }
 .card-info-wrapper {
+  position: relative;
   flex: 0 0 510px;
+  background-color: $basic-border-grey;
 
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 99.9%;
+    width: 2000px;
+    background-color: $basic-border-grey;
+  }
   @media (max-width: 768px) {
     padding-left: 10px;
     padding-right: 10px;
@@ -33,36 +44,31 @@
   color: $basic-black;
 }
 .card-info-slider {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: relative;
-  flex: 1 2 auto;
-  padding-bottom: 50px;
+  justify-content: space-between;
+  flex: 0 1 794px;
+  padding-top: 90px;
+  padding-bottom: 40px;
   align-items: center;
   background-color: $basic-white;
 
-  &:after {
-    position: absolute;
-    display: block;
-    content: '';
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    left: 100%;
-    background-color: $basic-white;
-    z-index: 1;
-    
-    @media (max-width: 1156px) {
-      display: none;
-    }
+  @media (max-width: 1156px) {
+    display: none;
   }
+}
+.card-info-slider-wrapper {
+  margin-bottom: 60px;
+  max-height: 422px;
+  text-align: center;
+}
+.card-info-slider-wrapper img {
+  max-width: 100%;
+  height: auto;
 }
 .card-info-slider-list {
   @include list-reset;
   display: flex;
   overflow: hidden;
-
 }
 .card-info-slider-list__item{
   flex: 1 0 100%;
@@ -71,7 +77,7 @@
   min-width: 70%;
 }
 .card-info-slider-wrapper {
-
+  width: 100%;
 }
 .card-info-slider-wrapper__img {
   width: 100%;
@@ -80,7 +86,8 @@
   @include list-reset;
   display: flex;
   justify-content: center;
-
+  margin-right: 15px;
+  margin-left: 15px;
 
   @media (max-width: 1156px) {
     display: flex;
@@ -90,22 +97,29 @@
     width: 90%;
   }
 }
-.card-img--active {
-  opacity: 1;
+.card-info-preview-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .card-info-slider-preview-item {
+  display: flex;
   width: 40px;
   height: 40px;
   border: 1px solid $basic-hr-border;
   cursor: pointer;
   margin-right: 5px;
+  opacity: 0.6;
+  align-items: center;
+  z-index: 20;
+
+  &--active {
+    opacity: 1;
+  }
 }
 .card-info-slider-preview-item img {
-  position: relative;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.6;
+  max-width: 100%;
+  height: auto;
 }
 .card-info-slider-list__item {
   display: none;
