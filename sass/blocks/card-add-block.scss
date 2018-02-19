@@ -1,8 +1,7 @@
 .card-add {
   padding-top: 105px;
-  padding-bottom: 105px;
   background-image: url("/img/card-add-bg.png");
-  background-repeate: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 
   @media (max-width: 768px) {
@@ -21,6 +20,7 @@
 }
 .card-add__header {
   margin: 0;
+  margin-bottom: 80px;
   font-family: "Merel Light";
   font-size: 30px;
   text-transform: uppercase;
@@ -35,7 +35,7 @@
   line-height: 1.5;
   font-size: 16px;
   color: $basic-paragraph-grey;
-  width: 49%;
+  width: 42%;
 
   &--margin-b {
     margin-bottom: 50px;
@@ -47,13 +47,16 @@
 }
 .card-add-remark {
   position: relative;
-  top: -200px;
-  margin-right: 115px;
+  top: -180px;
+  margin-right: 125px;
   padding-left: 30px;
+  margin-bottom: 0;
   color: $basic-green;
   border-left: 2px solid $basic-green;
   float: right;
-  width: 27%;
+  font-size: 18px;
+  max-width: 410px;
+  line-height: 1.5;
 
   @media (max-width: 1021px) {
     position: static;
@@ -67,6 +70,16 @@
     width: auto;
   }
 }
+.card-add-remark__text {
+  margin-bottom: 0;
+}
 .card-add-remark__header {
+  margin-top: 0;
   font-size: 24px;
+}
+.card-add__text.left {
+  position: relative;
+  float: right;
+  max-width: 568px;
+  top: -200px;
 }
