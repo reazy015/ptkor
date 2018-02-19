@@ -39,4 +39,14 @@ window.onload = function () {
             // instead of a settings object
         ]
     });
+    // $('.card-item-slider--type1').slick({
+    //     prevArrow: '<button class="about-left"><i class="fa fa-chevron-left fa-about" aria-hidden="true"></i></button>',
+    //     nextArrow: '<button class="about-right"><i class="fa fa-chevron-right fa-about" aria-hidden="true"></i></button>',
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 300,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: true
+    // });
 }

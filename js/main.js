@@ -1,4 +1,4 @@
-
+'use strict';
 
 window.onload = function () {
 
@@ -37,4 +37,5 @@ window.onload = function () {
                 }
             ]
         });
+
 }
