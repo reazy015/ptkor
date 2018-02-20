@@ -24,6 +24,10 @@
 
     & .nav-list-item--logo-link {
       margin-left: 10px;
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
@@ -70,4 +74,7 @@
   .page-header-info {
     display: none;
   }
+}
+.card .page-header-nav {
+  border-bottom: 1px solid $basic-hr-border;
 }

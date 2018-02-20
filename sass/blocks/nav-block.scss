@@ -163,6 +163,17 @@
 }
 .nav-list-item__logo {
   display: none;
+
+  &:focus {
+    outline: none;
+  }
+  & img {
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
   @media (max-width: 830px) {
     display: block;
     margin-bottom: 10px;

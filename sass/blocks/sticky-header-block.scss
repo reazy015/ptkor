@@ -82,6 +82,10 @@
     display: block;
     margin-top: 7px;
     margin-right: 75px;
+
+    &:focus {
+      outline: none;
+    }
   }
   & .submenu {
     z-index: -50;
