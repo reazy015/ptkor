@@ -3,17 +3,23 @@
   justify-content: space-between;
 }
 .card-item-ls {
+  float: left;
+  width: 62.5%;
   display: flex;
-  flex-wrap: wrap;
-  flex: 0 0 850px;
   justify-content: space-between;
   margin-right: 10px;
 }
 .card-item-rs {
-  flex: 0 1 454px;
+  float: right;
+  width: 30%;
 }
 .card-item-info {
   flex: 0 1 414px;
+  margin-right: 10px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 .card-item-info__header {
   padding: 20px 0px;
@@ -98,6 +104,8 @@
   margin-bottom: 35px;
 }
 .card-item-advantages {
+  float: right;
+  width: 30%;
   background-color: $basic-border-grey;
   padding-left: 36px;
   padding-top: 56px;

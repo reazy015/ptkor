@@ -1,7 +1,8 @@
 .card-item-slider {
   position: relative;
-  flex: 1 1 100%;
   overflow: hidden;
+  float: left;
+  width: 62.5%;
 }
 .card-item-slider-list {
   @include list-reset;
