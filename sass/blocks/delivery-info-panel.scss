@@ -1,0 +1,17 @@
+.delivery-info-panel {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid $basic-green;
+}
+.delivery-info-panel__item {
+  padding: 12px 25px;
+  color: $basic-font-grey;
+  cursor: pointer;
+
+  &--active {
+    background-color: $basic-green;
+    color: $basic-white;
+    font-weight: bold;
+  }
+}

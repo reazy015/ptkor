@@ -1,0 +1,27 @@
+.delivery-advantages__header {
+  margin-top: 80px;
+  margin-bottom: 65px;
+  text-align: center;
+  color: $basic-green;
+  font-size: 24px;
+  font-weight: bold;
+}
+.delivery-advantages-list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-advantages-list-item {
+  display: flex;
+  align-items: center;
+  flex: 1 1 30%;
+}
+.delivery-advantages-item-info__header {
+  text-transform: uppercase;
+  margin: 0;
+}
+.delivery-advantages-list-item__icon {
+  max-width: 90px;
+  height: auto;
+  margin-right: 24px;
+}

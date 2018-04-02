@@ -300,203 +300,290 @@
 </header>
 
 <h1 class="delivery__header">Доставка</h1>
-<p class="delivery__slogan">Заказы передаются в службу доставки<br>подтверждения менеджером оплаты.</p>
+<p class="delivery__slogan">Заказы передаются в службу доставки после<br>подтверждения менеджером оплаты.</p>
 
-<section class="delivery-info">
-    <ul class="delivery-info-panel">
-        <li class="delivery-info-panel__item delivery-info-panel__item--active">Самовывоз Санкт-Петербург</li>
-        <li class="delivery-info-panel__item">Самовывоз Москва</li>
-        <li class="delivery-info-panel__item">Доставка по России</li>
-    </ul>
-
-    <div class="delivery-advantages">
-        <h2 class="delivery-advantages__header">Преимущетсва самовывоза</h2>
-        <ul class="delivery-advantages-list">
-            <li class="delivery-advantages-list-item">
-                <svg></svg>
-                <div class="delivery-advantages-item-info">
-                    <h4 class="delivery-advantages-item-info__header">Удобный график</h4>
-                    <p class="delivery-advantages-item-info__text">пн-пт 10:00-21:00<br>сб-вс 12:00-16:00</p>
-                </div>
-            </li>
-            <li class="delivery-advantages-list-item">
-                <svg></svg>
-                <div class="delivery-advantages-item-info">
-                    <h4 class="delivery-advantages-item-info__header">Удобный график</h4>
-                    <p class="delivery-advantages-item-info__text">Скидка при самовывозе до 15%</p>
-                </div>
-            </li>
-            <li class="delivery-advantages-list-item">
-                <svg></svg>
-                <div class="delivery-advantages-item-info">
-                    <h4 class="delivery-advantages-item-info__header">Ознакомтесь со всем ассортиментом</h4>
-                </div>
-            </li>
-            <li class="delivery-advantages-list-item">
-                <svg></svg>
-                <div class="delivery-advantages-item-info">
-                    <h4 class="delivery-advantages-item-info__header">42% покупателей</h4>
-                    <p class="delivery-advantages-item-info__text">42% покупателей пользуются самовывозом</p>
-                </div>
-            </li>
+<div class="container">
+    <section class="delivery-info">
+        <ul class="delivery-info-panel">
+            <li class="delivery-info-panel__item delivery-info-panel__item--active">Самовывоз Санкт-Петербург</li>
+            <li class="delivery-info-panel__item">Самовывоз Москва</li>
+            <li class="delivery-info-panel__item">Доставка по России</li>
         </ul>
-    </div>
 
-    <div class="delivery-city-info">
-        <h3 class="delivery-city-info__header">Склад в Санкт-Петербурге</h3>
-        <div class="delivery-city-order">
-            <div class="delivery-city-order-comments"></div>
-            <button class="delivery-city-order__btn">Заказать звонок</button>
+        <div class="delivery-advantages">
+            <h2 class="delivery-advantages__header">Преимущетсва самовывоза</h2>
+            <ul class="delivery-advantages-list">
+                <li class="delivery-advantages-list-item">
+                    <img src="img/delivery-icons/006-calendar.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <div class="delivery-advantages-item-info">
+                        <h4 class="delivery-advantages-item-info__header">Удобный график</h4>
+                        <p class="delivery-advantages-item-info__text">пн-пт 10:00-21:00<br>сб-вс 12:00-16:00</p>
+                    </div>
+                </li>
+                <li class="delivery-advantages-list-item">
+                    <img src="img/delivery-icons/003-money.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <div class="delivery-advantages-item-info">
+                        <h4 class="delivery-advantages-item-info__header">Удобный график</h4>
+                        <p class="delivery-advantages-item-info__text">Скидка при самовывозе до 15%</p>
+                    </div>
+                </li>
+                <li class="delivery-advantages-list-item">
+                    <img src="img/delivery-icons/007-look.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <div class="delivery-advantages-item-info">
+                        <h4 class="delivery-advantages-item-info__header">Ознакомтесь со всем ассортиментом</h4>
+                    </div>
+                </li>
+                <li class="delivery-advantages-list-item">
+                    <img src="img/delivery-icons/009-team.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <div class="delivery-advantages-item-info">
+                        <h4 class="delivery-advantages-item-info__header">42% покупателей</h4>
+                        <p class="delivery-advantages-item-info__text">42% покупателей пользуются самовывозом</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="delivery-city-info-map">
-            <div class="delivery-map-descr">
-                <div class="delivery-map-descr-address"></div>
-                <div class="delivery-map-descr-schedule"></div>
-                <div class="delivery-map-descr-phone"></div>
-                <div class="delivery-map-descr-mail"></div>
+
+        <div class="delivery-city-info">
+            <div class="delivery-city-info-top">
+                <h3 class="delivery-city-info__header">Склад в Санкт-Петербурге</h3>
+                <div class="delivery-city-order">
+                    <div class="delivery-city-order-comments">
+                        <span>Самовывоз осуществляется со склада компании в <b>Ленинградской обасти</b>.</span><br>
+                        <span>Все подробности и сроки доставки вы можете уточнить у наших операторов.</span>
+                    </div>
+                    <button class="delivery-city-order__btn">Заказать звонок</button>
+                </div>
             </div>
-            <div class="delivery-map-container">
-
+            <div class="delivery-city-info-map">
+                <div class="delivery-map-descr">
+                    <div class="delivery-map-descr-address">
+                        <span>Адрес:</span><br>
+                        <span>Ленинградская область, Гатчинкский район,<br> пос.Войсковицы</span>
+                    </div>
+                    <div class="delivery-map-descr-schedule">
+                        <span>График работы:</span><br>
+                        <span>ПН-ПТ: 10:00 - 21:00</span><br>
+                        <span>СБ-ВС: 12:00 - 16:00</span>
+                    </div>
+                    <div class="delivery-map-descr-phone">
+                        <span>Контактный телефон:</span><br>
+                        <span>8(965)097-22-56</span>
+                    </div>
+                    <div class="delivery-map-descr-mail">
+                        <span>E-mail:</span><br>
+                        <span>sklad@ptkor.ru</span>
+                    </div>
+                </div>
+                <div class="delivery-map-container" id="spb" data-coordinates="59.888803258129485,30.279827500000017" data-scale="11"></div>
             </div>
         </div>
-    </div>
 
-    <div class="delivery-info-table">
-        <div class="delivery-info-table__header">Доставка по России</div>
-        <div class="delivery-city-order">
-            <div class="delivery-city-order-comments"></div>
-            <button class="delivery-city-order__btn">Заказать звонок</button>
+        <div class="delivery-city-info">
+            <div class="delivery-city-info-top">
+                <h3 class="delivery-city-info__header">Склад в Москве</h3>
+                <div class="delivery-city-order">
+                    <div class="delivery-city-order-comments">
+                        <span>Самовывоз осуществляется со склада компании в <b>Московской обасти</b>.</span><br>
+                        <span>Все подробности и сроки доставки вы можете уточнить у наших операторов.</span>
+                    </div>
+                    <button class="delivery-city-order__btn">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="delivery-city-info-map">
+                <div class="delivery-map-descr">
+                    <div class="delivery-map-descr-address">
+                        <span>Адрес:</span><br>
+                        <span>Московская область, Рузский р-н, г. Тучково,<br>
+                        Технологическое шоссе, д. 3 стр. 7<br>
+                        55.614139, 36.401146</span>
+                    </div>
+                    <div class="delivery-map-descr-schedule">
+                        <span>График работы:</span><br>
+                        <span>ПН-ПТ: 10:00 - 21:00</span><br>
+                        <span>СБ-ВС: 12:00 - 16:00</span>
+                    </div>
+                    <div class="delivery-map-descr-phone">
+                        <span>Контактный телефон:</span><br>
+                        <span>8(965)097-22-56</span>
+                    </div>
+                    <div class="delivery-map-descr-mail">
+                        <span>E-mail:</span><br>
+                        <span>sklad@ptkor.ru</span>
+                    </div>
+                </div>
+                <div class="delivery-map-container" id="msc" data-coordinates="59.888803258129485,30.279827500000017" data-scale="11"></div>
+            </div>
         </div>
-        <table class="delivery-info-table-main">
-            <tr>
-                <th>Город</th>
-                <th>Контакты</th>
-                <th>Адрес пунктов доставки</th>
-                <th>График работы</th>
-            </tr>
-            <tr>
-                <td>Москва</td>
-                <td>+ 7 (383) 210-53-54     pismo@dellin.ru</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Сухарная ул., 35/1</td>
-                        </tr>
-                        <tr>
-                            <td>Авиастроителей ул., 30</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс выходной</td>
-                        </tr>
-                        <tr>
-                            <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс 11:00-13:00</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>Санкт-Петербург</td>
-                <td>+ 7 (383) 210-53-54     pismo@dellin.ru</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Сухарная ул., 35/1</td>
-                        </tr>
-                        <tr>
-                            <td>Авиастроителей ул., 30</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс выходной</td>
-                        </tr>
-                        <tr>
-                            <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс 11:00-13:00</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>Новосибирск</td>
-                <td>+ 7 (383) 210-53-54     pismo@dellin.ru</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Сухарная ул., 35/1</td>
-                        </tr>
-                        <tr>
-                            <td>Авиастроителей ул., 30</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс выходной</td>
-                        </tr>
-                        <tr>
-                            <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс 11:00-13:00</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>Екатеринбург</td>
-                <td>+ 7 (383) 210-53-54     pismo@dellin.ru</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Сухарная ул., 35/1</td>
-                        </tr>
-                        <tr>
-                            <td>Авиастроителей ул., 30</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс выходной</td>
-                        </tr>
-                        <tr>
-                            <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс 11:00-13:00</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>Нижний новгород</td>
-                <td>+ 7 (383) 210-53-54     pismo@dellin.ru</td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Сухарная ул., 35/1</td>
-                        </tr>
-                        <tr>
-                            <td>Авиастроителей ул., 30</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс выходной</td>
-                        </tr>
-                        <tr>
-                            <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс 11:00-13:00</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
+
+        <div class="delivery-info-table">
+            <div class="delivery-info-table-advantages">
+                <h3 class="delivery-info-table-advantages__header">Преимущества доставки</h3>
+            </div>
+            <ul class="delivery-advantages-list">
+                <li class="delivery-advantages-list-item">
+                    <img src="img/delivery-icons/006-calendar.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <div class="delivery-advantages-item-info">
+                        <h4 class="delivery-advantages-item-info__header">Удобный график</h4>
+                        <p class="delivery-advantages-item-info__text">пн-пт 10:00-21:00<br>сб-вс 12:00-16:00</p>
+                    </div>
+                </li>
+                <li class="delivery-advantages-list-item">
+                    <img src="img/delivery-icons/003-money.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <div class="delivery-advantages-item-info">
+                        <h4 class="delivery-advantages-item-info__header">Удобный график</h4>
+                        <p class="delivery-advantages-item-info__text">Скидка при самовывозе до 15%</p>
+                    </div>
+                </li>
+                <li class="delivery-advantages-list-item">
+                    <img src="img/delivery-icons/007-look.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <div class="delivery-advantages-item-info">
+                        <h4 class="delivery-advantages-item-info__header">Ознакомтесь со всем ассортиментом</h4>
+                    </div>
+                </li>
+                <li class="delivery-advantages-list-item">
+                    <img src="img/delivery-icons/009-team.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <div class="delivery-advantages-item-info">
+                        <h4 class="delivery-advantages-item-info__header">42% покупателей</h4>
+                        <p class="delivery-advantages-item-info__text">42% покупателей пользуются самовывозом</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="delivery-info-table__header">Доставка по России</div>
+            <div class="delivery-city-order">
+                <div class="delivery-city-order-comments"></div>
+                <button class="delivery-city-order__btn">Заказать звонок</button>
+            </div>
+            <table class="delivery-info-table-main">
+                <tr>
+                    <th>Город</th>
+                    <th>Контакты</th>
+                    <th>Адрес пунктов доставки</th>
+                    <th>График работы</th>
+                </tr>
+                <tr>
+                    <td class="td-city">Москва</td>
+                    <td>+ 7 (383) 210-53-54     pismo@dellin.ru</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Сухарная ул., 35/1</td>
+                            </tr>
+                            <tr>
+                                <td>Авиастроителей ул., 30</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс выходной</td>
+                            </tr>
+                            <tr>
+                                <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс 11:00-13:00</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-city">Санкт-Петербург</td>
+                    <td>+ 7 (383) 210-53-54     pismo@dellin.ru</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Сухарная ул., 35/1</td>
+                            </tr>
+                            <tr>
+                                <td>Авиастроителей ул., 30</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс выходной</td>
+                            </tr>
+                            <tr>
+                                <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс 11:00-13:00</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-city">Новосибирск</td>
+                    <td>+ 7 (383) 210-53-54     pismo@dellin.ru</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Сухарная ул., 35/1</td>
+                            </tr>
+                            <tr>
+                                <td>Авиастроителей ул., 30</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс выходной</td>
+                            </tr>
+                            <tr>
+                                <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс 11:00-13:00</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-city">Екатеринбург</td>
+                    <td>+ 7 (383) 210-53-54     pismo@dellin.ru</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Сухарная ул., 35/1</td>
+                            </tr>
+                            <tr>
+                                <td>Авиастроителей ул., 30</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс выходной</td>
+                            </tr>
+                            <tr>
+                                <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс 11:00-13:00</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-city">Нижний новгород</td>
+                    <td>+ 7 (383) 210-53-54     pismo@dellin.ru</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Сухарная ул., 35/1</td>
+                            </tr>
+                            <tr>
+                                <td>Авиастроителей ул., 30</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс выходной</td>
+                            </tr>
+                            <tr>
+                                <td>Пн-пт 09:00-20:00, Сб 11:00-16:00, Вс 11:00-13:00</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</div>
 
 <footer class="page-footer">
 
@@ -637,6 +724,7 @@
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -644,4 +732,7 @@
 <script src="js/plugins.js"></script>
 <script src="js/vendor/slick.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/mapConfig.js"></script>
+</body>
+</html>
 

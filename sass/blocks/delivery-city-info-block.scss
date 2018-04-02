@@ -1,0 +1,19 @@
+.delivery-city-info__header {
+  text-align: center;
+}
+.delivery-city-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delivery-map-descr {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: $order-panel-bg;
+}
+.delivery-map-container {
+  width: 100%;
+  min-height: 375px;
+}

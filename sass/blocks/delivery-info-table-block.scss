@@ -1,0 +1,24 @@
+.delivery-info-table-main {
+  width: 100%;
+  border-collapse: collapse;
+}
+.delivery-info-table-main th,
+.delivery-info-table-main td{
+  padding-left: 28px;
+  border: 1px solid $basic-hr-border;
+}
+.delivery-info-table-main tr {
+  margin-bottom: 2px;
+}
+.delivery-info-table-main .td-city {
+  color: $basic-black;
+  font-weight: bold;
+}
+.delivery-info-table-main th {
+  background-color: $order-panel-bg;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+  text-align: left;
+  border: 1px solid $basic-hr-border;
+}
