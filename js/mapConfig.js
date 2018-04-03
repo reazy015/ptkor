@@ -5,7 +5,7 @@ window.mapConfig = ( function() {
     ymaps.ready(initSecond);
 
     function init() {
-        var coordinates = $("#spb").attr('data-coordinates');
+        var coordinates = $("#spb.delivery-map-container").attr('data-coordinates');
         var scale = $("#spb").attr('data-scale');
 
         var myMap = new ymaps.Map("map", {

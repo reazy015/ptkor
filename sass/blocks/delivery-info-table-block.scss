@@ -1,6 +1,11 @@
-.delivery-info-table-main {
+.delivery-info-table-main,
+.delivery-info-table-main td table{
   width: 100%;
-  border-collapse: collapse;
+}
+.delivery-info-table-main td table td {
+  border: none;
+  border-bottom: 1px solid $basic-hr-border;
+  padding-left: 0;
 }
 .delivery-info-table-main th,
 .delivery-info-table-main td{

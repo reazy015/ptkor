@@ -944,25 +944,35 @@
     </section>
 
     <section class="main-summary central">
-        <div class="main-summary-wrapper">
-            <h4 class="main-summary__header">Реализованные проекты</h4>
-            <div class="main-summary-info">
-                <div class="main-summary-info__item item">
-                    <div class="item__number">1467</div>
-                    <div class="item__text">Километров дорог</div>
-                </div>
-                <div class="main-summary-info__item item item--center">
-                    <div class="item__number">201</div>
-                    <div class="item__text">Объект</div>
-                </div>
-                <div class="main-summary-info__item item">
-                    <div class="item__number">158</div>
-                    <div class="item__text">Контрагентов</div>
-                </div>
+        <div class="main-summary-slider">
+            <img src="img/summary-slider/slide1.png" alt="slider-img" class="main-summary-slider-item main-summary-slider-item--active" data-address="1">
+            <img src="img/summary-slider/slide1.png" alt="slider-img" class="main-summary-slider-item" data-address="2">
+            <img src="img/summary-slider/slide1.png" alt="slider-img" class="main-summary-slider-item" data-address="3">
+            <img src="img/summary-slider/slide1.png" alt="slider-img" class="main-summary-slider-item" data-address="4">
+            <img src="img/summary-slider/slide1.png" alt="slider-img" class="main-summary-slider-item" data-address="5">
+        </div>
+        <div class="main-summary-slider-comments">
+            <div class="comments-container">
+                <ul class="main-summary-slider-comments-list">
+                    <li class="main-summary-slider-comments__item main-summary-slider-comments__item--active" data-address="1">Санкт-Петербург, улица Хмельницкого, 10</li>
+                    <li class="main-summary-slider-comments__item" data-address="2">Санкт-Петербург, улица Хмельницкого, 11</li>
+                    <li class="main-summary-slider-comments__item" data-address="3">Санкт-Петербург, улица Хмельницкого, 12</li>
+                    <li class="main-summary-slider-comments__item" data-address="4">Санкт-Петербург, улица Хмельницкого, 13</li>
+                    <li class="main-summary-slider-comments__item" data-address="5">Санкт-Петербург, улица Хмельницкого, 14</li>
+                </ul>
+                <ul class="main-summary-slider-indicators-list">
+                    <!--<li class="indicators-list-item indicators-list-item&#45;&#45;active"></li>-->
+                    <!--<li class="indicators-list-item"></li>-->
+                    <!--<li class="indicators-list-item"></li>-->
+                </ul>
+                <button class="comments-control comments-control--right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <button class="comments-control comments-control--left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
             </div>
-            <a href="#" class="main-summary__link">Смотерть все проекты</a>
+            <a href="objects.html" class="main-summary-all-link">Посмотреть все проекты</a>
         </div>
     </section>
+
+
 
     <section class="popup">
         <div class="popup-modal">
@@ -1189,6 +1199,9 @@
     </footer>
 
 
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/vendor/slick.min.js"></script>
     <script src="js/vendor/IEpolyfill.js"></script>
     <!--<script src="js/slider.js"></script>-->
     <script src="js/stickynav.js"></script>
@@ -1202,14 +1215,13 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
-    <script src="js/vendor/slick.min.js"></script>
+
     <script src="js/main.js"></script>
+    <script src="js/summarySlider.js"></script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
         window.ga = function() {
