@@ -7,6 +7,7 @@ window.summarySlider = ( function() {
     var summarySliderLeftControl = document.querySelector('.comments-control--left');
     var summarySliderRightControl = document.querySelector('.comments-control--right');
     var sliderStartIndex = 0;
+    var indicatorsList;
 
     function getCurrentSlide(index) {
         if (index < 0) {
@@ -31,7 +32,7 @@ window.summarySlider = ( function() {
         var currentActiveAdrList = document.querySelectorAll('.main-summary-slider-comments__item--active');
 
         for (var i = 0; i < currentActiveAdrList.length; i++) {
-            currentActiveAdrList[i].classList.remove('.main-summary-slider-comments__item--active');
+            currentActiveAdrList[i].classList.remove('main-summary-slider-comments__item--active');
         }
     }
 
@@ -50,6 +51,11 @@ window.summarySlider = ( function() {
         indicatorsList[index].classList.add('indicators-list-item--active');
     }
 
+    function showFitAddress(index) {
+        hideAllActiveAddresses();
+        summarySlidesAddressesList[index].classList.add('main-summary-slider-comments__item--active');
+    }
+
     function showSlide(slide) {
         if (slide) {
             hideAllActiveSlides();
@@ -59,9 +65,22 @@ window.summarySlider = ( function() {
         }
     }
 
+    function showSlideByIndicatorsIndex(evt) {
+        var target = evt.target;
+
+        if (target.classList.contains('indicators-list-item')) {
+           var index = Array.prototype.indexOf.call(indicatorsList, target);
+           sliderStartIndex = index;
+           disableAllActiveIndicators();
+           showSlide(getCurrentSlide(index));
+           target.classList.add('indicators-list-item--active');
+        }
+    }
+
     (function() {
         var listElement = document.createElement('li');
         listElement.classList.add('indicators-list-item');
+
         for (var i = 0; i < summarySlidesList.length; i++) {
             if ( i === 0) {
                 var activeListElement = listElement.cloneNode(true);
@@ -71,12 +90,15 @@ window.summarySlider = ( function() {
                 summaryIndicatorsList.appendChild(listElement.cloneNode(true));
             }
         }
+
+        indicatorsList = document.querySelectorAll('.indicators-list-item');
     })();
 
     summarySliderLeftControl.addEventListener('click', function() {
         sliderStartIndex--;
         showSlide(getCurrentSlide(sliderStartIndex));
         switchFitIndicator(sliderStartIndex);
+        showFitAddress(sliderStartIndex);
         console.log(sliderStartIndex);
 
     });
@@ -84,6 +106,8 @@ window.summarySlider = ( function() {
         sliderStartIndex++;
         showSlide(getCurrentSlide(sliderStartIndex));
         switchFitIndicator(sliderStartIndex);
+        showFitAddress(sliderStartIndex);
         console.log(sliderStartIndex);
     });
+    summaryIndicatorsList.addEventListener('click', showSlideByIndicatorsIndex);
 })();
