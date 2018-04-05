@@ -1,68 +1,81 @@
 .page-header {
-  padding-top: 10px;
-  font-family: "Merel";
+  position: relative;
+  width: 100%;
+  background-color: $basic-white;
+  font-family: "Merel", "Arial", sans-serif;
   font-size: 16px;
-
-  &--mobile-nav-open {
+  z-index: 100;
+  
+  @media (max-width: 1024px) {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background-color: $basic-white;
-    overflow-y: scroll;
-
-    & .nav {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-
-    & .nav-toggle {
-      margin-right: 10px;
-    }
-
-    & .nav-list-item--logo-link {
-      margin-left: 10px;
-
-      &:focus {
-        outline: none;
-      }
-    }
   }
 }
 .page-header-logo {
   margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 .page-header-logo > a:focus {
   outline: none;
 }
 .page-header__slogan {
+  font-family: "Merel Light", "Arial", sans-serif;
+  margin-left: 56px;
   font-size: 14px;
   color: $basic-font-grey;
-  margin-right: auto;
-  margin-left: 57px;
-  padding-top: 5px;
+  
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 .page-header-info {
-  margin-top: 14px;
+  font-family: "Merel", "Arial", sans-serif;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
+  color: $basic-black;
 }
 .page-header-phone {
-  margin-top: 14px;
-  margin-left: 60px;
-  font-family: "Merel Bold";
-  font-weight: bold;
+  font-family: "Merel", "Arial", sans-serif;
+  font-size: 18px;
   text-align: right;
+  color: $basic-black;
+}
+.page-header-phone__item span {
+  font-size: 21px;
 }
 .page-header-city {
   margin-top: 14px;
   margin-left: 83px;
-  font-family: "Merel Bold";
+  font-family: "Merel Bold", "Arial", sans-serif;
   text-align: left;
   text-transform: uppercase;
   color: $basic-green;
+}
+.page-header-top-container {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  
+  @media (max-width: 1024px) {
+    & > *:not(.page-header-logo) {
+      display: none;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    
+    & .nav-toggle {
+      display: block;
+    }
+  }
+}
+.page-header-top-container-decor {
+  display: none;
+}
+.page-header-decor-container {
+  border-top: 1px solid $basic-hr-border;
+  border-bottom: 1px solid $basic-hr-border;
 }
 @media (max-width: 1080px) {
   .page-header-top-container > *[class^="page-header"] {
@@ -70,11 +83,16 @@
     margin-right: 0;  
   }
 }
-@media (max-width: 900px) {
-  .page-header-info {
-    display: none;
-  }
-}
+
 .card .page-header-nav {
   border-bottom: 1px solid $basic-hr-border;
+}
+.page-header-phone-common {
+  font-family: "Merel", "Arial", sans-serif;
+  font-size: 18px;
+  color: $basic-black;
+
+}
+.common-phone {
+  font-size: 21px;
 }

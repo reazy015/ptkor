@@ -1,0 +1,82 @@
+.cones-filter {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-color: $basic-border-grey;
+  color: $basic-black;
+}
+.cones-filter__header {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.cones-filter-form {
+  display: flex;
+  justify-content: center;
+}
+.cones-filter-form-height {
+  flex: 0 1 370px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 147px;
+}
+.cones-filter-form-weight {
+  flex: 0 1 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.cones-filter-form-height input[type="checkbox"],
+.cones-filter-form-weight input[type="radio"]{
+  display: none;
+}
+.cones-filter-form-height span,
+.cones-filter-form-weight span{
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.cones-filter-form-height label span:before {
+  position: absolute;
+  display: block;
+  content: '';
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  border: 1px solid $basic-font-grey;
+}
+.cones-filter-form-height input[type="checkbox"]:checked ~ span:before {
+  background-color: $basic-green;
+  border-color: $basic-green;
+  background-image: url('/img/cone-page/filter-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.cones-filter-form-weight label span:before {
+  position: absolute;
+  display: block;
+  content: '';
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid $basic-font-grey;
+}
+.cones-filter-form-weight input[type="radio"]:checked ~ span:before {
+  border-color: $basic-green;
+}
+.cones-filter-form-weight input[type="radio"]:checked ~ span:after {
+  position: absolute;
+  display: block;
+  content: '';
+  right: 105%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $basic-green;
+}

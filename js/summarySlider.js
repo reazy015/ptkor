@@ -72,7 +72,9 @@ window.summarySlider = ( function() {
            var index = Array.prototype.indexOf.call(indicatorsList, target);
            sliderStartIndex = index;
            disableAllActiveIndicators();
+           hideAllActiveAddresses();
            showSlide(getCurrentSlide(index));
+           showFitAddress(index);
            target.classList.add('indicators-list-item--active');
         }
     }

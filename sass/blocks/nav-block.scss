@@ -1,12 +1,14 @@
 .nav {
-  border-top: 1px solid $basic-hr-border;
   padding-left: 10px;
   padding-right: 10px;
 
   &--catalog, &--card {
     border-bottom: 1px solid $basic-hr-border;
   }
-
+  
+  @media (max-width: 1024px) {
+    display: none;
+  }
 
   @media (max-width: 830px) {
     position: relative;
@@ -21,13 +23,12 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
-  max-width: 1360px;
+  max-width: 1020px;
   margin: auto;
   transition: transform .2s;
 
   @media (max-width: 830px) {
     display: none;
-    transform: translate(-100%);
   }
 }
 .nav-list-item {
@@ -297,9 +298,8 @@
   background-color: $basic-white;
   border-top: 1px solid $basic-font-grey;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: translate(100%);
-  animation-name: nav-open;
+  animation-name: navOpenSlide;
   animation-duration: .5s;
   animation-fill-mode: forwards;
   z-index: 100;
@@ -330,10 +330,17 @@
   padding-left: 10px;
 }
 
-@keyframes nav-open {
+@keyframes navOpenSlide {
   from {
     transform: translate(100%);
   } to {
     transform: translate(0%)
       }
+}
+.tablet-mobile-add-info {
+  display: none; 
+}
+.page-header--mobile-nav-open .tablet-mobile-add-info {
+  display: block;
+  text-align: center;
 }

@@ -1,0 +1,43 @@
+.cones-types {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.cones-types .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cones-types-item {
+  flex: 0 1 45%;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px 45px 60px;
+  margin-bottom: 13px;
+  color: $basic-black;
+  border: 1px solid $basic-hr-border;
+}
+.cones-types-item-descr__header {
+  font-family: "Merel Light";
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.cones-types-item-params {
+  font-family: "Merel Light", "Arial", sans-serif;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+.cones-types-item-params-row {
+  margin-bottom: 10px;
+}
+.cones-types-item-descr__price {
+  margin-bottom: 20px;
+  font-family: "Merel Bold";
+  font-size: 30px;
+  font-weight: bold;
+}
+.cones-types-item-descr__more {
+  @include reset-link;
+  font-family: "Merel", "Arial", sans-serif;
+  color: $basic-green;
+}

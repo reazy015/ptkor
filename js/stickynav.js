@@ -1,6 +1,19 @@
 'use strict';
 
 window.stickyNav = (function () {
+    var pageHeader = document.querySelector('.page-header');
+    var stickyAdditionalNav = pageHeader.querySelector('.page-header-additional-nav-container');
+
+    function fixAdditionalNav() {
+        if (window.pageYOffset > pageHeader.offsetHeight) {
+            stickyAdditionalNav.classList.add('page-header-additional-nav-container--fixed');
+        } else {
+            stickyAdditionalNav.classList.remove('page-header-additional-nav-container--fixed');
+        }
+    }
+
+    document.addEventListener('scroll', fixAdditionalNav);
+
     var body = document.body;
     var header = document.querySelector('.page-header');
     var menuList = document.querySelector('.nav-list');
@@ -11,22 +24,16 @@ window.stickyNav = (function () {
 
 
     function toggleMenu() {
-        header.classList.toggle('page-header--mobile-nav-open');
-        menuList.classList.toggle('nav-open');
         menuToggleBtn.classList.toggle('nav-toggle--open');
+        pageHeader.classList.toggle('page-header--nav-open');
 
-        if (!menuList.style.top) {
-           menuList.style.top = header.offsetHeight + 'px';
-        } else {
-            menuList.style.top = null;
-        }
 
         body.classList.toggle('no-scroll');
     }
 
 
     function fixHeader() {
-        if(window.pageYOffset  > headerOffsetTop && !menuList.classList.contains('nav-open')) {
+        if(window.pageYOffset  > headerOffsetTop && window.innerWidth < 830) {
             body.style.paddingTop = headerOffsetTop + 'px';
             header.classList.add('header-sticky');
         } else {

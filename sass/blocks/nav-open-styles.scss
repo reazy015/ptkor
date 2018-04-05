@@ -1,0 +1,141 @@
+.page-header--nav-open {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+
+  .page-header-top-container {
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    order: 1;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      top: 55%;
+      width: 200%;
+      right: 0%;
+      height: 1px;
+      background-color: $basic-hr-border;
+    }
+  }
+
+  & .page-header-top-container-decor {
+    display: block;
+    flex: 0 0 100%;
+    height: 1px;
+    background-color: $basic-hr-border;
+    max-height: 1px;
+    visibility: hidden;
+  }
+
+  & .page-header-logo {
+    flex: 0 0 50%;
+  }
+
+  & .page-header-phone-common {
+    display: block;
+    flex: 0 0 50%;
+    text-align: right;
+  }
+  & .page-header-info {
+    display: block;
+    flex: 0 0 50%;
+  }
+
+  & .page-header-nav {
+    order: 2;
+    display: block;
+    
+    & .nav-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 1px solid $basic-border-grey;
+    }
+
+  }
+
+  & .page-header-additional-nav-container {
+    position: static;
+    order: 3;
+    display: block;
+    border-bottom: 1px solid $basic-hr-border;
+
+    & .page-header-additional-nav-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & .page-header-additional-item__link {
+      color: $basic-font-grey;
+      font-size: 16px;
+      padding-right: 0;
+      padding-left: 0;
+      transition: color .3s;
+
+      &:hover {
+        color: $basic-green;
+        background-color: transparent;
+        font-weight: inherit;
+      }
+    }
+    
+    & .page-header-additional-nav-list br {
+      display: none;
+    }
+  }
+
+  & .tablet-mobile-add-info {
+    order: 4;
+    display: block;
+  }
+  
+  & .nav-list-item--city {
+    display: block;
+
+  }
+
+  & .add-info-item {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $basic-border-grey;
+  }
+
+  & .add-info-item span {
+    display: block;
+  }
+
+  & .info-item-address {
+    margin-bottom: 20px;
+  }
+
+  & .info-item-schedule {
+    margin-bottom: 20px;
+  }
+
+  & .info-item-schedule span{
+    display: inline-block;
+  }
+
+  & .info-item-address span:first-of-type {
+    font-family: "Merel Bold", "Arial", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $basic-green;
+  }
+
+  & .info-item-contacts span:first-of-type{
+    font-family: "Merel Bold", "Arial", sans-serif;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+}
