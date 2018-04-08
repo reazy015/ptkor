@@ -18,7 +18,7 @@ window.deliverySwtitchPanel = ( function () {
         } else {
             deliverAdvantages.style.display = 'block';
         }
-        
+
         for (var i = 0; i < deliveryInfoBlockList.length; i++) {
             if (deliveryInfoBlockList[i].dataset.target === target) {
                 deliveryInfoBlockList[i].classList.add('delivery-info-block--active');

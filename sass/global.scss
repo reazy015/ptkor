@@ -51,9 +51,8 @@ html {
   }
 
   &--header {
-    @media(max-width: 830px) {
-      display: none;
-    }
+    display: flex;
+    flex-direction: row!important;
   }
 
   &--sum {
