@@ -10,11 +10,17 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 80px;
+  border-bottom: 1px solid $basic-hr-border;
 }
 .delivery-advantages-list-item {
   display: flex;
   align-items: center;
-  flex: 1 1 30%;
+  flex: 0 1 284px;
+
+  &:last-of-type {
+    flex: 0 1 340px;
+  }
 }
 .delivery-advantages-item-info__header {
   text-transform: uppercase;

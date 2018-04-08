@@ -284,9 +284,9 @@
 <div class="container">
     <section class="delivery-info">
         <ul class="delivery-info-panel">
-            <li class="delivery-info-panel__item delivery-info-panel__item--active">Самовывоз Санкт-Петербург</li>
-            <li class="delivery-info-panel__item">Самовывоз Москва</li>
-            <li class="delivery-info-panel__item">Доставка по России</li>
+            <li class="delivery-info-panel__item delivery-info-panel__item--active" data-target="sbp">Самовывоз Санкт-Петербург</li>
+            <li class="delivery-info-panel__item" data-target="msc">Самовывоз Москва</li>
+            <li class="delivery-info-panel__item" data-target="delivery">Доставка по России</li>
         </ul>
 
         <div class="delivery-advantages">
@@ -322,7 +322,7 @@
             </ul>
         </div>
 
-        <div class="delivery-city-info">
+        <div class="delivery-city-info delivery-info-block  delivery-info-block--active" data-target="sbp">
             <div class="delivery-city-info-top">
                 <h3 class="delivery-city-info__header">Склад в Санкт-Петербурге</h3>
                 <div class="delivery-city-order">
@@ -357,7 +357,7 @@
             </div>
         </div>
 
-        <div class="delivery-city-info">
+        <div class="delivery-city-info delivery-info-block" data-target="msc">
             <div class="delivery-city-info-top">
                 <h3 class="delivery-city-info__header">Склад в Москве</h3>
                 <div class="delivery-city-order">
@@ -394,42 +394,43 @@
             </div>
         </div>
 
-        <div class="delivery-info-table">
+        <div class="delivery-info-table delivery-info-block" data-target="delivery">
             <div class="delivery-info-table-advantages">
                 <h3 class="delivery-info-table-advantages__header">Преимущества доставки</h3>
             </div>
             <ul class="delivery-advantages-list">
                 <li class="delivery-advantages-list-item">
-                    <img src="img/delivery-icons/006-calendar.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <img src="img/delivery-icons/002-truck.svg" alt="icon" class="delivery-advantages-list-item__icon">
                     <div class="delivery-advantages-item-info">
-                        <h4 class="delivery-advantages-item-info__header">Удобный график</h4>
-                        <p class="delivery-advantages-item-info__text">пн-пт 10:00-21:00<br>сб-вс 12:00-16:00</p>
+
+                        <p class="delivery-advantages-item-info__text">Собственный автотранспорт</p>
                     </div>
                 </li>
                 <li class="delivery-advantages-list-item">
-                    <img src="img/delivery-icons/003-money.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <img src="img/delivery-icons/004-calculator.svg" alt="icon" class="delivery-advantages-list-item__icon">
                     <div class="delivery-advantages-item-info">
-                        <h4 class="delivery-advantages-item-info__header">Удобный график</h4>
-                        <p class="delivery-advantages-item-info__text">Скидка при самовывозе до 15%</p>
+                        <p class="delivery-advantages-item-info__text">Индивидуальный расчет стоимости доставки</p>
                     </div>
                 </li>
                 <li class="delivery-advantages-list-item">
-                    <img src="img/delivery-icons/007-look.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <img src="img/delivery-icons/001-compass.svg" alt="icon" class="delivery-advantages-list-item__icon">
                     <div class="delivery-advantages-item-info">
-                        <h4 class="delivery-advantages-item-info__header">Ознакомтесь со всем ассортиментом</h4>
+                        <p class="delivery-advantages-item-info__text">Многолетний опыт работы с регионами</p>
                     </div>
                 </li>
                 <li class="delivery-advantages-list-item">
-                    <img src="img/delivery-icons/009-team.svg" alt="icon" class="delivery-advantages-list-item__icon">
+                    <img src="img/delivery-icons/005-box.svg" alt="icon" class="delivery-advantages-list-item__icon">
                     <div class="delivery-advantages-item-info">
-                        <h4 class="delivery-advantages-item-info__header">42% покупателей</h4>
-                        <p class="delivery-advantages-item-info__text">42% покупателей пользуются самовывозом</p>
+                        <p class="delivery-advantages-item-info__text">Гарантия сохранности груза</p>
                     </div>
                 </li>
             </ul>
             <div class="delivery-info-table__header">Доставка по России</div>
             <div class="delivery-city-order">
-                <div class="delivery-city-order-comments"></div>
+                <div class="delivery-city-order-comments">
+                    <span>Доставка по России осуществляется крупными транспортными компаниями.</span>
+                    <span>Все подробности и сроки доставки вы можете уточнить у наших операторов.</span>
+                </div>
                 <button class="delivery-city-order__btn">Заказать звонок</button>
             </div>
             <table class="delivery-info-table-main">
@@ -695,11 +696,9 @@
     </section>
 </footer>
 
-<script src="js/stickynav.js"></script>
-<script src="js/slider.js"></script>
+<!--<script src="js/stickynav.js"></script>-->
 <script src="js/adaptiveMenu.js"></script>
-<script src="js/aboutTabs.js"></script>
-<script src="js/aboutSlider.js"></script>
+
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
@@ -712,6 +711,7 @@
 <script src="js/vendor/slick.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/mapConfig.js"></script>
+<script src="js/deliverySwitchPanel.js"></script>
 </body>
 </html>
 

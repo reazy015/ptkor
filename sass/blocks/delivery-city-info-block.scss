@@ -1,10 +1,34 @@
+.delivery-city-info {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid $basic-green;
+}
+.delivery-city-info-top {
+  padding-bottom: 56px;
+}
 .delivery-city-info__header {
+  font-family: "Merel Bold", "Arial", sans-serif;
+  font-size: 24px;
+  margin-top: 65px;
+  margin-bottom: 46px;
   text-align: center;
 }
 .delivery-city-order {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.delivery-city-order-comments {
+  display: flex;
+  flex-direction: column;
+  color: $basic-font-grey;
+}
+.delivery-city-order__btn {
+  @include link-green;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  background-color: $basic-black-btn;
+  border: none;
 }
 .delivery-map-descr {
   display: flex;
@@ -16,4 +40,7 @@
 .delivery-map-container {
   width: 100%;
   min-height: 375px;
+}
+[class*="ymaps-2"][class*="-ground-pane"]  {
+  filter: grayscale(100%);
 }

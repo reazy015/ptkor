@@ -8,7 +8,7 @@ window.mapConfig = ( function() {
         var coordinates = $("#spb.delivery-map-container").attr('data-coordinates');
         var scale = $("#spb").attr('data-scale');
 
-        var myMap = new ymaps.Map("map", {
+        var myMap = new ymaps.Map("spb", {
                 center: coordinates.split(','),
                 zoom: scale
             }, {
@@ -32,7 +32,7 @@ window.mapConfig = ( function() {
         var coordinates = $("#msc").attr('data-coordinates');
         var scale = $("#msc").attr('data-scale');
 
-        var myMap = new ymaps.Map("map", {
+        var myMap = new ymaps.Map("msc", {
                 center: coordinates.split(','),
                 zoom: scale
             }, {

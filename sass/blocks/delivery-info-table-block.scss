@@ -1,6 +1,11 @@
+.delivery-info-table-main {
+  margin-top: 56px;
+  margin-bottom: 78px;
+}
 .delivery-info-table-main,
 .delivery-info-table-main td table{
   width: 100%;
+  border-collapse: collapse;
 }
 .delivery-info-table-main td table td {
   border: none;
@@ -11,6 +16,21 @@
 .delivery-info-table-main td{
   padding-left: 28px;
   border: 1px solid $basic-hr-border;
+}
+.delivery-info-table-main tr td:nth-of-type(3),
+.delivery-info-table-main tr td:nth-of-type(4){
+  padding-left: 0px;
+}
+.delivery-info-table-main td table tr td {
+  padding-left: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.delivery-info-table-main td table tr:last-of-type td {
+  border-bottom: none;
+}
+.delivery-info-table-main td table  td{
+  padding-left: 0;
 }
 .delivery-info-table-main tr {
   margin-bottom: 2px;
@@ -26,4 +46,31 @@
   padding-left: 28px;
   text-align: left;
   border: 1px solid $basic-hr-border;
+}
+.delivery-info-table-advantages__header {
+  margin-top: 80px;
+  margin-bottom: 65px;
+  text-align: center;
+  color: $basic-green;
+  font-size: 24px;
+  font-weight: bold;
+}
+.delivery-info-table .delivery-advantages-list-item {
+  flex: 0 1 284px;
+  color: $basic-font-grey;
+}
+.delivery-info-table .delivery-city-order-comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.delivery-info-table__header {
+  font-family: "Merel Bold", "Arial", sans-serif;
+  font-size: 24px;
+  margin-top: 65px;
+  margin-bottom: 46px;
+  text-align: center;
+}
+.delivery-info-table .delivery-city-order-comments {
+  align-self: stretch;
 }
