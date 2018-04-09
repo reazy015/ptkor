@@ -49,7 +49,7 @@
   }
 
   & .page-header-nav {
-    order: 2;
+    order: 3;
     display: block;
     
     & .nav-list {
@@ -63,7 +63,7 @@
 
   & .page-header-additional-nav-container {
     position: static;
-    order: 3;
+    order: 2;
     display: block;
     border-bottom: 1px solid $basic-hr-border;
 

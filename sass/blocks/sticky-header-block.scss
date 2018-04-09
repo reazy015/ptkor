@@ -13,15 +13,13 @@
 
   & .page-header__sticky-flex {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     width: 1360px;
     margin: auto;
   }
 
-  & .page-header-logo {
-	display: none;
-  }
+  
   & .page-header__slogan {
 	display: none;
 	order: 1;
@@ -57,6 +55,7 @@
     border-top: none;
     display: flex;
     flex: 0 1 70%;
+
   }
   & .container-flex {
     max-width: none;
@@ -74,9 +73,8 @@
     justify-content: space-between;
   }
   & .nav-list-item {
-    font-size: 12px;
     @media (max-width: 830px) {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
   & .nav-list-item__logo {
@@ -114,13 +112,14 @@
     }
     & .page-header-nav {
       flex-grow: 1;
-    }
-    & .container-flex {
-      padding: 0;
+      display: none;
     }
     & .city-dropdown {
       right: -40%;
       left: auto;
+    }
+    & .page-header-decor-container {
+      width: 100%;
     }
   }
 }

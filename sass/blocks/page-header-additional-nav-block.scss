@@ -49,8 +49,8 @@
   @include reset-link;
   display: block;
   width: 100%;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: "Merel", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
@@ -59,6 +59,11 @@
   color: $basic-black;
   cursor: pointer;
   transition: background-color .3s, font-weight .5s;
+
+  @media (max-width: 1024px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
   &:hover {
     font-weight: bolder;

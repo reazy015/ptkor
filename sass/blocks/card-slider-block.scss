@@ -5,7 +5,7 @@
 
   @media (max-width: 768px) {
     padding-top: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
   }
 }
 .card-slider__header {
@@ -17,6 +17,11 @@
   margin: 0;
   padding: 50px 55px;
   margin-bottom: 80px;
+
+  @media (max-width: 460px) {
+    padding: 15px 20px;
+    font-size: 24px;
+  }
 }
 .card-slider-container {
   position: relative;
@@ -50,13 +55,17 @@
 .item-info__header {
   margin: 0;
   margin-bottom: 15px;
-  font-family: "Merel light";
+  font-family: "Merel light", "Arila", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   color: $basic-black;
 }
 .card-info-slider {
   position: relative;
+
+  @media (max-width: 1024px) {
+
+  }
 }
 .card-info-slider-video {
   width: 100%;
@@ -68,7 +77,6 @@
   border: none;
   z-index: 80;
   cursor: pointer;
-  transition: opacity .2s;
   color: $basic-font-grey;
   transition: color .3s;
   outline: none;
@@ -118,6 +126,10 @@
   display: flex;
   justify-content: center;
   outline: none;
+
+  @media (max-width: 460px) {
+    bottom: 25%;
+  }
 
   &--hidden {
     visibility: hidden;

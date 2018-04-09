@@ -17,6 +17,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .delivery-city-order-comments {
   display: flex;
@@ -29,6 +34,10 @@
   padding-bottom: 16px;
   background-color: $basic-black-btn;
   border: none;
+
+  @media (max-width: 880px) {
+    margin-top: 25px;
+  }
 }
 .delivery-map-descr {
   display: flex;
@@ -36,6 +45,16 @@
   padding-top: 45px;
   padding-bottom: 45px;
   background-color: $order-panel-bg;
+
+  @media (max-width: 749px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    & > div {
+      margin-right: 25px;
+      margin-bottom: 15px;
+    }
+  }
 }
 .delivery-map-container {
   width: 100%;

@@ -12,6 +12,11 @@
   justify-content: space-between;
   padding-bottom: 80px;
   border-bottom: 1px solid $basic-hr-border;
+
+  @media (max-width: 1180px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .delivery-advantages-list-item {
   display: flex;
@@ -20,6 +25,15 @@
 
   &:last-of-type {
     flex: 0 1 340px;
+  }
+
+  @media (max-width: 1180px) {
+    flex: 0 1 380px;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      flex: 0 1 380px;
+    }
   }
 }
 .delivery-advantages-item-info__header {

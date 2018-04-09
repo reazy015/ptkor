@@ -1,6 +1,15 @@
+.delivery-table-container {
+  overflow: scroll;
+}
 .delivery-info-table-main {
   margin-top: 56px;
   margin-bottom: 78px;
+
+  @media (max-width: 1055px) {
+    display: block;
+    min-width: 1055px;
+    overflow: scroll
+  }
 }
 .delivery-info-table-main,
 .delivery-info-table-main td table{

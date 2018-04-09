@@ -6,7 +6,7 @@
   font-size: 16px;
   z-index: 100;
   
-  @media (max-width: 1024px) {
+  &--nav-open {
     position: fixed;
   }
 }
@@ -62,8 +62,8 @@
 .page-header-top-container {
   align-items: center;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   
   @media (max-width: 1024px) {
     & > *:not(.page-header-logo) {
@@ -77,6 +77,8 @@
     }
     padding-top: 5px;
     padding-bottom: 0px;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
   }
 }
 .page-header-top-container-decor {
@@ -104,4 +106,8 @@
 }
 .common-phone {
   font-size: 21px;
+}
+.page-header--nav-open .page-header-top-container {
+  padding-left: 10px;
+  padding-right: 10px;
 }

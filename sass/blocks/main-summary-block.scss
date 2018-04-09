@@ -1,6 +1,19 @@
 .main-summary {
   position: relative;
 }
+.main-summary__header {
+  margin-bottom: 65px;
+  font-family: "Merel Light", "Arial", sans-serif;
+  font-size: 30px;
+  color: $basic-black;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 470px) {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
 .main-summary-slider {
   overflow: hidden;
 }

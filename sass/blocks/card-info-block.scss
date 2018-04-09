@@ -1,6 +1,11 @@
 .card-info {
   position: relative;
   overflow: hidden;
+  margin-bottom: 25px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 .card-info-wrapper {
   position: relative;
@@ -19,21 +24,21 @@
     background-color: $basic-border-grey;
   }
   @media (max-width: 768px) {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 15px 10px;
+    margin-right: 0;
   }
 }
 .card-info__header {
   margin-top: 100px;
   margin-bottom: 70px;
-  font-family: "Merel Bold";
+  font-family: "Merel Bold", "Arial", sans-serif;
   font-size: 49px;
   color: $basic-black;
   text-transform: uppercase;
 
   @media (max-width: 420px) {
     font-size: 36px;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 }
 .card-info__text {
@@ -53,18 +58,26 @@
   align-items: center;
   background-color: $basic-white;
 
-  @media (max-width: 1156px) {
-    display: none;
-  }
+  @media (max-width: 1024px) {
+  padding-top: 25px;
+}
 }
 .card-info-slider-wrapper {
   margin-bottom: 60px;
   max-height: 422px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    margin-bottom: 25px;
+  }
 }
 .card-info-slider-wrapper img {
   max-width: 100%;
   height: auto;
+
+  @media (max-width: 768px) {
+    max-width: 80%;
+  }
 }
 .card-info-slider-list {
   @include list-reset;
@@ -135,7 +148,7 @@
   margin-bottom: 116px;
 
   @media (max-width: 830px) {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   @media (max-width: 420px) {

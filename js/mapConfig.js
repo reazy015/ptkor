@@ -9,7 +9,7 @@ window.mapConfig = ( function() {
         var scale = $("#spb").attr('data-scale');
 
         var myMap = new ymaps.Map("spb", {
-                center: coordinates.split(','),
+                center: [59.529892, 29.955401],
                 zoom: scale
             }, {
                 searchControlProvider: 'yandex#search'
@@ -19,7 +19,7 @@ window.mapConfig = ( function() {
             myGeoObject = new ymaps.GeoObject({});
         myMap.geoObjects
             .add(myGeoObject)
-            .add(new ymaps.Placemark(coordinates.split(','), {
+            .add(new ymaps.Placemark([59.529892, 29.955401], {
                 balloonContent: 'Объединенные ресурсы'
             }, {
                 preset: 'islands#dotIcon',
@@ -29,11 +29,11 @@ window.mapConfig = ( function() {
     }
 
     function initSecond() {
-        var coordinates = $("#msc").attr('data-coordinates');
+        var coordinates = [55.614139, 36.401146];
         var scale = $("#msc").attr('data-scale');
 
         var myMap = new ymaps.Map("msc", {
-                center: coordinates.split(','),
+                center: [55.614139, 36.401146],
                 zoom: scale
             }, {
                 searchControlProvider: 'yandex#search'
@@ -43,7 +43,7 @@ window.mapConfig = ( function() {
             myGeoObject = new ymaps.GeoObject({});
         myMap.geoObjects
             .add(myGeoObject)
-            .add(new ymaps.Placemark(coordinates.split(','), {
+            .add(new ymaps.Placemark([55.614139, 36.401146], {
                 balloonContent: 'Объединенные ресурсы'
             }, {
                 preset: 'islands#dotIcon',

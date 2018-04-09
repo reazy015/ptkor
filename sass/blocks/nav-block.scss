@@ -117,7 +117,7 @@
       margin-bottom: 20px;
     }
     & .city-dropdown-item__adr span:first-child{
-      font-family: "Merel Bold";
+      font-family: "Merel Bold", "Arial", sans-serif;
       text-transform: uppercase;
       color: $basic-green;
     }
@@ -187,9 +187,14 @@
 .nav-list-item__link {
   @include reset-link;
   display: block;
-  padding-top: 23px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
   @media (max-width: 830px) {
     align-self: center;
