@@ -15,6 +15,17 @@
   margin-bottom: 13px;
   color: $basic-black;
   border: 1px solid $basic-hr-border;
+
+  @media (max-width: 1024px) {
+    flex: 1 1 auto;
+    padding: 15px;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+}
+.cones-types-item__img {
+  max-width: 80%;
 }
 .cones-types-item-descr__header {
   font-family: "Merel Light";
@@ -26,6 +37,10 @@
   font-family: "Merel Light", "Arial", sans-serif;
   font-size: 16px;
   margin-bottom: 60px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 15px;
+  }
 }
 .cones-types-item-params-row {
   margin-bottom: 10px;
@@ -40,4 +55,20 @@
   @include reset-link;
   font-family: "Merel", "Arial", sans-serif;
   color: $basic-green;
+}
+.cones-adaptive-hidden {
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+.cones-adaptive-visible {
+  display: none;
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+.container--cones {
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 }

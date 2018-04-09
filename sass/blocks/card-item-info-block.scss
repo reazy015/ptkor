@@ -85,6 +85,10 @@
   text-decoration-color: $basic-font-grey;
   padding-right: 20px;
 }
+.card-item-info__new-price {
+  font-weight: bold;
+  color: red;
+}
 .card-item__header {
   font-family: "Merel Bold", Arial, Sans-Serif;
   font-size: 24px;

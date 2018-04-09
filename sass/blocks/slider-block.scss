@@ -252,4 +252,11 @@
 }
 .slider-main--cones {
   margin-bottom: 0;
+
+  @media (max-width: 1024px) {
+    .slider-image-wrapper img {
+      width: auto;
+      transform: translate(-50%);
+    }
+  }
 }

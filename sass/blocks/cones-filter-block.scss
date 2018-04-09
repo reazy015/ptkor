@@ -3,26 +3,64 @@
   padding-bottom: 60px;
   background-color: $basic-border-grey;
   color: $basic-black;
+
+  @media (max-width: 1024px) {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
 }
 .cones-filter__header {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 25px;
+  }
 }
 .cones-filter-form {
   display: flex;
   justify-content: center;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 .cones-filter-form-height {
   flex: 0 1 370px;
   display: flex;
   justify-content: space-between;
   margin-right: 147px;
+
+  @media (max-width: 1024px) {
+    & span {
+      flex: 1 1 100%;
+      margin-bottom: 10px;
+    }
+    flex-wrap: wrap;
+    margin: auto;
+    flex: 1 1 auto;
+    justify-content: space-around;
+  }
 }
 .cones-filter-form-weight {
   flex: 0 1 250px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    & span {
+      flex: 1 1 100%;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+    margin: auto;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: space-around;
+  }
 }
 .cones-filter-form-height input[type="checkbox"],
 .cones-filter-form-weight input[type="radio"]{
