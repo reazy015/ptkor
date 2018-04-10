@@ -48,6 +48,10 @@
   font-size: 18px;
   line-height: 1.2;
   color: $basic-black;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 .card-info-slider {
   flex-direction: column;

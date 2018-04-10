@@ -12,14 +12,15 @@
     flex-wrap: wrap;
     align-items: center;
     order: 1;
+    padding-top: 0;
 
     &:before {
       position: absolute;
       display: block;
       content: '';
-      top: 55%;
+      top: 58%;
       width: 200%;
-      right: 0%;
+      right: 0;
       height: 1px;
       background-color: $basic-hr-border;
     }
@@ -35,17 +36,18 @@
   }
 
   & .page-header-logo {
-    flex: 0 0 50%;
+    flex: 0 0 50px;
   }
 
   & .page-header-phone-common {
     display: block;
-    flex: 0 0 50%;
-    text-align: right;
+    flex: 1 1 50%;
+    text-align: center;
   }
   & .page-header-info {
     display: block;
-    flex: 0 0 50%;
+    flex: 1 1 100%;
+    text-align: center;
   }
 
   & .page-header-nav {

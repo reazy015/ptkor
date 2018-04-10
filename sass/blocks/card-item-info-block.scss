@@ -32,6 +32,10 @@
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
+
+  @media (max-width: 460px) {
+    margin-right: 0px!important;
+  }
 }
 .card-item-rs {
   float: right;
@@ -43,6 +47,10 @@
 
   &:last-of-type {
     margin-right: 0;
+  }
+
+  @media (max-width: 460px) {
+    margin-right: 0px!important;
   }
 }
 .card-item-info__header {
@@ -65,6 +73,10 @@
   padding-bottom: 15px;
   padding-left: 20px;
   color: $basic-font-grey;
+
+  @media (max-width: 460px) {
+    padding: 5px;
+  }
 }
 .card-item-info-params__value {
   flex: 1 1 auto;
@@ -72,6 +84,10 @@
   align-items: center;
   padding: 15px 15px;
   text-align: left;
+
+  @media (max-width: 460px) {
+    padding: 5px;
+  }
 }
 .card-item-info-list {
   @include list-reset;
@@ -166,18 +182,6 @@
 }
 .card-item:nth-child(2n) {
   display: none;
-}
-.card .types-acc, 
-.card .card-slider--additional {
-  @media (max-width: 460px) {
-    display: none;
-  }
-}
-.card .main-summary {
-  display: none;
-  @media (max-width: 460px) {
-    display: block;
-  }
 }
 .card .page-breadcrumbs {
   margin-top: 0;
