@@ -7,7 +7,12 @@
   right: 0;
   overflow: scroll;
 
-  .page-header-top-container {
+  & .nav-list-item__link {
+    font-size: 16px;
+    color: $basic-font-grey;
+  }
+
+  & .page-header-top-container {
     position: relative;
     flex-wrap: wrap;
     align-items: center;
@@ -18,7 +23,7 @@
       position: absolute;
       display: block;
       content: '';
-      top: 58%;
+      top: 55%;
       width: 200%;
       right: 0;
       height: 1px;
@@ -36,7 +41,7 @@
   }
 
   & .page-header-logo {
-    flex: 0 0 50px;
+    flex: 0 0 70px;
   }
 
   & .page-header-phone-common {

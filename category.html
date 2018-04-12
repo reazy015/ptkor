@@ -204,7 +204,10 @@
           <div class="container-flex container-flex--header page-header-top-container">
               <div class="page-header-logo">
                   <a href="/index.html">
-                      <img src="/img/logo.png" alt="logo-img" class="page-header-logo__img">
+                      <picture>
+                          <source srcset="img/logo-new-mobile.png" media="(max-width:1024px)">
+                          <img src="img/logo-new-desktop.png" alt="logo-img" class="page-header-logo__img">
+                      </picture>
                   </a>
                   <h2 class="page-header__slogan">
                       Поставка материалов<br>для дорожного строительства
@@ -560,7 +563,7 @@
                     </article>
                     <a href="#" class="article-container__link">Перейти в раздел</a>
                 </div>
-                <div class="callback">
+                <div class="callback callback--category">
                     <p class="callback__text">Не нашли нужный товар?</p>
                     <p class="callback__text">Свяжитесь с нами!</p>
                     <a href="#" class="callback__order">Заказать звонок</a>
@@ -603,285 +606,286 @@
 
     <section class="main-about">
 
-        <div class="main-about-dropdown">
-            <div class="main-about-dropdown__current">Нам доверяют</div>
-            <ul class="main-about-nav">
-                <li class="main-about-nav__item" data-slider-nav="partners">Партнеры</li>
-                <li class="main-about-nav__item main-about-nav__item--active" data-slider-nav="trust">Нам доверяют</li>
-                <li class="main-about-nav__item" data-slider-nav="obj-orders">Заказчики объектов</li>
-                <li class="main-about-nav__item" data-slider-nav="qlty">Качество</li>
-                <li class="main-about-nav__item" data-slider-nav="callbacks">Отзывы</li>
-            </ul>
-        </div>
+      <div class="main-about-dropdown">
+          <div class="main-about-dropdown__current">Нам доверяют</div>
+          <ul class="main-about-nav">
+              <li class="main-about-nav__item" data-slider-nav="partners">Партнеры</li>
+              <li class="main-about-nav__item main-about-nav__item--active" data-slider-nav="trust">Нам доверяют</li>
+              <li class="main-about-nav__item" data-slider-nav="obj-orders">Заказчики объектов</li>
+              <li class="main-about-nav__item" data-slider-nav="qlty">Качество</li>
+              <li class="main-about-nav__item" data-slider-nav="callbacks">Отзывы</li>
+          </ul>
+      </div>
 
-        <section class="main-about-slider slider" data-slider="partners">
+      <section class="main-about-slider slider" data-slider="partners">
 
-            <ul class="slider-list slider-list--about slider-list--partners">
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-            </ul>
-        </section>
-        <section class="main-about-slider slider main-about-slider--active" data-slider="trust">
+          <div class="slider-list slider-list--about slider-list--partners">
+              <div class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </div>
+              <div class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </div>
+              <div class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </div>
+              <div class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </div>
+              <div class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </div>
+              <div class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </div>
+              <div class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </div>
+              <div class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </div>
 
-            <ul class="slider-list slider-list--about slider-list--trust">
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
-                </li>
-            </ul>
-        </section>
-        <section class="main-about-slider slider" data-slider="obj-orders">
+          </div>
+      </section>
+      <section class="main-about-slider slider main-about-slider--active" data-slider="trust">
 
-            <ul class="slider-list slider-list--about slider-list--objects">
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-            </ul>
-        </section>
-        <section class="main-about-slider slider" data-slider="qlty">
+          <ul class="slider-list slider-list--about slider-list--trust">
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"2</h4>
+              </li>
+          </ul>
+      </section>
+      <section class="main-about-slider slider" data-slider="obj-orders">
 
-            <ul class="slider-list slider-list--about slider-list--qlty">
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-            </ul>
-        </section>
-        <section class="main-about-slider slider" data-slider="callbacks">
-            <ul class="slider-list slider-list--about slider-list--callbacks">
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-                <li class="slider-list-item">
-                    <div class="main-about-image-wrapper">
-                        <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
-                    </div>
-                    <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
-                </li>
-            </ul>
-        </section>
+          <ul class="slider-list slider-list--about slider-list--objects">
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+          </ul>
+      </section>
+      <section class="main-about-slider slider" data-slider="qlty">
 
-    </section>
+          <ul class="slider-list slider-list--about slider-list--qlty">
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+          </ul>
+      </section>
+      <section class="main-about-slider slider" data-slider="callbacks">
+          <ul class="slider-list slider-list--about slider-list--callbacks">
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+              <li class="">
+                  <div class="main-about-image-wrapper">
+                      <img src="img/about-slider-img.jpg" alt="slider-img" class="slider-list-item__img">
+                  </div>
+                  <h4 class="slider-list-item__header">ЗАО "Пилон"</h4>
+              </li>
+          </ul>
+      </section>
 
-  <section class="main-summary central">
+  </section>
+
+    <section class="main-summary central">
       <h2 class="main-summary__header">Реализованные проекты</h2>
       <div class="main-summary-slider">
           <img src="img/summary-slider/slide1.png" alt="slider-img" class="main-summary-slider-item main-summary-slider-item--active" data-address="1">

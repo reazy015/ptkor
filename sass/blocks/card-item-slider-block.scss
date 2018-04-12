@@ -3,6 +3,12 @@
   overflow: hidden;
   float: left;
   width: 62.5%;
+
+  @media (max-width: 1024px) {
+    float: none;
+    flex: 1 1 100%;
+    width: 100%;
+  }
 }
 .card-item-slider-list {
   @include list-reset;

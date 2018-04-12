@@ -29,9 +29,9 @@
   margin-bottom: 48px;
 }
 .grid-section__header {
-  margin-top: 50px;
-  margin-bottom: 27px;
-  font-family: "Merel Bold";
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: "Merel Bold", "Arial", sans-serif;
   font-size: 24px;
   color: $basic-black;
 
@@ -84,10 +84,10 @@
   }
 }
 .grid-section__article {
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 2%;
+  padding-bottom: 2%;
   border-bottom: 1px solid $basic-hr-border;
-  flex: 1 1 50
+  flex: 1 1 50%;
 
   &:last-child() {
     border-bottom: 0;

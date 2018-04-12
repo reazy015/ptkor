@@ -58,16 +58,20 @@
   }
 }
 .main-about-slider {
-  position: relative;
   margin-top: 85px;
   display: block;
   min-height: 120px;
   visibility: hidden;
   position: absolute;
   z-index: -100;
-  overflow: visible;
+  overflow: hidden;
   width: 100%;
   left: 0;
+
+  @media (max-width: 1024px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 
   &--active {
     visibility: visible;
@@ -79,8 +83,7 @@
   display: block;
 }
 .main-about-slider .slider-list-item {
-  min-height: auto;
-  flex: 1 1 auto;
+  display: block;
 }
 .main-about-slider .slider-list-item__img {
   width: auto;
@@ -93,9 +96,12 @@
   }
 }
 .main-about-slider .slider-list-item {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
+  min-height: auto;
+  display: block;
+  max-height: 150px;
+  flex: none;
 }
 .slider-list-item__header {
   color: $basic-font-grey;

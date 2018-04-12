@@ -36,6 +36,15 @@
   color: $basic-black;
   text-transform: uppercase;
 
+  @media (max-width: 1024px) {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    
+    & br {
+      display: none;
+    }
+  }
+
   @media (max-width: 420px) {
     font-size: 36px;
     margin-top: 10px;
@@ -43,8 +52,8 @@
 }
 .card-info__text {
   width: 80%;
-  margin-bottom: 70px;
-  font-family: "Merel";
+  margin-bottom: 25px;
+  font-family: "Merel", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.2;
   color: $basic-black;

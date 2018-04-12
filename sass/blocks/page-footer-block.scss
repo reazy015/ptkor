@@ -5,6 +5,11 @@
   padding-top: 101px;
   padding-bottom: 93px;
   color: white;
+
+  @media (max-width: 768px) {
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
 }
 .page-footer__support {
   display: flex;
@@ -37,6 +42,11 @@
   @include list-reset;
   margin-top: 74px;
   margin-bottom: 103px;
+
+  @media (max-width: 1024px) {
+    margin-top: 44px;
+    margin-bottom: 53px;
+  }
 }
 .support-list-item {
   margin-bottom: 18px;

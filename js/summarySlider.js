@@ -101,15 +101,14 @@ window.summarySlider = ( function() {
         showSlide(getCurrentSlide(sliderStartIndex));
         switchFitIndicator(sliderStartIndex);
         showFitAddress(sliderStartIndex);
-        console.log(sliderStartIndex);
-
     });
+
     summarySliderRightControl.addEventListener('click', function() {
         sliderStartIndex++;
         showSlide(getCurrentSlide(sliderStartIndex));
         switchFitIndicator(sliderStartIndex);
         showFitAddress(sliderStartIndex);
-        console.log(sliderStartIndex);
     });
+
     summaryIndicatorsList.addEventListener('click', showSlideByIndicatorsIndex);
 })();

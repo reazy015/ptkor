@@ -7,6 +7,11 @@
   padding-right: 15px;
   margin: auto;
 
+  @media (max-width: 1024px) {
+    padding-top: 35px;
+    padding-bottom: 60px;
+  }
+
   @media (max-width: 460px) {
     flex-direction: column;
     padding-top: 25px;
@@ -24,11 +29,15 @@
     flex: 0 0 580px;
   }
 
+  @media (max-width: 1024px) {
+    flex: 1 1 320px;
+    margin-right: 50px;
+  }
+
   @media (max-width: 768px) {
-    flex: 1 1 auto;
-    display: flex;
+    display: block;
     flex-direction: column;
-    margin-right: 0;
+
     width: 100%;
   }
 }
@@ -39,6 +48,11 @@
 
   @media (max-width: 1184px) {
     float: none;
+  }
+
+  @media (max-width: 1024px) {
+    margin-right: 0;
+    flex: 1 1 320px;
   }
 
   @media (max-width: 436px) {
@@ -66,7 +80,7 @@
 .card-download-tech-link {
   text-decoration: none;
   color: $basic-green;
-  padding: 15px 0px;
+  padding: 15px 0;
   border: 1px dashed $basic-green;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -78,7 +92,7 @@
   @media (max-width: 768px) {
     margin-bottom: 15px;
     margin-right: 0;
-    flex: 1 1 100%;
+    display: block;
     align-self: auto;
 
   }
@@ -93,9 +107,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
 
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+  }
+
   @media (max-width: 436px) {
     width: auto;
-    justify-content: flex-start;
   }
 }
 .cert-list-item {

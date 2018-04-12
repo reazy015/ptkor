@@ -16,6 +16,10 @@
       display: none;
     }
   }
+
+  &--category {
+    height: auto!important;
+  }
 }
 .category .callback {
   flex: 1 0 auto;
@@ -23,7 +27,7 @@
 }
 .callback__text {
   margin-bottom: 40px;
-  font-family: "Merel Bold";
+  font-family: "Merel Bold", "Arial", sans-serif;
   font-size: 24px;
 }
 .callback__order {

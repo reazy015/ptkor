@@ -2,24 +2,29 @@
   padding-bottom: 160px;
   padding-top: 100px;
   background-image: url('/img/faq-background.png');
-  backgroun-size: cover;
+  background-size: cover;
   text-align: center;
   color: $basic-white;
+
+  @media (max-width: 768px) {
+    padding-bottom: 90px;
+    padding-top: 75px;
+  }
 }
 .page-callback__header {
   margin-bottom: 80px;
-  font-family: 'Merel Light';
+  font-family: 'Merel Light', "Arial", sans-serif;
   font-size: 30px;
   text-transform: uppercase;
 }
 .page-callback__slogan {
   margin-bottom: 40px;
-  font-family: "Merel";
+  font-family: "Merel", "Arial", sans-serif;
   font-size: 18px;
 }
 .page-callback__phone {
   margin-bottom: 77px;
-  font-family: "Merel Bold";
+  font-family: "Merel Bold", "Arial", sans-serif;
   font-size: 24px;
 }
 .page-callback__link {

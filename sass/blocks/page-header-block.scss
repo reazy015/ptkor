@@ -17,7 +17,7 @@
   flex: 0 1 400px;
 
   @media (max-width: 1024px) {
-    flex: 0 0 50px;
+    flex: 0 0 70px;
   }
 }
 .page-header-logo__img {
@@ -103,9 +103,11 @@
 
     & .page-header-info {
       order: 4;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     padding-top: 5px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-left: 10px!important;
     padding-right: 10px!important;
   }
@@ -123,7 +125,6 @@
     margin-right: 0;  
   }
 }
-
 .card .page-header-nav {
   border-bottom: 1px solid $basic-hr-border;
 }
@@ -132,6 +133,9 @@
   font-size: 18px;
   color: $basic-black;
 
+  @media (max-width: 1024px) {
+    padding-right: 35px;
+  }
 }
 .common-phone {
   font-size: 21px;

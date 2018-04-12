@@ -20,7 +20,7 @@
 }
 .delivery-advantages-list-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex: 0 1 284px;
 
   &:last-of-type {
